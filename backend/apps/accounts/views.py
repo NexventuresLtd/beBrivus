@@ -24,10 +24,25 @@ class RegisterView(generics.CreateAPIView):
         # Generate JWT tokens
         refresh = RefreshToken.for_user(user)
         
+        # Check if onboarding is needed
+        needs_onboarding = False
+        onboarding_type = None
+        
+        if user.user_type == 'mentor':
+            # Check if mentor profile exists
+            from apps.mentors.models import MentorProfile
+            try:
+                user.mentor_profile
+            except MentorProfile.DoesNotExist:
+                needs_onboarding = True
+                onboarding_type = 'mentor'
+        
         return Response({
             'user': UserSerializer(user).data,
             'refresh': str(refresh),
             'access': str(refresh.access_token),
+            'needs_onboarding': needs_onboarding,
+            'onboarding_type': onboarding_type,
         }, status=status.HTTP_201_CREATED)
 
 

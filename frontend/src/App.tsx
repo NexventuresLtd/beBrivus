@@ -14,6 +14,14 @@ import { DashboardPage } from "./pages/DashboardPage";
 import { OpportunitiesPage } from "./pages/OpportunitiesPage";
 import { MentorsPage } from "./pages/MentorsPage";
 import { TrackerPage } from "./pages/TrackerPage";
+import { ResourcesPage } from "./pages/ResourcesPage";
+import { ForumPage } from "./pages/ForumPage";
+import { GamificationPage } from "./pages/GamificationPage";
+import { AICoachPage } from "./pages/AICoachPage";
+import MentorshipPage from "./pages/MentorshipPage";
+import MentorDashboard from "./pages/MentorDashboard";
+import VideoCallPage from "./pages/VideoCallPage";
+import MentorOnboarding from "./components/MentorOnboarding";
 
 // Create a client
 const queryClient = new QueryClient({
@@ -98,7 +106,7 @@ function AppRoutes() {
         path="/mentors"
         element={
           <ProtectedRoute>
-            <MentorsPage />
+            <MentorshipPage />
           </ProtectedRoute>
         }
       />
@@ -114,9 +122,7 @@ function AppRoutes() {
         path="/resources"
         element={
           <ProtectedRoute>
-            <div className="min-h-screen flex items-center justify-center">
-              <h1 className="text-2xl">Resources Page (Coming Soon)</h1>
-            </div>
+            <ResourcesPage />
           </ProtectedRoute>
         }
       />
@@ -124,9 +130,23 @@ function AppRoutes() {
         path="/forum"
         element={
           <ProtectedRoute>
-            <div className="min-h-screen flex items-center justify-center">
-              <h1 className="text-2xl">Forum Page (Coming Soon)</h1>
-            </div>
+            <ForumPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/gamification"
+        element={
+          <ProtectedRoute>
+            <GamificationPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/ai-coach"
+        element={
+          <ProtectedRoute>
+            <AICoachPage />
           </ProtectedRoute>
         }
       />
@@ -164,9 +184,31 @@ function AppRoutes() {
         path="/achievements"
         element={
           <ProtectedRoute>
-            <div className="min-h-screen flex items-center justify-center">
-              <h1 className="text-2xl">Achievements Page (Coming Soon)</h1>
-            </div>
+            <GamificationPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/mentor/onboarding"
+        element={
+          <ProtectedRoute>
+            <MentorOnboarding />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/mentor-dashboard"
+        element={
+          <ProtectedRoute>
+            <MentorDashboard />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/video-call/:sessionId"
+        element={
+          <ProtectedRoute>
+            <VideoCallPage />
           </ProtectedRoute>
         }
       />

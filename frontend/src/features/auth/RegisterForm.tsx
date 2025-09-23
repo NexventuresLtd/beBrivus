@@ -42,8 +42,14 @@ export const RegisterForm: React.FC = () => {
     try {
       setIsLoading(true);
       setError("");
-      await registerUser(data);
-      navigate("/dashboard");
+      const response = await registerUser(data);
+
+      // Check if onboarding is needed
+      if (response.needs_onboarding && response.onboarding_type === "mentor") {
+        navigate("/mentor/onboarding");
+      } else {
+        navigate("/dashboard");
+      }
     } catch (err: any) {
       setError(
         err.response?.data?.detail ||

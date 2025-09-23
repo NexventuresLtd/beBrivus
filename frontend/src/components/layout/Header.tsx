@@ -12,6 +12,8 @@ import {
   Target,
   BarChart3,
   Gift,
+  Bot,
+  Trophy,
 } from "lucide-react";
 import { useAuth } from "../../contexts/AuthContext";
 import { Button } from "../ui";
@@ -78,6 +80,20 @@ export const Header: React.FC = () => {
               >
                 <Users className="w-4 h-4" />
                 <span>Forum</span>
+              </Link>
+              <Link
+                to="/ai-coach"
+                className="flex items-center space-x-1 text-secondary-700 hover:text-primary-600 transition-colors"
+              >
+                <Bot className="w-4 h-4" />
+                <span>AI Coach</span>
+              </Link>
+              <Link
+                to="/gamification"
+                className="flex items-center space-x-1 text-secondary-700 hover:text-primary-600 transition-colors"
+              >
+                <Trophy className="w-4 h-4" />
+                <span>Progress</span>
               </Link>
             </nav>
           )}

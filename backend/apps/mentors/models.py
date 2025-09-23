@@ -114,6 +114,8 @@ class MentorshipSession(models.Model):
     ]
     
     STATUS_CHOICES = [
+        ('requested', 'Requested'),
+        ('rejected', 'Rejected'),
         ('scheduled', 'Scheduled'),
         ('in_progress', 'In Progress'),
         ('completed', 'Completed'),
@@ -121,7 +123,9 @@ class MentorshipSession(models.Model):
         ('no_show', 'No Show'),
     ]
     
-    mentorship_request = models.ForeignKey(MentorshipRequest, on_delete=models.CASCADE, related_name='sessions')
+    # mentorship_request = models.ForeignKey(MentorshipRequest, on_delete=models.CASCADE, related_name='sessions')
+    mentor = models.ForeignKey(MentorProfile, on_delete=models.CASCADE, related_name='sessions')
+    mentee = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='mentorship_sessions')
     
     # Session details
     session_type = models.CharField(max_length=20, choices=SESSION_TYPES)
@@ -183,7 +187,7 @@ class MentorReview(models.Model):
 
 class MentorAvailability(models.Model):
     """
-    Mentor availability schedule
+    Mentor general weekly availability schedule
     """
     DAYS_OF_WEEK = [
         (0, 'Monday'),
@@ -195,11 +199,13 @@ class MentorAvailability(models.Model):
         (6, 'Sunday'),
     ]
     
-    mentor = models.ForeignKey(MentorProfile, on_delete=models.CASCADE, related_name='availability')
+    mentor = models.ForeignKey(MentorProfile, on_delete=models.CASCADE, related_name='weekly_availability')
     day_of_week = models.IntegerField(choices=DAYS_OF_WEEK)
     start_time = models.TimeField()
     end_time = models.TimeField()
     timezone = models.CharField(max_length=50, default='UTC')
+    is_active = models.BooleanField(default=True)
+    is_available = models.BooleanField(default=True)
     
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -210,3 +216,28 @@ class MentorAvailability(models.Model):
     
     def __str__(self):
         return f"{self.mentor.user.full_name} - {self.get_day_of_week_display()} {self.start_time}-{self.end_time}"
+
+
+class MentorSpecificAvailability(models.Model):
+    """
+    Mentor availability for specific dates (overrides weekly availability)
+    """
+    mentor = models.ForeignKey(MentorProfile, on_delete=models.CASCADE, related_name='specific_availability')
+    date = models.DateField()
+    start_time = models.TimeField()
+    end_time = models.TimeField()
+    timezone = models.CharField(max_length=50, default='UTC')
+    is_available = models.BooleanField(default=True)  # False for unavailable times
+    reason = models.CharField(max_length=200, blank=True, help_text="Reason for unavailability")
+    
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        db_table = 'mentor_specific_availability'
+        unique_together = ['mentor', 'date', 'start_time']
+        ordering = ['date', 'start_time']
+    
+    def __str__(self):
+        status = "Available" if self.is_available else "Unavailable"
+        return f"{self.mentor.user.full_name} - {self.date} {self.start_time}-{self.end_time} ({status})"

@@ -35,19 +35,22 @@ THIRD_PARTY_APPS = [
     'django_filters',
     'taggit',
     'django_cleanup.apps.CleanupConfig',
+    'channels',
 ]
 
 LOCAL_APPS = [
     'apps.accounts',
-    # 'apps.opportunities', 
-    # 'apps.mentors',
-    # 'apps.applications',
-    # 'apps.forum',
-    # 'apps.tracker',
-    # 'apps.resources',
-    # 'apps.ai_services',
+    'apps.opportunities', 
+    'apps.mentors',
+    'apps.applications',
+    'apps.tracker',
+    'apps.ai_services',
+    'apps.forum',
+    'apps.resources',
     # 'apps.analytics',
-    # 'apps.gamification',
+    'apps.gamification',
+    'apps.video',
+    'apps.messaging',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -196,6 +199,9 @@ CACHES = {
 # OpenAI Configuration
 OPENAI_API_KEY = config('OPENAI_API_KEY', default='')
 
+# Google Gemini Configuration
+GEMINI_API_KEY = config('GEMINI_API_KEY', default='')
+
 # Email Configuration
 EMAIL_BACKEND = config('EMAIL_BACKEND', default='django.core.mail.backends.console.EmailBackend')
 EMAIL_HOST = config('EMAIL_HOST', default='smtp.gmail.com')
@@ -237,3 +243,15 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Channels Configuration
+ASGI_APPLICATION = 'core.asgi.application'
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}

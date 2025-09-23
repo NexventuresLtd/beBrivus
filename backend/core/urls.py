@@ -11,15 +11,16 @@ urlpatterns = [
     
     # API endpoints
     path('api/auth/', include('apps.accounts.urls')),
-    # path('api/opportunities/', include('apps.opportunities.urls')),
-    # path('api/mentors/', include('apps.mentors.urls')),
-    # path('api/applications/', include('apps.applications.urls')),
-    # path('api/forum/', include('apps.forum.urls')),
-    # path('api/tracker/', include('apps.tracker.urls')),
-    # path('api/resources/', include('apps.resources.urls')),
-    # path('api/ai/', include('apps.ai_services.urls')),
+    path('api/opportunities/', include('apps.opportunities.urls')),
+    path('api/mentors/', include('apps.mentors.urls')),
+    path('api/applications/', include('apps.applications.urls')),
+    path('api/tracker/', include('apps.tracker.urls')),
+    path('api/ai/', include('apps.ai_services.urls')),
+    path('api/forum/', include('apps.forum.urls')),
+    path('api/resources/', include('apps.resources.urls')),
     # path('api/analytics/', include('apps.analytics.urls')),
-    # path('api/gamification/', include('apps.gamification.urls')),
+    path('api/gamification/', include('apps.gamification.urls')),
+    path('api/messaging/', include('apps.messaging.urls')),
 ]
 
 # Serve media files in development
