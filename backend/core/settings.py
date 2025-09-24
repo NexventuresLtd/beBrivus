@@ -36,6 +36,7 @@ THIRD_PARTY_APPS = [
     'taggit',
     'django_cleanup.apps.CleanupConfig',
     'channels',
+    'daphne',
 ]
 
 LOCAL_APPS = [

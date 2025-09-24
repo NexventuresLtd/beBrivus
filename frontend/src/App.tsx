@@ -22,6 +22,7 @@ import MentorshipPage from "./pages/MentorshipPage";
 import MentorDashboard from "./pages/MentorDashboard";
 import VideoCallPage from "./pages/VideoCallPage";
 import MentorOnboarding from "./components/MentorOnboarding";
+import MentorProtectedRoute from "./components/MentorProtectedRoute";
 
 // Create a client
 const queryClient = new QueryClient({
@@ -199,9 +200,9 @@ function AppRoutes() {
       <Route
         path="/mentor-dashboard"
         element={
-          <ProtectedRoute>
+          <MentorProtectedRoute>
             <MentorDashboard />
-          </ProtectedRoute>
+          </MentorProtectedRoute>
         }
       />
       <Route

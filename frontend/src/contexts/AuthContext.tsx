@@ -7,7 +7,7 @@ interface AuthContextType {
   user: User | null;
   isAuthenticated: boolean;
   isLoading: boolean;
-  login: (email: string, password: string) => Promise<void>;
+  login: (email: string, password: string) => Promise<any>;
   register: (data: any) => Promise<any>;
   logout: () => Promise<void>;
   updateProfile: (data: Partial<User>) => Promise<void>;
@@ -35,19 +35,20 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   // Check if user is authenticated on mount
   useEffect(() => {
-    const initAuth = async () => {
+    const initAuth = () => {
       const accessToken = tokenManager.getAccessToken();
 
       if (accessToken && !tokenManager.isTokenExpired(accessToken)) {
         try {
-          const userProfile = await authApi.getProfile();
-          setUser(userProfile);
+          const userProfile = localStorage.getItem('user');
+          if (userProfile) {
+            setUser(JSON.parse(userProfile));
+          }
         } catch (error) {
           console.error("Failed to get user profile:", error);
           tokenManager.clearTokens();
         }
       }
-
       setIsLoading(false);
     };
 
@@ -58,7 +59,10 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     try {
       setIsLoading(true);
       const response = await authApi.login({ email, password });
+      const userProfile = await authApi.getProfile();
+      localStorage.setItem('user', JSON.stringify(userProfile));
       setUser(response.user);
+      return response; // Return full response including onboarding info
     } catch (error) {
       throw error;
     } finally {

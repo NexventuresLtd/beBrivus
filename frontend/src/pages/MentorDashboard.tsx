@@ -191,7 +191,7 @@ const MentorDashboard: React.FC = () => {
   const handleStartSession = (session: Session) => {
     startSessionMutation.mutate(session.id);
     // Navigate to video call
-    window.open(`/video-call/${session.meeting_id || session.id}`, "_blank");
+    window.location.href = `/video-call/${session.meeting_id || session.id}`;
   };
 
   const renderOverviewTab = () => {
@@ -286,7 +286,7 @@ const MentorDashboard: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-secondary-900">
-                        {session.mentee.first_name} {session.mentee.last_name}
+                        {session.mentee_name}
                       </p>
                       <p className="text-sm text-neutral-600">
                         {new Date(session.scheduled_start).toLocaleDateString()}
@@ -353,7 +353,7 @@ const MentorDashboard: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-secondary-900">
-                        {session.mentee.first_name} {session.mentee.last_name}
+                        {session.mentee_name}
                       </p>
                       <p className="text-sm text-neutral-600">
                         {new Date(session.scheduled_start).toLocaleString()}
@@ -431,7 +431,7 @@ const MentorDashboard: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-secondary-900">
-                    {session.mentee.first_name} {session.mentee.last_name}
+                    {session.mentee_name}
                   </h3>
                   <p className="text-neutral-600">{session.mentee.email}</p>
                   <div className="flex items-center space-x-4 mt-2 text-sm text-neutral-500">
@@ -531,7 +531,7 @@ const MentorDashboard: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-secondary-900">
-                    {session.mentee.first_name} {session.mentee.last_name}
+                    {session.mentee_name}
                   </h3>
                   <p className="text-neutral-600">{session.mentee.email}</p>
                   <div className="flex items-center space-x-4 mt-2 text-sm text-neutral-500">
@@ -667,7 +667,7 @@ const MentorDashboard: React.FC = () => {
                   <User className="w-8 h-8" />
                 </div>
                 <h3 className="text-lg font-bold text-secondary-900">
-                  {mentee.first_name} {mentee.last_name}
+                  {mentee_name} {mentee.last_name}
                 </h3>
                 <p className="text-neutral-600 mb-4">{mentee.email}</p>
 
@@ -730,14 +730,6 @@ const MentorDashboard: React.FC = () => {
     <Layout>
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="mb-8">
-            <h1 className="text-3xl font-bold text-secondary-900 mb-2">
-              Mentor Dashboard
-            </h1>
-            <p className="text-neutral-600">
-              Manage your mentoring sessions and mentees
-            </p>
-          </div>
 
           {/* Navigation Tabs */}
           <div className="bg-white rounded-xl shadow-sm border border-neutral-200 mb-8">
@@ -773,14 +765,13 @@ const MentorDashboard: React.FC = () => {
 
           {/* Confirmation Dialog */}
           {showConfirmDialog && selectedSession && (
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+            <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
               <div className="bg-white rounded-xl p-6 max-w-md w-full">
                 <h3 className="text-lg font-bold text-secondary-900 mb-4">
                   Confirm Session
                 </h3>
                 <p className="text-neutral-600 mb-4">
-                  Accept session with {selectedSession.mentee.first_name}{" "}
-                  {selectedSession.mentee.last_name}?
+                  Accept session with {selectedSession.mentee_name}
                 </p>
 
                 <div className="space-y-4">
@@ -846,7 +837,7 @@ const MentorDashboard: React.FC = () => {
                   Decline Session
                 </h3>
                 <p className="text-neutral-600 mb-4">
-                  Decline session with {selectedSession.mentee.first_name}{" "}
+                  Decline session with {selectedSession.mentee_name}{" "}
                   {selectedSession.mentee.last_name}?
                 </p>
 

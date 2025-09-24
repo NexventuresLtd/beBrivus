@@ -31,8 +31,14 @@ export const LoginForm: React.FC = () => {
     try {
       setIsLoading(true);
       setError("");
-      await login(data.email, data.password);
-      navigate("/dashboard");
+      const response = await login(data.email, data.password);
+
+      // Check if onboarding is needed
+      if (response.needs_onboarding && response.onboarding_type === "mentor") {
+        navigate("/mentor/onboarding");
+      } else {
+        navigate("/dashboard");
+      }
     } catch (err: any) {
       setError(err.response?.data?.detail || "Login failed. Please try again.");
     } finally {

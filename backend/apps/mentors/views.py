@@ -628,7 +628,7 @@ class MentorDashboardViewSet(viewsets.GenericViewSet):
                 'last_name': mentee.last_name,
                 'email': mentee.email,
                 'username': mentee.username,
-                'profile_picture': getattr(mentee, 'profile_picture', None),
+                'profile_picture': None,
                 'total_sessions': sessions.count(),
                 'completed_sessions': sessions.filter(status='completed').count(),
                 'last_session': sessions.order_by('-scheduled_start').first().scheduled_start if sessions.exists() else None,
@@ -805,6 +805,18 @@ class MentorOnboardingView(generics.CreateAPIView):
     """
     serializer_class = MentorOnboardingSerializer
     permission_classes = [IsAuthenticated]
+    
+    def get(self, request, *args, **kwargs):
+        """Check if mentor needs onboarding"""
+        if request.user.user_type != 'mentor':
+            return Response({'needs_onboarding': False})
+        
+        # Check if mentor profile exists
+        needs_onboarding = not hasattr(request.user, 'mentor_profile')
+        return Response({
+            'needs_onboarding': needs_onboarding,
+            'onboarding_type': 'mentor' if needs_onboarding else None
+        })
     
     def post(self, request, *args, **kwargs):
         # Check if user is a mentor

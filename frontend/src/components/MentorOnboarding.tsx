@@ -14,7 +14,7 @@ interface MentorOnboardingData {
   time_zone: string;
 }
 
-const API_BASE_URL = "http://localhost:8001/api";
+const API_BASE_URL = "http://localhost:8000/api";
 
 const MentorOnboarding: React.FC = () => {
   const navigate = useNavigate();
@@ -107,17 +107,17 @@ const MentorOnboarding: React.FC = () => {
   const renderStep1 = () => (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">
+        <h3 className="text-lg font-semibold text-neutral-900 mb-4">
           Professional Information
         </h3>
-        <p className="text-gray-600 mb-6">
+        <p className="text-neutral-600 mb-6">
           Tell us about your current professional background
         </p>
       </div>
 
       <div className="space-y-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-neutral-700 mb-1">
             Current Position *
           </label>
           <input
@@ -126,13 +126,13 @@ const MentorOnboarding: React.FC = () => {
             onChange={(e) =>
               updateFormData({ current_position: e.target.value })
             }
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
             placeholder="e.g., Senior Software Engineer"
           />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-neutral-700 mb-1">
             Current Company *
           </label>
           <input
@@ -141,13 +141,13 @@ const MentorOnboarding: React.FC = () => {
             onChange={(e) =>
               updateFormData({ current_company: e.target.value })
             }
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
             placeholder="e.g., Google, Microsoft, Startup Inc."
           />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-neutral-700 mb-1">
             Years of Experience *
           </label>
           <input
@@ -159,7 +159,7 @@ const MentorOnboarding: React.FC = () => {
                 years_of_experience: parseInt(e.target.value) || 0,
               })
             }
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
             placeholder="5"
           />
         </div>
@@ -170,17 +170,17 @@ const MentorOnboarding: React.FC = () => {
   const renderStep2 = () => (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">
+        <h3 className="text-lg font-semibold text-neutral-900 mb-4">
           Expertise & Experience
         </h3>
-        <p className="text-gray-600 mb-6">
+        <p className="text-neutral-600 mb-6">
           Share your areas of expertise and mentoring background
         </p>
       </div>
 
       <div className="space-y-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-neutral-700 mb-1">
             Areas of Expertise *
           </label>
           <input
@@ -189,16 +189,16 @@ const MentorOnboarding: React.FC = () => {
             onChange={(e) =>
               updateFormData({ specializations: e.target.value })
             }
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
             placeholder="e.g., React, Node.js, System Design, Product Management"
           />
-          <p className="text-sm text-gray-500 mt-1">
+          <p className="text-sm text-neutral-500 mt-1">
             Separate multiple areas with commas
           </p>
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-neutral-700 mb-1">
             Mentoring Experience *
           </label>
           <textarea
@@ -207,7 +207,7 @@ const MentorOnboarding: React.FC = () => {
             onChange={(e) =>
               updateFormData({ mentoring_experience: e.target.value })
             }
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
             placeholder="Describe your mentoring experience, teaching background, or what makes you a great mentor..."
           />
         </div>
@@ -218,17 +218,17 @@ const MentorOnboarding: React.FC = () => {
   const renderStep3 = () => (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">
+        <h3 className="text-lg font-semibold text-neutral-900 mb-4">
           Session Details
         </h3>
-        <p className="text-gray-600 mb-6">
+        <p className="text-neutral-600 mb-6">
           Set your availability and pricing preferences
         </p>
       </div>
 
       <div className="space-y-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-neutral-700 mb-1">
             Languages Spoken *
           </label>
           <input
@@ -237,20 +237,20 @@ const MentorOnboarding: React.FC = () => {
             onChange={(e) =>
               updateFormData({ languages_spoken: e.target.value })
             }
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
             placeholder="e.g., English, Spanish, French"
           />
-          <p className="text-sm text-gray-500 mt-1">
+          <p className="text-sm text-neutral-500 mt-1">
             Separate multiple languages with commas
           </p>
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-neutral-700 mb-1">
             Hourly Rate (USD) *
           </label>
           <div className="relative">
-            <span className="absolute left-3 top-2 text-gray-500">$</span>
+            <span className="absolute left-3 top-2 text-neutral-500">$</span>
             <input
               type="number"
               min="1"
@@ -258,20 +258,20 @@ const MentorOnboarding: React.FC = () => {
               onChange={(e) =>
                 updateFormData({ hourly_rate: parseInt(e.target.value) || 0 })
               }
-              className="w-full pl-8 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full pl-8 pr-3 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
               placeholder="50"
             />
           </div>
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-neutral-700 mb-1">
             Time Zone *
           </label>
           <select
             value={formData.time_zone}
             onChange={(e) => updateFormData({ time_zone: e.target.value })}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
           >
             <option value="America/New_York">Eastern Time (UTC-5)</option>
             <option value="America/Chicago">Central Time (UTC-6)</option>
@@ -292,9 +292,9 @@ const MentorOnboarding: React.FC = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-neutral-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md mx-auto">
-        <div className="bg-white rounded-lg shadow-md p-8">
+        <div className="bg-white rounded-lg shadow-lg p-8">
           {/* Progress Indicator */}
           <div className="flex items-center justify-center mb-8">
             <div className="flex items-center space-x-4">
@@ -303,8 +303,8 @@ const MentorOnboarding: React.FC = () => {
                   <div
                     className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium ${
                       step <= currentStep
-                        ? "bg-blue-600 text-white"
-                        : "bg-gray-200 text-gray-500"
+                        ? "bg-primary-600 text-white"
+                        : "bg-neutral-200 text-neutral-500"
                     }`}
                   >
                     {step}
@@ -312,7 +312,7 @@ const MentorOnboarding: React.FC = () => {
                   {step < 3 && (
                     <div
                       className={`h-1 w-12 ${
-                        step < currentStep ? "bg-blue-600" : "bg-gray-200"
+                        step < currentStep ? "bg-primary-600" : "bg-neutral-200"
                       }`}
                     />
                   )}
@@ -323,19 +323,19 @@ const MentorOnboarding: React.FC = () => {
 
           {/* Header */}
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900">
+            <h2 className="text-2xl font-bold text-neutral-900">
               Welcome to BeBrivus!
             </h2>
-            <p className="text-gray-600">Let's set up your mentor profile</p>
+            <p className="text-neutral-600">Let's set up your mentor profile</p>
 
             {/* Success/Error Messages */}
             {success && (
-              <div className="mt-4 p-3 bg-green-100 border border-green-400 text-green-700 rounded">
+              <div className="mt-4 p-3 bg-success-100 border border-success-400 text-success-700 rounded">
                 {success}
               </div>
             )}
             {error && (
-              <div className="mt-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
+              <div className="mt-4 p-3 bg-error-100 border border-error-400 text-error-700 rounded">
                 {error}
               </div>
             )}
@@ -353,8 +353,8 @@ const MentorOnboarding: React.FC = () => {
               disabled={currentStep === 1}
               className={`px-4 py-2 text-sm font-medium rounded-md ${
                 currentStep === 1
-                  ? "text-gray-400 cursor-not-allowed"
-                  : "text-gray-700 hover:text-gray-900"
+                  ? "text-neutral-400 cursor-not-allowed"
+                  : "text-neutral-700 hover:text-neutral-900"
               }`}
             >
               Back
@@ -365,8 +365,8 @@ const MentorOnboarding: React.FC = () => {
               disabled={!isStepValid() || onboardingMutation.isPending}
               className={`px-6 py-2 text-sm font-medium rounded-md ${
                 isStepValid() && !onboardingMutation.isPending
-                  ? "bg-blue-600 text-white hover:bg-blue-700"
-                  : "bg-gray-300 text-gray-500 cursor-not-allowed"
+                  ? "bg-primary-600 text-white hover:bg-primary-700"
+                  : "bg-neutral-300 text-neutral-500 cursor-not-allowed"
               }`}
             >
               {onboardingMutation.isPending
