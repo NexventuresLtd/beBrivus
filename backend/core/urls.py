@@ -21,6 +21,9 @@ urlpatterns = [
     # path('api/analytics/', include('apps.analytics.urls')),
     path('api/gamification/', include('apps.gamification.urls')),
     path('api/messaging/', include('apps.messaging.urls')),
+    
+    # Admin API endpoints
+    path('api/admin/', include('apps.accounts.admin_urls')),
 ]
 
 # Serve media files in development

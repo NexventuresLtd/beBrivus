@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { AuthProvider, useAuth } from "./contexts/AuthContext";
+import { AdminAuthProvider } from "./contexts/AdminAuthContext";
 import { HomePage } from "./pages/HomePage";
 import { LoginPage } from "./pages/LoginPage";
 import { RegisterPage } from "./pages/RegisterPage";
@@ -23,6 +24,16 @@ import MentorDashboard from "./pages/MentorDashboard";
 import VideoCallPage from "./pages/VideoCallPage";
 import MentorOnboarding from "./components/MentorOnboarding";
 import MentorProtectedRoute from "./components/MentorProtectedRoute";
+
+// Admin imports
+import { AdminLoginPage } from "./pages/admin/AdminLoginPage";
+import { AdminDashboard } from "./pages/admin/AdminDashboard";
+import { OpportunityManagement } from "./pages/admin/OpportunityManagement";
+import { CreateOpportunity } from "./pages/admin/CreateOpportunity";
+import { ResourceManagement } from "./pages/admin/ResourceManagement";
+import { UserManagement } from "./pages/admin/UserManagement";
+import { AdminLayout } from "./components/admin/AdminLayout";
+import { AdminProtectedRoute } from "./components/admin/AdminProtectedRoute";
 
 // Create a client
 const queryClient = new QueryClient({
@@ -213,6 +224,48 @@ function AppRoutes() {
           </ProtectedRoute>
         }
       />
+
+      {/* Admin Routes */}
+      <Route path="/admin/login" element={<AdminLoginPage />} />
+      <Route
+        path="/admin"
+        element={
+          <AdminProtectedRoute>
+            <AdminLayout />
+          </AdminProtectedRoute>
+        }
+      >
+        <Route index element={<Navigate to="/admin/dashboard" />} />
+        <Route path="dashboard" element={<AdminDashboard />} />
+        <Route path="opportunities" element={<OpportunityManagement />} />
+        <Route path="opportunities/new" element={<CreateOpportunity />} />
+        <Route path="resources" element={<ResourceManagement />} />
+        <Route path="users" element={<UserManagement />} />
+        <Route
+          path="analytics"
+          element={
+            <div className="min-h-screen flex items-center justify-center">
+              <h1 className="text-2xl">Analytics (Coming Soon)</h1>
+            </div>
+          }
+        />
+        <Route
+          path="content"
+          element={
+            <div className="min-h-screen flex items-center justify-center">
+              <h1 className="text-2xl">Content Management (Coming Soon)</h1>
+            </div>
+          }
+        />
+        <Route
+          path="settings"
+          element={
+            <div className="min-h-screen flex items-center justify-center">
+              <h1 className="text-2xl">Admin Settings (Coming Soon)</h1>
+            </div>
+          }
+        />
+      </Route>
     </Routes>
   );
 }
@@ -221,11 +274,13 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <Router>
-          <div className="App">
-            <AppRoutes />
-          </div>
-        </Router>
+        <AdminAuthProvider>
+          <Router>
+            <div className="App">
+              <AppRoutes />
+            </div>
+          </Router>
+        </AdminAuthProvider>
       </AuthProvider>
     </QueryClientProvider>
   );

@@ -33,6 +33,7 @@ class MentorProfile(models.Model):
     max_mentees = models.PositiveIntegerField(default=5)
     hourly_rate = models.DecimalField(max_digits=6, decimal_places=2, blank=True, null=True)
     free_sessions_offered = models.PositiveIntegerField(default=1)
+    time_zone = models.CharField(max_length=50, default='UTC')
     
     # Preferences
     preferred_mentee_level = models.CharField(max_length=100, blank=True)

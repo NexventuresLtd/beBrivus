@@ -667,7 +667,7 @@ const MentorDashboard: React.FC = () => {
                   <User className="w-8 h-8" />
                 </div>
                 <h3 className="text-lg font-bold text-secondary-900">
-                  {mentee_name} {mentee.last_name}
+                  {mentee.first_name} {mentee.last_name}
                 </h3>
                 <p className="text-neutral-600 mb-4">{mentee.email}</p>
 

@@ -1,32 +1,40 @@
 from rest_framework import serializers
 from django.utils import timezone
-from .models import Opportunity
+from .models import Opportunity, OpportunityCategory
 from apps.applications.models import Application
+
+
+class OpportunityCategorySerializer(serializers.ModelSerializer):
+    """Serializer for opportunity categories"""
+    
+    class Meta:
+        model = OpportunityCategory
+        fields = ['id', 'name', 'description', 'icon', 'color', 'active']
 
 
 class OpportunitySerializer(serializers.ModelSerializer):
     """Serializer for opportunity details"""
-    required_skills_list = serializers.StringRelatedField(source='required_skills', many=True, read_only=True)
-    benefits_list = serializers.StringRelatedField(source='benefits', many=True, read_only=True)
+    category_name = serializers.CharField(source='category.name', read_only=True)
     match_score = serializers.IntegerField(read_only=True, default=75)
     days_remaining = serializers.SerializerMethodField()
     
     def get_days_remaining(self, obj):
         if obj.application_deadline:
-            delta = obj.application_deadline - timezone.now().date()
+            delta = obj.application_deadline.date() - timezone.now().date()
             return delta.days if delta.days > 0 else 0
         return None
 
     class Meta:
         model = Opportunity
         fields = [
-            'id', 'title', 'company', 'company_logo', 'location', 'is_remote',
-            'employment_type', 'experience_level', 'description', 'requirements',
-            'salary_min', 'salary_max', 'salary_currency', 'required_skills_list',
-            'benefits_list', 'application_url', 'posted_date', 'application_deadline',
-            'match_score', 'days_remaining', 'is_active'
+            'id', 'title', 'organization', 'organization_logo', 'location', 'remote_allowed',
+            'category', 'category_name', 'difficulty_level', 'description', 'requirements',
+            'salary_min', 'salary_max', 'currency', 'benefits',
+            'application_deadline', 'start_date', 'end_date', 'external_url',
+            'match_score', 'days_remaining', 'is_active', 'status', 'featured',
+            'views_count', 'applications_count', 'created_at', 'updated_at'
         ]
-        read_only_fields = ['posted_date', 'is_active']
+        read_only_fields = ['created_at', 'updated_at', 'is_active', 'views_count', 'applications_count']
 
 
 class OpportunitySearchSerializer(OpportunitySerializer):

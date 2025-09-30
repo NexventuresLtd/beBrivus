@@ -28,26 +28,18 @@ class OpportunityViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = OpportunitySerializer
     permission_classes = [IsAuthenticated]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    search_fields = ['title', 'company', 'location', 'description', 'required_skills']
-    filterset_fields = ['employment_type', 'experience_level', 'is_remote']
-    ordering_fields = ['posted_date', 'application_deadline', 'salary_min', 'salary_max']
-    ordering = ['-posted_date']
+    search_fields = ['title', 'organization', 'location', 'description']
+    filterset_fields = ['category', 'difficulty_level', 'remote_allowed', 'status']
+    ordering_fields = ['created_at', 'application_deadline', 'salary_min', 'salary_max']
+    ordering = ['-published_at']
 
     def get_queryset(self):
-        queryset = Opportunity.objects.filter(is_active=True).prefetch_related(
-            'required_skills', 'benefits'
-        )
+        queryset = Opportunity.objects.filter(status='published').select_related('category')
         
-        # Add match score calculation based on user's skills and profile
-        user = self.request.user
-        user_skills = []
-        if hasattr(user, 'skills') and user.skills.exists():
-            user_skills = list(user.skills.values_list('name', flat=True))
-        
-        # Simple matching algorithm - can be enhanced with ML
+        # Add match score calculation - simplified for now
         queryset = queryset.annotate(
             match_score=Case(
-                When(required_skills__name__in=user_skills, then=92),
+                When(featured=True, then=90),
                 default=75,
                 output_field=IntegerField()
             )
@@ -195,29 +187,27 @@ class OpportunitySearchView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        queryset = Opportunity.objects.filter(is_active=True).prefetch_related(
-            'required_skills', 'benefits'
-        )
+        queryset = Opportunity.objects.filter(status='published').select_related('category')
         
         # Apply filters
         search_term = request.query_params.get('search', '')
         if search_term:
             queryset = queryset.filter(
                 Q(title__icontains=search_term) |
-                Q(company__icontains=search_term) |
+                Q(organization__icontains=search_term) |
                 Q(description__icontains=search_term) |
-                Q(required_skills__name__icontains=search_term)
+                Q(category__name__icontains=search_term)
             ).distinct()
 
-        employment_type = request.query_params.get('type', '')
-        if employment_type:
-            queryset = queryset.filter(employment_type=employment_type)
+        category_name = request.query_params.get('type', '')
+        if category_name:
+            queryset = queryset.filter(category__name__icontains=category_name)
 
         location = request.query_params.get('location', '')
         if location:
             queryset = queryset.filter(
                 Q(location__icontains=location) |
-                Q(is_remote=True)
+                Q(remote_allowed=True)
             )
 
         min_salary = request.query_params.get('min_salary', '')
@@ -248,13 +238,13 @@ class OpportunitySearchView(APIView):
             
             queryset = queryset.annotate(
                 match_score=Case(
-                    When(required_skills__name__in=user_skills, then=92),
+                    When(featured=True, then=92),
                     default=75,
                     output_field=IntegerField()
                 )
             ).order_by('-match_score')
         elif sort_by == 'date':
-            queryset = queryset.order_by('-posted_date')
+            queryset = queryset.order_by('-created_at')
         elif sort_by == 'deadline':
             queryset = queryset.order_by('application_deadline')
         elif sort_by == 'salary':

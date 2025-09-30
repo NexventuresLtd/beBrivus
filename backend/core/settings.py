@@ -54,7 +54,7 @@ LOCAL_APPS = [
     'apps.messaging',
 ]
 
-INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+INSTALLED_APPS = THIRD_PARTY_APPS + DJANGO_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -158,7 +158,7 @@ REST_FRAMEWORK = {
 
 # Simple JWT Configuration
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=60),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
     'ROTATE_REFRESH_TOKENS': True,
     'BLACKLIST_AFTER_ROTATION': True,
