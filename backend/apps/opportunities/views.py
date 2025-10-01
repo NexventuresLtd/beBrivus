@@ -62,8 +62,8 @@ class OpportunityViewSet(viewsets.ReadOnlyModelViewSet):
         application = Application.objects.create(
             user=request.user,
             opportunity=opportunity,
-            status='applied',
-            applied_date=timezone.now().date()
+            status='submitted',
+            submitted_at=timezone.now()
         )
         
         return Response(
@@ -320,8 +320,8 @@ class ApplyToOpportunityView(APIView):
         application = Application.objects.create(
             user=request.user,
             opportunity=opportunity,
-            status='applied',
-            applied_date=timezone.now().date(),
+            status='submitted',
+            submitted_at=timezone.now(),
             cover_letter=request.data.get('cover_letter', ''),
             notes=request.data.get('notes', '')
         )

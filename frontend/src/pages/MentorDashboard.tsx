@@ -730,7 +730,6 @@ const MentorDashboard: React.FC = () => {
     <Layout>
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-
           {/* Navigation Tabs */}
           <div className="bg-white rounded-xl shadow-sm border border-neutral-200 mb-8">
             <nav className="flex space-x-1 p-1">
@@ -831,7 +830,7 @@ const MentorDashboard: React.FC = () => {
 
           {/* Rejection Dialog */}
           {showRejectDialog && selectedSession && (
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+            <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
               <div className="bg-white rounded-xl p-6 max-w-md w-full">
                 <h3 className="text-lg font-bold text-secondary-900 mb-4">
                   Decline Session

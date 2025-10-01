@@ -63,7 +63,7 @@ class ApplicationSerializer(serializers.ModelSerializer):
         model = Application
         fields = [
             'id', 'opportunity', 'opportunity_title', 'company_name',
-            'status', 'applied_date', 'cover_letter', 'notes',
+            'status', 'submitted_at', 'cover_letter', 'notes',
             'interview_date', 'feedback', 'created_at', 'updated_at'
         ]
         read_only_fields = ['created_at', 'updated_at']

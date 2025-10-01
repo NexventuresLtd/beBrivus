@@ -27,7 +27,7 @@ export const HomePage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen bg-gradient-to-br from-primary-900 via-primary-800 to-primary-600 text-white overflow-hidden">
         {/* Background Pattern */}
-        <div className="absolute inset-0 bg-black bg-opacity-20">
+        <div className="absolute inset-0 bg-black /20">
           <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 to-transparent"></div>
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary-600/30 to-transparent"></div>
           <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -41,18 +41,19 @@ export const HomePage: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex items-center min-h-screen">
           <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
             {/* Content */}
-            <div className="text-left lg:pr-8">              
+            <div className="text-left lg:pr-8">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 Your Gateway to
                 <span className="bg-gradient-to-r from-secondary-300 to-warning-300 bg-clip-text text-transparent block">
                   Global Excellence
                 </span>
               </h1>
-              
+
               <p className="text-xl md:text-2xl mb-8 text-primary-100 leading-relaxed">
-                Discover life-changing scholarships, internships, and career opportunities 
-                worldwide. Get AI-powered recommendations, expert mentorship, and 
-                comprehensive support throughout your application journey.
+                Discover life-changing scholarships, internships, and career
+                opportunities worldwide. Get AI-powered recommendations, expert
+                mentorship, and comprehensive support throughout your
+                application journey.
               </p>
 
               {/* Stats Row */}
@@ -63,7 +64,9 @@ export const HomePage: React.FC = () => {
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-white">15K+</div>
-                    <div className="text-sm text-primary-200">Active Fellows</div>
+                    <div className="text-sm text-primary-200">
+                      Active Fellows
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -117,22 +120,36 @@ export const HomePage: React.FC = () => {
                       <Globe className="w-8 h-8 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white">Global Network</h3>
+                      <h3 className="text-xl font-bold text-white">
+                        Global Network
+                      </h3>
                       <p className="text-primary-200">Connect worldwide</p>
                     </div>
                   </div>
                   <div className="space-y-4">
                     <div className="flex items-center justify-between p-3 bg-white/5 rounded-xl">
-                      <span className="text-white font-medium">Scholarships</span>
-                      <span className="text-secondary-300 font-semibold">2,847</span>
+                      <span className="text-white font-medium">
+                        Scholarships
+                      </span>
+                      <span className="text-secondary-300 font-semibold">
+                        2,847
+                      </span>
                     </div>
                     <div className="flex items-center justify-between p-3 bg-white/5 rounded-xl">
-                      <span className="text-white font-medium">Internships</span>
-                      <span className="text-secondary-300 font-semibold">1,923</span>
+                      <span className="text-white font-medium">
+                        Internships
+                      </span>
+                      <span className="text-secondary-300 font-semibold">
+                        1,923
+                      </span>
                     </div>
                     <div className="flex items-center justify-between p-3 bg-white/5 rounded-xl">
-                      <span className="text-white font-medium">Fellowships</span>
-                      <span className="text-secondary-300 font-semibold">456</span>
+                      <span className="text-white font-medium">
+                        Fellowships
+                      </span>
+                      <span className="text-secondary-300 font-semibold">
+                        456
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -151,8 +168,15 @@ export const HomePage: React.FC = () => {
 
         {/* Bottom Wave */}
         <div className="absolute bottom-0 left-0 w-full">
-          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32V120H1392C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120H0V64Z" fill="white"/>
+          <svg
+            viewBox="0 0 1440 120"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32V120H1392C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120H0V64Z"
+              fill="white"
+            />
           </svg>
         </div>
       </section>
@@ -163,7 +187,9 @@ export const HomePage: React.FC = () => {
           <div className="text-center mb-20">
             <div className="inline-flex items-center bg-primary-100 px-4 py-2 rounded-full mb-6">
               <Star className="w-4 h-4 mr-2 text-primary-600" />
-              <span className="text-sm font-semibold text-primary-700">Comprehensive Platform</span>
+              <span className="text-sm font-semibold text-primary-700">
+                Comprehensive Platform
+              </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-secondary-900 mb-6 leading-tight">
               Everything You Need to
@@ -172,9 +198,10 @@ export const HomePage: React.FC = () => {
               </span>
             </h2>
             <p className="text-xl text-secondary-600 max-w-4xl mx-auto leading-relaxed">
-              From AI-powered opportunity discovery to expert mentorship, we provide 
-              all the cutting-edge tools and personalized support you need to unlock 
-              your potential and advance your career on the global stage.
+              From AI-powered opportunity discovery to expert mentorship, we
+              provide all the cutting-edge tools and personalized support you
+              need to unlock your potential and advance your career on the
+              global stage.
             </p>
           </div>
 
@@ -189,7 +216,8 @@ export const HomePage: React.FC = () => {
                 </h3>
                 <p className="text-secondary-600 leading-relaxed">
                   Get personalized opportunity recommendations based on your
-                  profile, skills, and career goals using advanced machine learning.
+                  profile, skills, and career goals using advanced machine
+                  learning.
                 </p>
               </CardBody>
             </Card>
@@ -203,8 +231,8 @@ export const HomePage: React.FC = () => {
                   Expert Mentorship
                 </h3>
                 <p className="text-secondary-600 leading-relaxed">
-                  Connect with industry professionals for personalized guidance on
-                  applications, interviews, and strategic career development.
+                  Connect with industry professionals for personalized guidance
+                  on applications, interviews, and strategic career development.
                 </p>
               </CardBody>
             </Card>
@@ -233,8 +261,9 @@ export const HomePage: React.FC = () => {
                   Premium Resources
                 </h3>
                 <p className="text-secondary-600 leading-relaxed">
-                  Access exclusive templates, comprehensive guides, and expert tutorials
-                  to elevate your applications and interview performance.
+                  Access exclusive templates, comprehensive guides, and expert
+                  tutorials to elevate your applications and interview
+                  performance.
                 </p>
               </CardBody>
             </Card>
@@ -248,8 +277,9 @@ export const HomePage: React.FC = () => {
                   Global Community
                 </h3>
                 <p className="text-secondary-600 leading-relaxed">
-                  Join an exclusive community of ambitious peers, share experiences,
-                  and build lasting connections with future global leaders.
+                  Join an exclusive community of ambitious peers, share
+                  experiences, and build lasting connections with future global
+                  leaders.
                 </p>
               </CardBody>
             </Card>
@@ -284,7 +314,9 @@ export const HomePage: React.FC = () => {
           <div className="text-center mb-20">
             <div className="inline-flex items-center bg-success-500/20 backdrop-blur-sm px-6 py-3 rounded-full mb-6 border border-success-400/30">
               <Globe className="w-5 h-5 mr-2 text-success-300" />
-              <span className="text-lg font-semibold text-success-200">Global Impact</span>
+              <span className="text-lg font-semibold text-success-200">
+                Global Impact
+              </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
               Trusted by Students
@@ -293,8 +325,9 @@ export const HomePage: React.FC = () => {
               </span>
             </h2>
             <p className="text-xl text-secondary-200 max-w-3xl mx-auto leading-relaxed">
-              Join a thriving community of ambitious students who have transformed their 
-              futures through our comprehensive fellowship platform.
+              Join a thriving community of ambitious students who have
+              transformed their futures through our comprehensive fellowship
+              platform.
             </p>
           </div>
 
@@ -307,7 +340,9 @@ export const HomePage: React.FC = () => {
                 <div className="text-5xl font-bold bg-gradient-to-r from-success-300 to-success-400 bg-clip-text text-transparent mb-3">
                   15K+
                 </div>
-                <div className="text-lg font-semibold text-white mb-2">Active Fellows</div>
+                <div className="text-lg font-semibold text-white mb-2">
+                  Active Fellows
+                </div>
                 <div className="text-secondary-300 text-sm">Growing daily</div>
               </div>
             </div>
@@ -320,7 +355,9 @@ export const HomePage: React.FC = () => {
                 <div className="text-5xl font-bold bg-gradient-to-r from-primary-300 to-primary-400 bg-clip-text text-transparent mb-3">
                   8.5K+
                 </div>
-                <div className="text-lg font-semibold text-white mb-2">Opportunities</div>
+                <div className="text-lg font-semibold text-white mb-2">
+                  Opportunities
+                </div>
                 <div className="text-secondary-300 text-sm">Updated weekly</div>
               </div>
             </div>
@@ -333,8 +370,12 @@ export const HomePage: React.FC = () => {
                 <div className="text-5xl font-bold bg-gradient-to-r from-warning-300 to-warning-400 bg-clip-text text-transparent mb-3">
                   750+
                 </div>
-                <div className="text-lg font-semibold text-white mb-2">Expert Mentors</div>
-                <div className="text-secondary-300 text-sm">Industry leaders</div>
+                <div className="text-lg font-semibold text-white mb-2">
+                  Expert Mentors
+                </div>
+                <div className="text-secondary-300 text-sm">
+                  Industry leaders
+                </div>
               </div>
             </div>
 
@@ -346,7 +387,9 @@ export const HomePage: React.FC = () => {
                 <div className="text-5xl font-bold bg-gradient-to-r from-secondary-300 to-secondary-400 bg-clip-text text-transparent mb-3">
                   92%
                 </div>
-                <div className="text-lg font-semibold text-white mb-2">Success Rate</div>
+                <div className="text-lg font-semibold text-white mb-2">
+                  Success Rate
+                </div>
                 <div className="text-secondary-300 text-sm">Proven results</div>
               </div>
             </div>
@@ -357,12 +400,16 @@ export const HomePage: React.FC = () => {
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-10 border border-white/10 max-w-4xl mx-auto">
               <div className="flex justify-center mb-6">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 text-warning-400 fill-current" />
+                  <Star
+                    key={i}
+                    className="w-6 h-6 text-warning-400 fill-current"
+                  />
                 ))}
               </div>
               <blockquote className="text-2xl font-semibold text-white mb-6 leading-relaxed italic">
-                "beBrivus transformed my approach to finding opportunities. Within 3 months, 
-                I secured a prestigious fellowship that launched my career in international development."
+                "beBrivus transformed my approach to finding opportunities.
+                Within 3 months, I secured a prestigious fellowship that
+                launched my career in international development."
               </blockquote>
               <div className="flex items-center justify-center">
                 <div className="w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center mr-4">
@@ -370,7 +417,9 @@ export const HomePage: React.FC = () => {
                 </div>
                 <div className="text-left">
                   <div className="font-semibold text-white">Anna Chen</div>
-                  <div className="text-secondary-300 text-sm">Rhodes Scholar, Oxford University</div>
+                  <div className="text-secondary-300 text-sm">
+                    Rhodes Scholar, Oxford University
+                  </div>
                 </div>
               </div>
             </div>
@@ -393,18 +442,23 @@ export const HomePage: React.FC = () => {
             <div className="text-center mb-12">
               <div className="inline-flex items-center bg-secondary-500/20 backdrop-blur-sm px-6 py-3 rounded-full mb-6 border border-secondary-400/30">
                 <Trophy className="w-5 h-5 mr-2 text-secondary-300" />
-                <span className="text-lg font-semibold text-secondary-200">Limited Time Application</span>
+                <span className="text-lg font-semibold text-secondary-200">
+                  Limited Time Application
+                </span>
               </div>
-              
+
               <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
                 Ready to Transform
                 <span className="bg-gradient-to-r from-secondary-300 to-warning-300 bg-clip-text text-transparent block">
                   Your Future?
                 </span>
               </h2>
-              
+
               <p className="text-xl md:text-2xl text-primary-100 mb-12 max-w-4xl mx-auto leading-relaxed">
-                Join thousands of ambitious students who have already unlocked their potential and secured life-changing opportunities through beBrivus. Your journey to global excellence starts with a single click.
+                Join thousands of ambitious students who have already unlocked
+                their potential and secured life-changing opportunities through
+                beBrivus. Your journey to global excellence starts with a single
+                click.
               </p>
             </div>
 
@@ -414,22 +468,34 @@ export const HomePage: React.FC = () => {
                 <div className="w-20 h-20 bg-gradient-to-br from-secondary-400/20 to-secondary-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                   <Zap className="w-10 h-10 text-secondary-300" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Instant Matching</h3>
-                <p className="text-primary-200">AI finds your perfect opportunities in seconds</p>
+                <h3 className="text-xl font-bold text-white mb-2">
+                  Instant Matching
+                </h3>
+                <p className="text-primary-200">
+                  AI finds your perfect opportunities in seconds
+                </p>
               </div>
               <div className="text-center group">
                 <div className="w-20 h-20 bg-gradient-to-br from-warning-400/20 to-warning-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                   <Users className="w-10 h-10 text-warning-300" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Expert Guidance</h3>
-                <p className="text-primary-200">1-on-1 mentorship from industry leaders</p>
+                <h3 className="text-xl font-bold text-white mb-2">
+                  Expert Guidance
+                </h3>
+                <p className="text-primary-200">
+                  1-on-1 mentorship from industry leaders
+                </p>
               </div>
               <div className="text-center group">
                 <div className="w-20 h-20 bg-gradient-to-br from-success-400/20 to-success-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                   <Target className="w-10 h-10 text-success-300" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Guaranteed Results</h3>
-                <p className="text-primary-200">92% of our fellows secure their dream opportunity</p>
+                <h3 className="text-xl font-bold text-white mb-2">
+                  Guaranteed Results
+                </h3>
+                <p className="text-primary-200">
+                  92% of our fellows secure their dream opportunity
+                </p>
               </div>
             </div>
 
@@ -445,16 +511,26 @@ export const HomePage: React.FC = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
                   </Button>
                 </Link>
-                
+
                 <div className="flex items-center text-primary-200">
                   <div className="flex -space-x-2 mr-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">A</div>
-                    <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">M</div>
-                    <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">S</div>
-                    <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">+</div>
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">
+                      A
+                    </div>
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">
+                      M
+                    </div>
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">
+                      S
+                    </div>
+                    <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">
+                      +
+                    </div>
                   </div>
                   <div>
-                    <div className="font-semibold text-white">Join 15,000+ Fellows</div>
+                    <div className="font-semibold text-white">
+                      Join 15,000+ Fellows
+                    </div>
                     <div className="text-sm">Start your journey today</div>
                   </div>
                 </div>

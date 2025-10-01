@@ -9013,3 +9013,1462 @@ Not Found: /api/gamification/achievements/
 [mHTTP OPTIONS /api/auth/profile/ 200 [0.07, 127.0.0.1:53973][0m
 [mHTTP GET /api/auth/profile/ 200 [0.12, 127.0.0.1:52557][0m
 [mHTTP GET /api/auth/profile/ 200 [0.02, 127.0.0.1:53973][0m
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP OPTIONS /api/opportunities/ 200 [0.01, 127.0.0.1:54321][0m
+[mHTTP OPTIONS /api/opportunities/ 200 [0.01, 127.0.0.1:52994][0m
+[mHTTP GET /api/opportunities/ 200 [0.11, 127.0.0.1:52994][0m
+[mHTTP GET /api/opportunities/ 200 [0.03, 127.0.0.1:54321][0m
+[mHTTP GET /api/opportunities/ 200 [0.03, 127.0.0.1:52224][0m
+[mHTTP GET /api/opportunities/ 200 [0.05, 127.0.0.1:52224][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:55303][0m
+[mHTTP GET /api/opportunities/ 200 [0.05, 127.0.0.1:55303][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:59968][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:59968][0m
+[mHTTP GET /api/opportunities/ 200 [0.02, 127.0.0.1:59968][0m
+[mHTTP GET /api/opportunities/ 200 [0.03, 127.0.0.1:64136][0m
+[mHTTP GET /api/opportunities/ 200 [0.03, 127.0.0.1:64004][0m
+[mHTTP GET /api/opportunities/ 200 [0.05, 127.0.0.1:64004][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:64004][0m
+[mHTTP GET /api/opportunities/ 200 [0.05, 127.0.0.1:62440][0m
+[mHTTP GET /api/opportunities/ 200 [0.03, 127.0.0.1:62440][0m
+[mHTTP GET /api/opportunities/ 200 [0.03, 127.0.0.1:64004][0m
+[mHTTP GET /api/opportunities/ 200 [0.02, 127.0.0.1:64004][0m
+[mHTTP GET /api/opportunities/ 200 [0.02, 127.0.0.1:62440][0m
+[mHTTP GET /api/opportunities/ 200 [0.02, 127.0.0.1:63373][0m
+[mHTTP GET /api/opportunities/ 200 [0.02, 127.0.0.1:63373][0m
+[mHTTP GET /api/opportunities/ 200 [0.03, 127.0.0.1:51515][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:51515][0m
+[mHTTP GET /api/opportunities/ 200 [0.03, 127.0.0.1:49670][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:49670][0m
+[mHTTP OPTIONS /api/mentors/ 200 [0.00, 127.0.0.1:49670][0m
+[mHTTP GET /api/mentors/ 200 [0.10, 127.0.0.1:49670][0m
+[mHTTP GET /api/mentors/ 200 [0.04, 127.0.0.1:49670][0m
+[mHTTP OPTIONS /api/resources/ 200 [0.01, 127.0.0.1:49670][0m
+[mHTTP OPTIONS /api/resources/categories/ 200 [0.01, 127.0.0.1:58481][0m
+[mHTTP OPTIONS /api/resources/ 200 [0.01, 127.0.0.1:64897][0m
+[mHTTP OPTIONS /api/resources/categories/ 200 [0.00, 127.0.0.1:49670][0m
+[mHTTP GET /api/resources/ 200 [0.04, 127.0.0.1:64897][0m
+[mHTTP GET /api/resources/categories/ 200 [0.04, 127.0.0.1:58481][0m
+[mHTTP GET /api/resources/categories/ 200 [0.03, 127.0.0.1:64897][0m
+[mHTTP GET /api/resources/ 200 [0.04, 127.0.0.1:49670][0m
+[mHTTP OPTIONS /api/forum/categories/ 200 [0.01, 127.0.0.1:49670][0m
+[mHTTP OPTIONS /api/forum/discussions/?ordering=-last_activity 200 [0.01, 127.0.0.1:64897][0m
+[mHTTP GET /api/forum/categories/ 200 [0.03, 127.0.0.1:64897][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.04, 127.0.0.1:49670][0m
+[mHTTP OPTIONS /api/gamification/profile/ 200 [0.02, 127.0.0.1:49670][0m
+[mHTTP OPTIONS /api/gamification/badges/ 200 [0.02, 127.0.0.1:64897][0m
+[mHTTP OPTIONS /api/gamification/leaderboard/ 200 [0.02, 127.0.0.1:49320][0m
+[mHTTP OPTIONS /api/gamification/achievements/ 200 [0.02, 127.0.0.1:58481][0m
+[mHTTP GET /api/gamification/leaderboard/ 200 [0.09, 127.0.0.1:49320][0m
+[mHTTP GET /api/gamification/profile/ 200 [0.10, 127.0.0.1:49670][0m
+[mHTTP GET /api/gamification/badges/ 200 [0.17, 127.0.0.1:58481][0m
+Not Found: /api/gamification/achievements/
+[33mHTTP GET /api/gamification/achievements/ 404 [0.21, 127.0.0.1:64897][0m
+[mHTTP GET /api/opportunities/ 200 [0.03, 127.0.0.1:64897][0m
+[mHTTP GET /api/opportunities/ 200 [0.03, 127.0.0.1:58481][0m
+[mHTTP OPTIONS /api/opportunities/6/save/ 200 [0.00, 127.0.0.1:58481][0m
+[mHTTP POST /api/opportunities/6/save/ 201 [0.04, 127.0.0.1:58481][0m
+[mHTTP DELETE /api/opportunities/6/save/ 204 [0.02, 127.0.0.1:58481][0m
+[mHTTP GET /api/mentors/ 200 [0.04, 127.0.0.1:58481][0m
+[mHTTP GET /api/opportunities/ 200 [0.05, 127.0.0.1:58481][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:64897][0m
+[mHTTP GET /api/mentors/ 200 [0.04, 127.0.0.1:64897][0m
+[mHTTP OPTIONS /api/messaging/conversations/ 200 [0.00, 127.0.0.1:64897][0m
+[mHTTP GET /api/messaging/conversations/ 200 [0.03, 127.0.0.1:64897][0m
+Bad Request: /api/messaging/conversations/
+[31;1mHTTP POST /api/messaging/conversations/ 400 [0.02, 127.0.0.1:64897][0m
+[mHTTP GET /api/resources/ 200 [0.03, 127.0.0.1:64897][0m
+[mHTTP GET /api/resources/categories/ 200 [0.03, 127.0.0.1:58481][0m
+[mHTTP GET /api/resources/ 200 [0.03, 127.0.0.1:64897][0m
+[mHTTP GET /api/resources/categories/ 200 [0.03, 127.0.0.1:58481][0m
+[mHTTP OPTIONS /api/applications/?ordering=-applied_date 200 [0.08, 127.0.0.1:50437][0m
+[mHTTP OPTIONS /api/applications/dashboard/ 200 [0.06, 127.0.0.1:52433][0m
+[mHTTP OPTIONS /api/applications/?ordering=-applied_date 200 [0.04, 127.0.0.1:64318][0m
+[mHTTP OPTIONS /api/applications/dashboard/ 200 [0.04, 127.0.0.1:50379][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+Internal Server Error: /api/applications/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-applied_date 500 [0.69, 127.0.0.1:50437][0m
+[35;1mHTTP GET /api/applications/dashboard/ 500 [0.70, 127.0.0.1:52433][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+Internal Server Error: /api/applications/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-applied_date 500 [0.15, 127.0.0.1:50379][0m
+[35;1mHTTP GET /api/applications/dashboard/ 500 [0.14, 127.0.0.1:50437][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+Internal Server Error: /api/applications/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-applied_date 500 [0.09, 127.0.0.1:49997][0m
+[35;1mHTTP GET /api/applications/dashboard/ 500 [0.09, 127.0.0.1:62124][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+Internal Server Error: /api/applications/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-applied_date 500 [0.12, 127.0.0.1:54277][0m
+[35;1mHTTP GET /api/applications/dashboard/ 500 [0.14, 127.0.0.1:56146][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-applied_date 500 [0.27, 127.0.0.1:60690][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-applied_date 500 [0.08, 127.0.0.1:54977][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-applied_date 500 [0.09, 127.0.0.1:54977][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-applied_date 500 [0.19, 127.0.0.1:61318][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-applied_date 500 [0.09, 127.0.0.1:61318][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-applied_date 500 [0.15, 127.0.0.1:54044][0m
+[mHTTP OPTIONS /api/applications/?ordering=-submitted_at 200 [0.03, 127.0.0.1:51889][0m
+[mHTTP OPTIONS /api/applications/?ordering=-submitted_at 200 [0.03, 127.0.0.1:62682][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-submitted_at 500 [0.15, 127.0.0.1:62682][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-submitted_at 500 [0.09, 127.0.0.1:51889][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-submitted_at 500 [0.13, 127.0.0.1:51889][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-submitted_at 500 [0.10, 127.0.0.1:62682][0m
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 30, in get_queryset
+    ).select_related('opportunity').order_by('-applied_date')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1722, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'applied_date' into field. Choices are: activity, additional_info, ai_assistance_used, ai_suggestions, aianalysis, chatsession, cover_letter, created_at, decision_date, documents, feedback, id, interview_date, interviews, last_updated_at, notes, opportunity, opportunity_id, status, status_history, submitted_at, updated_at, user, user_id
+[35;1mHTTP GET /api/applications/?ordering=-submitted_at 500 [0.09, 127.0.0.1:62554][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\opportunities\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\opportunities\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\opportunities\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/applications/?ordering=-submitted_at 200 [0.37, 127.0.0.1:57588][0m
+[mHTTP GET /api/applications/?ordering=-submitted_at 200 [0.04, 127.0.0.1:62688][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:62688][0m
+[mHTTP GET /api/opportunities/ 200 [0.08, 127.0.0.1:49343][0m
+[mHTTP OPTIONS /api/applications/ 200 [0.00, 127.0.0.1:49343][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 497, in to_internal_value
+    for field in fields:
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 1081, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 1177, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'employment_type' was declared on serializer ApplicationSerializer, but has not been included in the 'fields' option.
+[35;1mHTTP POST /api/applications/ 500 [0.16, 127.0.0.1:49343][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 497, in to_internal_value
+    for field in fields:
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 1081, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 1177, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'employment_type' was declared on serializer ApplicationSerializer, but has not been included in the 'fields' option.
+[35;1mHTTP POST /api/applications/ 500 [0.07, 127.0.0.1:49343][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py", line 21, in get_salary_range
+    return f"{obj.opportunity.salary_currency}{obj.opportunity.salary_min:,} - {obj.opportunity.salary_currency}{obj.opportunity.salary_max:,}"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Opportunity' object has no attribute 'salary_currency'
+[35;1mHTTP POST /api/applications/ 500 [0.13, 127.0.0.1:54009][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: applications.user_id, applications.opportunity_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\views.py", line 38, in perform_create
+    serializer.save(user=self.request.user)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: applications.user_id, applications.opportunity_id
+[35;1mHTTP POST /api/applications/ 500 [0.37, 127.0.0.1:57032][0m
+[mHTTP GET /api/applications/?ordering=-submitted_at 200 [0.04, 127.0.0.1:57032][0m
+[mHTTP GET /api/applications/?ordering=-submitted_at 200 [0.03, 127.0.0.1:61787][0m
+[mHTTP GET /api/applications/?ordering=-submitted_at 200 [0.05, 127.0.0.1:61787][0m
+[mHTTP GET /api/applications/?ordering=-submitted_at 200 [0.06, 127.0.0.1:57032][0m
+[mHTTP GET /api/applications/?ordering=-submitted_at 200 [0.04, 127.0.0.1:57032][0m
+[mHTTP GET /api/applications/?ordering=-submitted_at 200 [0.03, 127.0.0.1:61787][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\opportunities\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\models.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\models.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\models.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000

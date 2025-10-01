@@ -9,9 +9,8 @@ export interface ApplicationData {
   location: string;
   employment_type: string;
   salary_range: string;
-  status: 'applied' | 'under_review' | 'interview' | 'offer' | 'rejected' | 'withdrawn';
-  priority: 'high' | 'medium' | 'low';
-  applied_date: string;
+  status: 'draft' | 'submitted' | 'under_review' | 'interview_scheduled' | 'accepted' | 'rejected' | 'withdrawn';
+  submitted_at: string | null;
   interview_date?: string;
   notes: string;
   cover_letter: string;
@@ -80,7 +79,6 @@ export interface CreateApplicationData {
 export interface ApplicationSearchParams {
   search?: string;
   status?: string;
-  priority?: string;
   ordering?: string;
   page?: number;
   page_size?: number;

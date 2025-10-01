@@ -32,8 +32,8 @@ const OpportunityCard: React.FC<{
 
   const handleApply = async () => {
     try {
-      if (opportunity.application_url) {
-        window.open(opportunity.application_url, "_blank");
+      if (opportunity.external_url) {
+        window.open(opportunity.external_url, "_blank");
       }
       // Mark as applied in the backend
       await opportunitiesApi.applyToOpportunity(opportunity.id, {});
@@ -46,19 +46,21 @@ const OpportunityCard: React.FC<{
     // TODO: Implement share functionality
     console.log("Share:", opportunity.id);
   };
-  
-  const getTypeColor = (employmentType: string) => {
-    switch (employmentType.toLowerCase()) {
-      case "full-time":
+
+  const getTypeColor = (categoryName: string) => {
+    switch (categoryName.toLowerCase()) {
+      case "scholarship":
+      case "scholarships":
         return "bg-success-100 text-success-800";
-      case "part-time":
-        return "bg-secondary-100 text-secondary-800";
-      case "contract":
-        return "bg-warning-100 text-warning-800";
       case "internship":
+      case "internships":
         return "bg-primary-100 text-primary-800";
-      case "remote":
-        return "bg-info-100 text-info-800";
+      case "fellowship":
+      case "fellowships":
+        return "bg-warning-100 text-warning-800";
+      case "job":
+      case "jobs":
+        return "bg-secondary-100 text-secondary-800";
       default:
         return "bg-neutral-100 text-neutral-800";
     }
@@ -88,10 +90,10 @@ const OpportunityCard: React.FC<{
               </h3>
               <div
                 className={`px-3 py-1 rounded-full text-sm font-medium ${getTypeColor(
-                  opportunity.employment_type
+                  opportunity.category_name || "General"
                 )}`}
               >
-                {opportunity.employment_type}
+                {opportunity.category_name}
               </div>
               {opportunity.remote_allowed && (
                 <div className="flex items-center bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -104,7 +106,7 @@ const OpportunityCard: React.FC<{
             <div className="flex items-center text-neutral-600 mb-4 gap-6">
               <div className="flex items-center">
                 <Award className="w-5 h-5 mr-2" />
-                {opportunity.company}
+                {opportunity.organization}
               </div>
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 mr-2" />
@@ -115,15 +117,15 @@ const OpportunityCard: React.FC<{
                   <DollarSign className="w-5 h-5 mr-2" />
                   {opportunity.salary_min && opportunity.salary_max
                     ? `${opportunity.salary_min.toLocaleString()} - ${opportunity.salary_max.toLocaleString()} ${
-                        opportunity.salary_currency
+                        opportunity.currency
                       }`
                     : opportunity.salary_min
                     ? `${opportunity.salary_min.toLocaleString()}+ ${
-                        opportunity.salary_currency
+                        opportunity.currency
                       }`
                     : opportunity.salary_max
                     ? `Up to ${opportunity.salary_max.toLocaleString()} ${
-                        opportunity.salary_currency
+                        opportunity.currency
                       }`
                     : ""}
                 </div>
@@ -146,23 +148,21 @@ const OpportunityCard: React.FC<{
               </div>
             )}
 
-            {/* Skills Tags */}
+            {/* Category and Difficulty */}
             <div className="flex flex-wrap gap-2 mb-4">
-              {opportunity.required_skills_list.map((skill, index) => (
-                <span
-                  key={index}
-                  className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-neutral-100 text-neutral-600 hover:bg-neutral-200 transition-colors cursor-pointer"
-                >
-                  {skill}
-                </span>
-              ))}
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-primary-600">
+                {opportunity.category_name}
+              </span>
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary-100 text-secondary-600">
+                {opportunity.difficulty_level}
+              </span>
             </div>
 
             {/* Stats */}
             <div className="flex items-center gap-6 text-sm text-neutral-500">
               <div className="flex items-center">
                 <GraduationCap className="w-4 h-4 mr-1" />
-                {opportunity.experience_level}
+                {opportunity.difficulty_level}
               </div>
               {daysLeft !== null && (
                 <div className="flex items-center">
@@ -172,7 +172,7 @@ const OpportunityCard: React.FC<{
               )}
               <div className="flex items-center">
                 <Clock className="w-4 h-4 mr-1" />
-                {new Date(opportunity.posted_date).toLocaleDateString()}
+                {new Date(opportunity.created_at).toLocaleDateString()}
               </div>
             </div>
           </div>
@@ -220,7 +220,7 @@ const OpportunityCard: React.FC<{
                   <BookOpen className="w-4 h-4 mr-2" />
                   Learn More
                 </Button>
-                {opportunity.application_url && (
+                {opportunity.external_url && (
                   <Button
                     size="sm"
                     className="bg-primary-600 hover:bg-primary-700 text-white"
@@ -302,14 +302,14 @@ export const OpportunitiesPage: React.FC = () => {
   const filteredOpportunities = opportunities.filter((opportunity) => {
     const matchesSearch =
       opportunity.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      opportunity.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      opportunity.required_skills_list.some((skill: string) =>
-        skill.toLowerCase().includes(searchTerm.toLowerCase())
-      );
+      opportunity.organization
+        .toLowerCase()
+        .includes(searchTerm.toLowerCase()) ||
+      opportunity.description.toLowerCase().includes(searchTerm.toLowerCase());
 
     const matchesFilter =
       filterType === "all" ||
-      opportunity.employment_type.toLowerCase() === filterType;
+      opportunity.category_name.toLowerCase() === filterType;
 
     return matchesSearch && matchesFilter;
   });
@@ -320,7 +320,7 @@ export const OpportunitiesPage: React.FC = () => {
         return b.match_score - a.match_score;
       case "date":
         return (
-          new Date(b.posted_date).getTime() - new Date(a.posted_date).getTime()
+          new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
         );
       case "deadline":
         if (!a.application_deadline && !b.application_deadline) return 0;
@@ -373,17 +373,17 @@ export const OpportunitiesPage: React.FC = () => {
                   />
                 </div>
 
-                {/* Type Filter */}
+                {/* Category Filter */}
                 <select
                   className="px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   value={filterType}
                   onChange={(e) => setFilterType(e.target.value)}
                 >
-                  <option value="all">All Types</option>
-                  <option value="scholarship">Scholarships</option>
-                  <option value="fellowship">Fellowships</option>
-                  <option value="internship">Internships</option>
-                  <option value="job">Jobs</option>
+                  <option value="all">All Categories</option>
+                  <option value="scholarships">Scholarships</option>
+                  <option value="fellowships">Fellowships</option>
+                  <option value="internships">Internships</option>
+                  <option value="jobs">Jobs</option>
                 </select>
 
                 {/* Sort */}

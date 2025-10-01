@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Plus,
   Search,
@@ -13,117 +13,34 @@ import {
   Trash2,
   FileText,
   ExternalLink,
+  Loader2,
+  X,
 } from "lucide-react";
 import { Button } from "../components/ui/Button";
 import { Input } from "../components/ui/Input";
 import { Card } from "../components/ui/Card";
 import { Badge } from "../components/ui/Badge";
 import { Layout } from "../components/layout/Layout";
+import { applicationsApi, type ApplicationData } from "../api/applications";
 
-interface Application {
-  id: string;
-  jobTitle: string;
-  company: string;
-  location: string;
-  applicationDate: string;
-  status:
-    | "Applied"
-    | "Under Review"
-    | "Interview"
-    | "Offer"
-    | "Rejected"
-    | "Withdrawn";
-  priority: "High" | "Medium" | "Low";
-  salary: string;
-  notes: string;
-  nextAction: string;
-  nextActionDate: string;
-  documents: string[];
-  interviewDates: string[];
-  jobUrl?: string;
-}
-
-// Mock data for applications
-const mockApplications: Application[] = [
-  {
-    id: "1",
-    jobTitle: "Senior Frontend Developer",
-    company: "TechCorp Inc.",
-    location: "San Francisco, CA",
-    applicationDate: "2024-01-15",
-    status: "Interview",
-    priority: "High",
-    salary: "$120,000 - $150,000",
-    notes:
-      "Great culture fit, excited about the role. Technical interview scheduled for next week.",
-    nextAction: "Technical Interview",
-    nextActionDate: "2024-01-25",
-    documents: ["Resume", "Cover Letter", "Portfolio"],
-    interviewDates: ["2024-01-20", "2024-01-25"],
-    jobUrl: "https://techcorp.com/careers/senior-frontend-dev",
-  },
-  {
-    id: "2",
-    jobTitle: "Product Manager",
-    company: "StartupXYZ",
-    location: "New York, NY",
-    applicationDate: "2024-01-14",
-    status: "Under Review",
-    priority: "Medium",
-    salary: "$100,000 - $130,000",
-    notes: "Applied through LinkedIn. HR mentioned 2-week review process.",
-    nextAction: "Follow up with HR",
-    nextActionDate: "2024-01-28",
-    documents: ["Resume", "Cover Letter"],
-    interviewDates: [],
-  },
-  {
-    id: "3",
-    jobTitle: "UX Designer",
-    company: "Design Studio",
-    location: "Remote",
-    applicationDate: "2024-01-10",
-    status: "Offer",
-    priority: "High",
-    salary: "$80,000 - $95,000",
-    notes:
-      "Received offer! Need to negotiate salary and review benefits package.",
-    nextAction: "Salary Negotiation",
-    nextActionDate: "2024-01-22",
-    documents: ["Resume", "Portfolio", "Design Challenge"],
-    interviewDates: ["2024-01-16", "2024-01-18"],
-  },
-  {
-    id: "4",
-    jobTitle: "Software Engineer",
-    company: "Big Tech Co",
-    location: "Seattle, WA",
-    applicationDate: "2024-01-08",
-    status: "Rejected",
-    priority: "Medium",
-    salary: "$130,000 - $160,000",
-    notes:
-      "Feedback: Strong technical skills but looking for more system design experience.",
-    nextAction: "Improve system design skills",
-    nextActionDate: "2024-02-01",
-    documents: ["Resume", "Cover Letter"],
-    interviewDates: ["2024-01-12"],
-  },
-];
+// Use the ApplicationData interface from the API
+type Application = ApplicationData;
 
 const getStatusColor = (status: Application["status"]) => {
   switch (status) {
-    case "Applied":
+    case "draft":
       return "secondary";
-    case "Under Review":
+    case "submitted":
+      return "secondary";
+    case "under_review":
       return "warning";
-    case "Interview":
+    case "interview_scheduled":
       return "primary";
-    case "Offer":
+    case "accepted":
       return "success";
-    case "Rejected":
+    case "rejected":
       return "error";
-    case "Withdrawn":
+    case "withdrawn":
       return "secondary";
     default:
       return "secondary";
@@ -132,51 +49,77 @@ const getStatusColor = (status: Application["status"]) => {
 
 const getStatusIcon = (status: Application["status"]) => {
   switch (status) {
-    case "Applied":
+    case "draft":
+      return <FileText className="h-4 w-4" />;
+    case "submitted":
       return <Clock className="h-4 w-4" />;
-    case "Under Review":
+    case "under_review":
       return <AlertCircle className="h-4 w-4" />;
-    case "Interview":
+    case "interview_scheduled":
       return <Calendar className="h-4 w-4" />;
-    case "Offer":
+    case "accepted":
       return <CheckCircle className="h-4 w-4" />;
-    case "Rejected":
+    case "rejected":
       return <XCircle className="h-4 w-4" />;
-    case "Withdrawn":
+    case "withdrawn":
       return <XCircle className="h-4 w-4" />;
     default:
       return <Clock className="h-4 w-4" />;
   }
 };
 
-const ApplicationCard: React.FC<{ application: Application }> = ({
-  application,
-}) => {
+const getStatusLabel = (status: Application["status"]) => {
+  switch (status) {
+    case "draft":
+      return "Draft";
+    case "submitted":
+      return "Submitted";
+    case "under_review":
+      return "Under Review";
+    case "interview_scheduled":
+      return "Interview Scheduled";
+    case "accepted":
+      return "Accepted";
+    case "rejected":
+      return "Rejected";
+    case "withdrawn":
+      return "Withdrawn";
+    default:
+      return status;
+  }
+};
+
+const ApplicationCard: React.FC<{
+  application: Application;
+  onEdit?: (application: Application) => void;
+  onDelete?: (id: number) => void;
+  onView?: (application: Application) => void;
+}> = ({ application, onEdit, onDelete, onView }) => {
   const handleView = () => {
-    console.log("View application:", application.id);
-    // TODO: Implement view functionality
-  };
-
-  const handleEdit = () => {
-    console.log("Edit application:", application.id);
-    // TODO: Implement edit functionality
-  };
-
-  const handleDelete = () => {
-    console.log("Delete application:", application.id);
-    // TODO: Implement delete functionality
-  };
-
-  const handleViewJob = () => {
-    if (application.jobUrl) {
-      window.open(application.jobUrl, "_blank");
+    if (onView) {
+      onView(application);
     }
   };
 
-  const isUpcoming =
-    application.nextActionDate &&
-    new Date(application.nextActionDate) <=
-      new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+  const handleEdit = () => {
+    if (onEdit) {
+      onEdit(application);
+    }
+  };
+
+  const handleDelete = () => {
+    if (onDelete) {
+      onDelete(application.id);
+    }
+  };
+
+  const handleViewJob = () => {
+    // Try to open the opportunity's external URL if available
+    console.log("View job details for:", application.opportunity_title);
+    // This would need to be enhanced to get the opportunity details
+  };
+
+  const isUpcoming = application.is_upcoming_action;
 
   return (
     <Card
@@ -188,31 +131,23 @@ const ApplicationCard: React.FC<{ application: Application }> = ({
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-2">
             <h3 className="text-xl font-semibold text-gray-900">
-              {application.jobTitle}
+              {application.opportunity_title}
             </h3>
             <Badge
               variant={getStatusColor(application.status)}
               className="text-xs flex items-center gap-1"
             >
               {getStatusIcon(application.status)}
-              {application.status}
-            </Badge>
-            <Badge
-              variant={
-                application.priority === "High"
-                  ? "error"
-                  : application.priority === "Medium"
-                  ? "warning"
-                  : "secondary"
-              }
-              className="text-xs"
-            >
-              {application.priority}
+              {getStatusLabel(application.status)}
             </Badge>
           </div>
-          <p className="text-lg text-gray-700 mb-1">{application.company}</p>
+          <p className="text-lg text-gray-700 mb-1">
+            {application.company_name}
+          </p>
           <p className="text-gray-600 mb-2">{application.location}</p>
-          <p className="text-gray-600 font-medium">{application.salary}</p>
+          <p className="text-gray-600 font-medium">
+            {application.salary_range}
+          </p>
         </div>
         <div className="flex items-center gap-2">
           <Button variant="ghost" size="sm" onClick={handleView}>
@@ -224,11 +159,9 @@ const ApplicationCard: React.FC<{ application: Application }> = ({
           <Button variant="ghost" size="sm" onClick={handleDelete}>
             <Trash2 className="h-4 w-4 text-red-500" />
           </Button>
-          {application.jobUrl && (
-            <Button variant="ghost" size="sm" onClick={handleViewJob}>
-              <ExternalLink className="h-4 w-4" />
-            </Button>
-          )}
+          <Button variant="ghost" size="sm" onClick={handleViewJob}>
+            <ExternalLink className="h-4 w-4" />
+          </Button>
         </div>
       </div>
 
@@ -246,98 +179,302 @@ const ApplicationCard: React.FC<{ application: Application }> = ({
             Application Date
           </p>
           <p className="text-sm text-gray-900">
-            {new Date(application.applicationDate).toLocaleDateString()}
+            {application.submitted_at
+              ? new Date(application.submitted_at).toLocaleDateString()
+              : "Not submitted yet"}
           </p>
         </div>
         <div>
           <p className="text-xs font-medium text-gray-500 mb-1">Next Action</p>
-          <p className="text-sm text-gray-900">{application.nextAction}</p>
-          <p className="text-xs text-gray-500">
-            {new Date(application.nextActionDate).toLocaleDateString()}
+          <p className="text-sm text-gray-900">
+            {application.next_action_date ? "Follow up" : "No action needed"}
           </p>
+          {application.next_action_date && (
+            <p className="text-xs text-gray-500">
+              {new Date(application.next_action_date).toLocaleDateString()}
+            </p>
+          )}
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-2 mb-4">
-        {application.documents.map((doc, index) => (
-          <div
-            key={index}
-            className="flex items-center gap-1 text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded"
-          >
-            <FileText className="h-3 w-3" />
-            {doc}
-          </div>
-        ))}
-      </div>
-
-      {application.interviewDates.length > 0 && (
+      {application.interview_date && (
         <div className="border-t pt-3">
           <p className="text-xs font-medium text-gray-500 mb-2">
-            Interview Dates
+            Interview Date
           </p>
-          <div className="flex flex-wrap gap-2">
-            {application.interviewDates.map((date, index) => (
-              <Badge key={index} variant="primary" className="text-xs">
-                <Calendar className="h-3 w-3 mr-1" />
-                {new Date(date).toLocaleDateString()}
-              </Badge>
-            ))}
-          </div>
+          <Badge variant="primary" className="text-xs">
+            <Calendar className="h-3 w-3 mr-1" />
+            {new Date(application.interview_date).toLocaleDateString()}
+          </Badge>
         </div>
       )}
     </Card>
   );
 };
 
+// Add Application Modal Component
+const AddApplicationModal: React.FC<{
+  isOpen: boolean;
+  onClose: () => void;
+  onSubmit: (data: any) => void;
+}> = ({ isOpen, onClose, onSubmit }) => {
+  const [formData, setFormData] = useState({
+    opportunity_title: "",
+    company_name: "",
+    location: "",
+    status: "submitted",
+    submitted_at: new Date().toISOString().split("T")[0],
+    notes: "",
+    cover_letter: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    onSubmit(formData);
+    setFormData({
+      opportunity_title: "",
+      company_name: "",
+      location: "",
+      status: "submitted",
+      submitted_at: new Date().toISOString().split("T")[0],
+      notes: "",
+      cover_letter: "",
+    });
+  };
+
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+      <div className="bg-white rounded-lg p-6 w-full max-w-md max-h-[90vh] overflow-y-auto">
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-xl font-semibold">Add Application</h2>
+          <Button variant="ghost" size="sm" onClick={onClose}>
+            <X className="h-4 w-4" />
+          </Button>
+        </div>
+
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium mb-1">
+              Job Title *
+            </label>
+            <Input
+              type="text"
+              value={formData.opportunity_title}
+              onChange={(e) =>
+                setFormData({ ...formData, opportunity_title: e.target.value })
+              }
+              placeholder="Enter job title..."
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">
+              Company Name *
+            </label>
+            <Input
+              type="text"
+              value={formData.company_name}
+              onChange={(e) =>
+                setFormData({ ...formData, company_name: e.target.value })
+              }
+              placeholder="Enter company name..."
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">Location</label>
+            <Input
+              type="text"
+              value={formData.location}
+              onChange={(e) =>
+                setFormData({ ...formData, location: e.target.value })
+              }
+              placeholder="Enter location..."
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">Status</label>
+            <select
+              value={formData.status}
+              onChange={(e) =>
+                setFormData({ ...formData, status: e.target.value })
+              }
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+            >
+              <option value="draft">Draft</option>
+              <option value="submitted">Submitted</option>
+              <option value="under_review">Under Review</option>
+              <option value="interview_scheduled">Interview Scheduled</option>
+              <option value="accepted">Accepted</option>
+              <option value="rejected">Rejected</option>
+              <option value="withdrawn">Withdrawn</option>
+            </select>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">
+              Application Date
+            </label>
+            <Input
+              type="date"
+              value={formData.submitted_at}
+              onChange={(e) =>
+                setFormData({ ...formData, submitted_at: e.target.value })
+              }
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">Notes</label>
+            <textarea
+              value={formData.notes}
+              onChange={(e) =>
+                setFormData({ ...formData, notes: e.target.value })
+              }
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+              rows={3}
+              placeholder="Any notes about this application..."
+            />
+          </div>
+
+          <div className="flex gap-2 pt-4">
+            <Button type="submit" className="flex-1">
+              Add Application
+            </Button>
+            <Button type="button" variant="outline" onClick={onClose}>
+              Cancel
+            </Button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
+
 export const TrackerPage: React.FC = () => {
+  const [applications, setApplications] = useState<Application[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [filterStatus, setFilterStatus] = useState<string>("all");
-  const [filterPriority, setFilterPriority] = useState<string>("all");
-  const [sortBy, setSortBy] = useState<string>("date");
 
-  const filteredApplications = mockApplications.filter((application) => {
+  const [sortBy, setSortBy] = useState<string>("date");
+  const [showAddModal, setShowAddModal] = useState(false);
+
+  // Load applications on component mount
+  useEffect(() => {
+    loadApplications();
+  }, []);
+
+  const loadApplications = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      const response = await applicationsApi.getApplications({
+        ordering: "-submitted_at",
+      });
+      setApplications(response.results || []);
+    } catch (err) {
+      console.error("Failed to load applications:", err);
+      setError("Failed to load applications. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleDeleteApplication = async (id: number) => {
+    if (window.confirm("Are you sure you want to delete this application?")) {
+      try {
+        await applicationsApi.deleteApplication(id);
+        setApplications(applications.filter((app) => app.id !== id));
+      } catch (err) {
+        console.error("Failed to delete application:", err);
+        alert("Failed to delete application. Please try again.");
+      }
+    }
+  };
+
+  const handleAddApplication = async (data: any) => {
+    try {
+      const newApplication = await applicationsApi.createApplication(data);
+      setApplications([newApplication, ...applications]);
+      setShowAddModal(false);
+    } catch (err) {
+      console.error("Failed to create application:", err);
+      alert("Failed to create application. Please try again.");
+    }
+  };
+
+  const filteredApplications = applications.filter((application) => {
     const matchesSearch =
-      application.jobTitle.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      application.company.toLowerCase().includes(searchTerm.toLowerCase());
+      application.opportunity_title
+        .toLowerCase()
+        .includes(searchTerm.toLowerCase()) ||
+      application.company_name.toLowerCase().includes(searchTerm.toLowerCase());
 
     const matchesStatus =
       filterStatus === "all" || application.status === filterStatus;
-    const matchesPriority =
-      filterPriority === "all" || application.priority === filterPriority;
-
-    return matchesSearch && matchesStatus && matchesPriority;
+    return matchesSearch && matchesStatus;
   });
 
   const sortedApplications = [...filteredApplications].sort((a, b) => {
     switch (sortBy) {
       case "date":
-        return (
-          new Date(b.applicationDate).getTime() -
-          new Date(a.applicationDate).getTime()
-        );
+        const dateA = a.submitted_at ? new Date(a.submitted_at).getTime() : 0;
+        const dateB = b.submitted_at ? new Date(b.submitted_at).getTime() : 0;
+        return dateB - dateA;
       case "company":
-        return a.company.localeCompare(b.company);
+        return a.company_name.localeCompare(b.company_name);
       case "status":
         return a.status.localeCompare(b.status);
-      case "priority":
-        const priorityOrder = { High: 3, Medium: 2, Low: 1 };
-        return priorityOrder[b.priority] - priorityOrder[a.priority];
       default:
         return 0;
     }
   });
 
-  const statusCounts = mockApplications.reduce((acc, app) => {
+  const statusCounts = applications.reduce((acc, app) => {
     acc[app.status] = (acc[app.status] || 0) + 1;
     return acc;
   }, {} as Record<string, number>);
 
-  const upcomingActions = mockApplications.filter(
-    (app) =>
-      app.nextActionDate &&
-      new Date(app.nextActionDate) <=
-        new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
-  );
+  const upcomingActions = applications.filter((app) => app.is_upcoming_action);
+
+  if (loading) {
+    return (
+      <Layout>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex items-center justify-center min-h-[400px]">
+            <div className="text-center">
+              <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4 text-primary-600" />
+              <p className="text-gray-600">Loading applications...</p>
+            </div>
+          </div>
+        </div>
+      </Layout>
+    );
+  }
+
+  if (error) {
+    return (
+      <Layout>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex items-center justify-center min-h-[400px]">
+            <div className="text-center">
+              <AlertCircle className="h-8 w-8 mx-auto mb-4 text-red-500" />
+              <p className="text-red-600 mb-4">{error}</p>
+              <Button onClick={loadApplications}>Try Again</Button>
+            </div>
+          </div>
+        </div>
+      </Layout>
+    );
+  }
 
   return (
     <Layout>
@@ -351,7 +488,7 @@ export const TrackerPage: React.FC = () => {
               Keep track of your job applications and stay organized
             </p>
           </div>
-          <Button>
+          <Button onClick={() => setShowAddModal(true)}>
             <Plus className="h-4 w-4 mr-2" />
             Add Application
           </Button>
@@ -367,7 +504,7 @@ export const TrackerPage: React.FC = () => {
               <div>
                 <p className="text-sm text-gray-600">Total Applications</p>
                 <p className="text-2xl font-bold text-gray-900">
-                  {mockApplications.length}
+                  {applications.length}
                 </p>
               </div>
             </div>
@@ -380,9 +517,9 @@ export const TrackerPage: React.FC = () => {
               <div>
                 <p className="text-sm text-gray-600">In Progress</p>
                 <p className="text-2xl font-bold text-gray-900">
-                  {(statusCounts["Applied"] || 0) +
-                    (statusCounts["Under Review"] || 0) +
-                    (statusCounts["Interview"] || 0)}
+                  {(statusCounts["applied"] || 0) +
+                    (statusCounts["under_review"] || 0) +
+                    (statusCounts["interview"] || 0)}
                 </p>
               </div>
             </div>
@@ -395,7 +532,7 @@ export const TrackerPage: React.FC = () => {
               <div>
                 <p className="text-sm text-gray-600">Offers</p>
                 <p className="text-2xl font-bold text-gray-900">
-                  {statusCounts["Offer"] || 0}
+                  {statusCounts["offer"] || 0}
                 </p>
               </div>
             </div>
@@ -429,13 +566,15 @@ export const TrackerPage: React.FC = () => {
                     className="flex items-center justify-between"
                   >
                     <div>
-                      <span className="font-medium">{app.nextAction}</span>
+                      <span className="font-medium">Follow up required</span>
                       <span className="text-gray-600 ml-2">
-                        for {app.company}
+                        for {app.company_name}
                       </span>
                     </div>
                     <span className="text-sm text-gray-500">
-                      {new Date(app.nextActionDate).toLocaleDateString()}
+                      {app.next_action_date
+                        ? new Date(app.next_action_date).toLocaleDateString()
+                        : "Soon"}
                     </span>
                   </div>
                 ))}
@@ -466,22 +605,13 @@ export const TrackerPage: React.FC = () => {
                 className="px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               >
                 <option value="all">All Statuses</option>
-                <option value="Applied">Applied</option>
-                <option value="Under Review">Under Review</option>
-                <option value="Interview">Interview</option>
-                <option value="Offer">Offer</option>
-                <option value="Rejected">Rejected</option>
-                <option value="Withdrawn">Withdrawn</option>
-              </select>
-              <select
-                value={filterPriority}
-                onChange={(e) => setFilterPriority(e.target.value)}
-                className="px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-              >
-                <option value="all">All Priorities</option>
-                <option value="High">High</option>
-                <option value="Medium">Medium</option>
-                <option value="Low">Low</option>
+                <option value="draft">Draft</option>
+                <option value="submitted">Submitted</option>
+                <option value="under_review">Under Review</option>
+                <option value="interview_scheduled">Interview Scheduled</option>
+                <option value="accepted">Accepted</option>
+                <option value="rejected">Rejected</option>
+                <option value="withdrawn">Withdrawn</option>
               </select>
               <select
                 value={sortBy}
@@ -491,7 +621,6 @@ export const TrackerPage: React.FC = () => {
                 <option value="date">Latest First</option>
                 <option value="company">Company</option>
                 <option value="status">Status</option>
-                <option value="priority">Priority</option>
               </select>
               <Button variant="outline">
                 <Filter className="h-4 w-4 mr-2" />
@@ -504,7 +633,7 @@ export const TrackerPage: React.FC = () => {
         {/* Results Count */}
         <div className="flex justify-between items-center mb-6">
           <p className="text-gray-600">
-            Showing {sortedApplications.length} of {mockApplications.length}{" "}
+            Showing {sortedApplications.length} of {applications.length}{" "}
             applications
           </p>
         </div>
@@ -512,7 +641,11 @@ export const TrackerPage: React.FC = () => {
         {/* Applications List */}
         <div className="space-y-6">
           {sortedApplications.map((application) => (
-            <ApplicationCard key={application.id} application={application} />
+            <ApplicationCard
+              key={application.id}
+              application={application}
+              onDelete={handleDeleteApplication}
+            />
           ))}
         </div>
 
@@ -525,12 +658,19 @@ export const TrackerPage: React.FC = () => {
             <p className="text-gray-600 mb-4">
               Start tracking your job applications to stay organized
             </p>
-            <Button>
+            <Button onClick={() => setShowAddModal(true)}>
               <Plus className="h-4 w-4 mr-2" />
               Add Your First Application
             </Button>
           </div>
         )}
+
+        {/* Add Application Modal */}
+        <AddApplicationModal
+          isOpen={showAddModal}
+          onClose={() => setShowAddModal(false)}
+          onSubmit={handleAddApplication}
+        />
       </div>
     </Layout>
   );

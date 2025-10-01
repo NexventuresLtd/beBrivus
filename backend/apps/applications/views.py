@@ -20,14 +20,14 @@ class ApplicationViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     search_fields = ['opportunity__title', 'opportunity__company', 'notes']
-    filterset_fields = ['status', 'priority']
-    ordering_fields = ['applied_date', 'updated_at', 'priority']
-    ordering = ['-applied_date']
+    filterset_fields = ['status']
+    ordering_fields = ['submitted_at', 'updated_at', 'created_at']
+    ordering = ['-created_at']
 
     def get_queryset(self):
         return Application.objects.filter(
             user=self.request.user
-        ).select_related('opportunity').order_by('-applied_date')
+        ).select_related('opportunity').order_by('-created_at')
 
     def get_serializer_class(self):
         if self.action == 'retrieve':
