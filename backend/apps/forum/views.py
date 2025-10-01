@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from rest_framework import viewsets, status
+from rest_framework import viewsets, status, permissions
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
@@ -17,9 +17,9 @@ from .models import (
     DiscussionView, UserForumProfile
 )
 from .serializers import (
-    ForumCategorySerializer, DiscussionListSerializer,
-    DiscussionDetailSerializer, DiscussionCreateSerializer,
-    ReplySerializer, ReplyCreateSerializer
+    ForumCategorySerializer, ForumCategoryCreateUpdateSerializer,
+    DiscussionListSerializer, DiscussionDetailSerializer, 
+    DiscussionCreateSerializer, ReplySerializer, ReplyCreateSerializer
 )
 from apps.ai_services.gemini_service import gemini_service
 import logging
@@ -27,11 +27,32 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-class ForumCategoryViewSet(viewsets.ReadOnlyModelViewSet):
+class ForumCategoryViewSet(viewsets.ModelViewSet):
     """ViewSet for forum categories"""
-    queryset = ForumCategory.objects.filter(is_active=True)
-    serializer_class = ForumCategorySerializer
-    permission_classes = [IsAuthenticated]
+    
+    def get_queryset(self):
+        if self.action in ['create', 'update', 'partial_update', 'destroy']:
+            # Admin actions - show all categories
+            return ForumCategory.objects.all()
+        # Regular users - only active categories
+        return ForumCategory.objects.filter(is_active=True)
+    
+    def get_serializer_class(self):
+        """Different serializers for different actions"""
+        if self.action in ['create', 'update', 'partial_update']:
+            return ForumCategoryCreateUpdateSerializer
+        return ForumCategorySerializer
+    
+    def get_permissions(self):
+        """Different permissions for different actions"""
+        if self.action in ['create', 'update', 'partial_update', 'destroy']:
+            # Only admins can modify categories
+            permission_classes = [permissions.IsAdminUser]
+        else:
+            # Regular users can view categories
+            permission_classes = [IsAuthenticated]
+        
+        return [permission() for permission in permission_classes]
 
 
 class DiscussionViewSet(viewsets.ModelViewSet):

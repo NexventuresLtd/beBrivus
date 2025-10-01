@@ -6,33 +6,18 @@ from apps.opportunities.serializers import OpportunitySerializer
 
 class ApplicationSerializer(serializers.ModelSerializer):
     """Serializer for application list and basic operations"""
-    opportunity_title = serializers.SerializerMethodField()
-    company_name = serializers.SerializerMethodField()
-    company_logo = serializers.SerializerMethodField()
-    location = serializers.SerializerMethodField()
-    employment_type = serializers.SerializerMethodField()
+    opportunity_title = serializers.CharField(source='opportunity.title', read_only=True)
+    company_name = serializers.CharField(source='opportunity.company', read_only=True)
+    company_logo = serializers.ImageField(source='opportunity.company_logo', read_only=True)
+    location = serializers.CharField(source='opportunity.location', read_only=True)
+    employment_type = serializers.CharField(source='opportunity.employment_type', read_only=True)
     salary_range = serializers.SerializerMethodField()
     days_since_applied = serializers.SerializerMethodField()
     next_action_date = serializers.SerializerMethodField()
     is_upcoming_action = serializers.SerializerMethodField()
     
-    def get_opportunity_title(self, obj):
-        return obj.opportunity.title if obj.opportunity else obj.manual_job_title
-    
-    def get_company_name(self, obj):
-        return obj.opportunity.company if obj.opportunity else obj.manual_company_name
-    
-    def get_company_logo(self, obj):
-        return obj.opportunity.company_logo if obj.opportunity else None
-    
-    def get_location(self, obj):
-        return obj.opportunity.location if obj.opportunity else obj.manual_location
-    
-    def get_employment_type(self, obj):
-        return obj.opportunity.employment_type if obj.opportunity else ""
-    
     def get_salary_range(self, obj):
-        if obj.opportunity and obj.opportunity.salary_min and obj.opportunity.salary_max:
+        if obj.opportunity.salary_min and obj.opportunity.salary_max:
             return f"{obj.opportunity.currency}{obj.opportunity.salary_min:,} - {obj.opportunity.currency}{obj.opportunity.salary_max:,}"
         return "Not specified"
     
@@ -110,33 +95,12 @@ class ApplicationDetailSerializer(ApplicationSerializer):
 class ApplicationCreateSerializer(serializers.ModelSerializer):
     """Serializer for creating new applications"""
     
-    # Accept these fields in the request
-    opportunity_title = serializers.CharField(required=False, write_only=True)
-    company_name = serializers.CharField(required=False, write_only=True)
-    location = serializers.CharField(required=False, write_only=True)
-    
     class Meta:
         model = Application
         fields = [
             'opportunity', 'status', 'submitted_at',
-            'interview_date', 'notes', 'cover_letter',
-            'opportunity_title', 'company_name', 'location'
+            'interview_date', 'notes', 'cover_letter'
         ]
-    
-    def create(self, validated_data):
-        # Extract manual fields
-        opportunity_title = validated_data.pop('opportunity_title', '')
-        company_name = validated_data.pop('company_name', '')
-        location = validated_data.pop('location', '')
-        
-        # Create the application
-        application = Application.objects.create(
-            **validated_data,
-            manual_job_title=opportunity_title,
-            manual_company_name=company_name,
-            manual_location=location
-        )
-        return application
 
 
 class ApplicationStatsSerializer(serializers.Serializer):

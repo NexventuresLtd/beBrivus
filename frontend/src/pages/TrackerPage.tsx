@@ -22,6 +22,7 @@ import { Card } from "../components/ui/Card";
 import { Badge } from "../components/ui/Badge";
 import { Layout } from "../components/layout/Layout";
 import { applicationsApi, type ApplicationData } from "../api/applications";
+import { opportunitiesApi, type Opportunity } from "../api/opportunities";
 
 // Use the ApplicationData interface from the API
 type Application = ApplicationData;
@@ -218,23 +219,42 @@ const AddApplicationModal: React.FC<{
   onClose: () => void;
   onSubmit: (data: any) => void;
 }> = ({ isOpen, onClose, onSubmit }) => {
+  const [opportunities, setOpportunities] = useState<Opportunity[]>([]);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
-    opportunity_title: "",
-    company_name: "",
-    location: "",
+    opportunity: "",
     status: "submitted",
     submitted_at: new Date().toISOString().split("T")[0],
     notes: "",
     cover_letter: "",
   });
 
+  useEffect(() => {
+    if (isOpen) {
+      loadOpportunities();
+    }
+  }, [isOpen]);
+
+  const loadOpportunities = async () => {
+    try {
+      setLoading(true);
+      const response = await opportunitiesApi.getOpportunities();
+      setOpportunities(response.results || []);
+    } catch (err) {
+      console.error("Failed to load opportunities:", err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmit(formData);
+    onSubmit({
+      ...formData,
+      opportunity: parseInt(formData.opportunity),
+    });
     setFormData({
-      opportunity_title: "",
-      company_name: "",
-      location: "",
+      opportunity: "",
       status: "submitted",
       submitted_at: new Date().toISOString().split("T")[0],
       notes: "",
@@ -257,44 +277,29 @@ const AddApplicationModal: React.FC<{
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium mb-1">
-              Job Title *
+              Opportunity *
             </label>
-            <Input
-              type="text"
-              value={formData.opportunity_title}
-              onChange={(e) =>
-                setFormData({ ...formData, opportunity_title: e.target.value })
-              }
-              placeholder="Enter job title..."
-              required
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium mb-1">
-              Company Name *
-            </label>
-            <Input
-              type="text"
-              value={formData.company_name}
-              onChange={(e) =>
-                setFormData({ ...formData, company_name: e.target.value })
-              }
-              placeholder="Enter company name..."
-              required
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium mb-1">Location</label>
-            <Input
-              type="text"
-              value={formData.location}
-              onChange={(e) =>
-                setFormData({ ...formData, location: e.target.value })
-              }
-              placeholder="Enter location..."
-            />
+            {loading ? (
+              <div className="flex items-center justify-center py-2">
+                <Loader2 className="h-4 w-4 animate-spin" />
+              </div>
+            ) : (
+              <select
+                value={formData.opportunity}
+                onChange={(e) =>
+                  setFormData({ ...formData, opportunity: e.target.value })
+                }
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                required
+              >
+                <option value="">Select an opportunity</option>
+                {opportunities.map((opp) => (
+                  <option key={opp.id} value={opp.id}>
+                    {opp.title} - {opp.company}
+                  </option>
+                ))}
+              </select>
+            )}
           </div>
 
           <div>

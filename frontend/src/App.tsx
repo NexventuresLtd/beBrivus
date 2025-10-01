@@ -32,8 +32,10 @@ import { OpportunityManagement } from "./pages/admin/OpportunityManagement";
 import { CreateOpportunity } from "./pages/admin/CreateOpportunity";
 import { ResourceManagement } from "./pages/admin/ResourceManagement";
 import { UserManagement } from "./pages/admin/UserManagement";
+import { ForumManagement } from "./pages/admin/ForumManagement";
 import { AdminLayout } from "./components/admin/AdminLayout";
 import { AdminProtectedRoute } from "./components/admin/AdminProtectedRoute";
+import { ForumNewPostPage } from "./pages/ForumNewPostPage";
 
 // Create a client
 const queryClient = new QueryClient({
@@ -147,6 +149,14 @@ function AppRoutes() {
         }
       />
       <Route
+        path="/forum/new"
+        element={
+          <ProtectedRoute>
+            <ForumNewPostPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
         path="/gamification"
         element={
           <ProtectedRoute>
@@ -241,6 +251,7 @@ function AppRoutes() {
         <Route path="opportunities/new" element={<CreateOpportunity />} />
         <Route path="resources" element={<ResourceManagement />} />
         <Route path="users" element={<UserManagement />} />
+        <Route path="forum" element={<ForumManagement />} />
         <Route
           path="analytics"
           element={

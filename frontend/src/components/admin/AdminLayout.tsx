@@ -13,6 +13,7 @@ import {
   Search,
   Menu,
   X,
+  MessageSquare,
 } from "lucide-react";
 import { useAdminAuth } from "../../contexts/AdminAuthContext";
 import { useState } from "react";
@@ -52,6 +53,12 @@ export const AdminLayout: React.FC = () => {
       href: "/admin/users",
       icon: Users,
       current: location.pathname.startsWith("/admin/users"),
+    },
+    {
+      name: "Forum Management",
+      href: "/admin/forum",
+      icon: MessageSquare,
+      current: location.pathname.startsWith("/admin/forum"),
     },
     // {
     //   name: "Analytics",

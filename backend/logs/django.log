@@ -10472,3 +10472,634 @@ Watching for file changes with StatReloader
 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
 Configuring endpoint tcp:port=8000:interface=127.0.0.1
 Listening on TCP address 127.0.0.1:8000
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 716, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py", line 23, in get_company_name
+    return obj.opportunity.company if obj.opportunity else obj.manual_company_name
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Opportunity' object has no attribute 'company'
+[35;1mHTTP GET /api/applications/?ordering=-submitted_at 500 [0.16, 127.0.0.1:60769][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 716, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py", line 23, in get_company_name
+    return obj.opportunity.company if obj.opportunity else obj.manual_company_name
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Opportunity' object has no attribute 'company'
+[35;1mHTTP GET /api/applications/?ordering=-submitted_at 500 [0.09, 127.0.0.1:60769][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 716, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py", line 23, in get_company_name
+    return obj.opportunity.company if obj.opportunity else obj.manual_company_name
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Opportunity' object has no attribute 'company'
+[35;1mHTTP GET /api/applications/?ordering=-submitted_at 500 [0.07, 127.0.0.1:60769][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 716, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py", line 23, in get_company_name
+    return obj.opportunity.company if obj.opportunity else obj.manual_company_name
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Opportunity' object has no attribute 'company'
+[35;1mHTTP GET /api/applications/?ordering=-submitted_at 500 [0.06, 127.0.0.1:63827][0m
+Internal Server Error: /api/applications/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 716, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\serializers.py", line 23, in get_company_name
+    return obj.opportunity.company if obj.opportunity else obj.manual_company_name
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Opportunity' object has no attribute 'company'
+[35;1mHTTP GET /api/applications/?ordering=-submitted_at 500 [0.09, 127.0.0.1:63827][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\applications\models.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/applications/?ordering=-submitted_at 200 [0.09, 127.0.0.1:51146][0m
+[mHTTP GET /api/applications/?ordering=-submitted_at 200 [0.04, 127.0.0.1:51146][0m
+[mHTTP GET /api/resources/ 200 [0.05, 127.0.0.1:51146][0m
+[mHTTP GET /api/resources/categories/ 200 [0.05, 127.0.0.1:58366][0m
+[mHTTP GET /api/resources/categories/ 200 [0.03, 127.0.0.1:51146][0m
+[mHTTP GET /api/resources/ 200 [0.03, 127.0.0.1:50060][0m
+[mHTTP GET /api/forum/categories/ 200 [0.03, 127.0.0.1:50060][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.04, 127.0.0.1:51146][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.05, 127.0.0.1:63256][0m
+[mHTTP GET /api/forum/categories/ 200 [0.05, 127.0.0.1:55192][0m
+[mHTTP GET /api/resources/categories/ 200 [0.03, 127.0.0.1:63256][0m
+[mHTTP GET /api/resources/ 200 [0.05, 127.0.0.1:55192][0m
+[mHTTP GET /api/resources/categories/ 200 [0.05, 127.0.0.1:54464][0m
+[mHTTP GET /api/resources/ 200 [0.06, 127.0.0.1:63256][0m
+[mHTTP GET /api/forum/categories/ 200 [0.03, 127.0.0.1:63256][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.03, 127.0.0.1:54464][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.02, 127.0.0.1:63256][0m
+[mHTTP GET /api/forum/categories/ 200 [0.03, 127.0.0.1:54464][0m
+[mHTTP GET /api/forum/categories/ 200 [0.14, 127.0.0.1:58852][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.13, 127.0.0.1:62895][0m
+[mHTTP GET /api/forum/categories/ 200 [0.03, 127.0.0.1:52182][0m
+[mHTTP GET /api/forum/categories/ 200 [0.02, 127.0.0.1:53865][0m
+[mHTTP GET /api/forum/categories/ 200 [0.03, 127.0.0.1:53865][0m
+[mHTTP GET /api/forum/categories/ 200 [0.05, 127.0.0.1:53895][0m
+[mHTTP GET /api/forum/categories/ 200 [0.03, 127.0.0.1:53510][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\models.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\admin.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/forum/categories/ 200 [0.27, 127.0.0.1:52286][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP OPTIONS /api/forum/categories/ 200 [0.00, 127.0.0.1:61452][0m
+[mHTTP GET /api/forum/categories/ 200 [0.16, 127.0.0.1:61452][0m
+[mHTTP GET /api/forum/categories/ 200 [0.10, 127.0.0.1:61452][0m
+[mHTTP OPTIONS /api/forum/discussions/ 200 [0.00, 127.0.0.1:53028][0m
+Internal Server Error: /api/forum/discussions/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\fields.py", line 1654, in to_representation
+    return [self.child.to_representation(item) if item is not None else None for item in data]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '_TaggableManager' object is not iterable
+[35;1mHTTP POST /api/forum/discussions/ 500 [0.35, 127.0.0.1:53028][0m
+Internal Server Error: /api/forum/discussions/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\fields.py", line 1654, in to_representation
+    return [self.child.to_representation(item) if item is not None else None for item in data]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '_TaggableManager' object is not iterable
+[35;1mHTTP POST /api/forum/discussions/ 500 [0.15, 127.0.0.1:53028][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Internal Server Error: /api/forum/discussions/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\fields.py", line 1654, in to_representation
+    return [self.child.to_representation(item) if item is not None else None for item in data]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '_TaggableManager' object is not iterable
+[35;1mHTTP POST /api/forum/discussions/ 500 [0.28, 127.0.0.1:53716][0m
+Internal Server Error: /api/forum/discussions/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\fields.py", line 1654, in to_representation
+    return [self.child.to_representation(item) if item is not None else None for item in data]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '_TaggableManager' object is not iterable
+[35;1mHTTP POST /api/forum/discussions/ 500 [0.15, 127.0.0.1:53716][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\serializers.py changed, reloading.

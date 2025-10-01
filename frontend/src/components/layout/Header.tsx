@@ -88,13 +88,6 @@ export const Header: React.FC = () => {
                 <Bot className="w-4 h-4" />
                 <span>AI Coach</span>
               </Link>
-              <Link
-                to="/gamification"
-                className="flex items-center space-x-1 text-secondary-700 hover:text-primary-600 transition-colors"
-              >
-                <Trophy className="w-4 h-4" />
-                <span>Progress</span>
-              </Link>
             </nav>
           )}
 

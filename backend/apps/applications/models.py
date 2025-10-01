@@ -18,12 +18,7 @@ class Application(models.Model):
     ]
     
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='applications')
-    opportunity = models.ForeignKey(Opportunity, on_delete=models.CASCADE, related_name='applications', blank=True, null=True)
-    
-    # Manual job details (when no opportunity is linked)
-    manual_job_title = models.CharField(max_length=200, blank=True)
-    manual_company_name = models.CharField(max_length=200, blank=True)
-    manual_location = models.CharField(max_length=200, blank=True)
+    opportunity = models.ForeignKey(Opportunity, on_delete=models.CASCADE, related_name='applications')
     
     # Application content
     cover_letter = models.TextField(blank=True)
@@ -48,11 +43,11 @@ class Application(models.Model):
     
     class Meta:
         db_table = 'applications'
+        unique_together = ['user', 'opportunity']
         ordering = ['-created_at']
     
     def __str__(self):
-        title = self.opportunity.title if self.opportunity else self.manual_job_title
-        return f"{self.user.full_name} → {title}"
+        return f"{self.user.full_name} → {self.opportunity.title}"
 
 
 class ApplicationDocument(models.Model):

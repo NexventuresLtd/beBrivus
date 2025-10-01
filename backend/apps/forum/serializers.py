@@ -14,10 +14,19 @@ class ForumCategorySerializer(serializers.ModelSerializer):
     
     class Meta:
         model = ForumCategory
-        fields = ['id', 'name', 'description', 'color', 'icon', 'discussions_count']
+        fields = ['id', 'name', 'description', 'color', 'icon', 'is_active', 'order', 'discussions_count']
+        read_only_fields = ['discussions_count']
     
     def get_discussions_count(self, obj):
         return obj.discussions.filter(is_locked=False).count()
+
+
+class ForumCategoryCreateUpdateSerializer(serializers.ModelSerializer):
+    """Serializer for creating/updating forum categories"""
+    
+    class Meta:
+        model = ForumCategory
+        fields = ['name', 'description', 'color', 'icon', 'is_active', 'order']
 
 
 class UserForumSerializer(serializers.ModelSerializer):
@@ -96,7 +105,7 @@ class DiscussionListSerializer(serializers.ModelSerializer):
     category = ForumCategorySerializer(read_only=True)
     latest_reply = serializers.SerializerMethodField()
     is_liked_by_user = serializers.SerializerMethodField()
-    tag_list = serializers.StringRelatedField(source='tags', many=True, read_only=True)
+    tag_list = serializers.SerializerMethodField()
     
     class Meta:
         model = Discussion
@@ -122,6 +131,9 @@ class DiscussionListSerializer(serializers.ModelSerializer):
         if user.is_authenticated:
             return obj.likes.filter(user=user).exists()
         return False
+    
+    def get_tag_list(self, obj):
+        return [tag.name for tag in obj.tags.all()]
 
 
 class DiscussionDetailSerializer(serializers.ModelSerializer):
@@ -133,7 +145,7 @@ class DiscussionDetailSerializer(serializers.ModelSerializer):
     can_edit = serializers.SerializerMethodField()
     can_delete = serializers.SerializerMethodField()
     can_moderate = serializers.SerializerMethodField()
-    tag_list = serializers.StringRelatedField(source='tags', many=True, read_only=True)
+    tag_list = serializers.SerializerMethodField()
     
     class Meta:
         model = Discussion
@@ -170,6 +182,9 @@ class DiscussionDetailSerializer(serializers.ModelSerializer):
         if not user.is_authenticated:
             return False
         return getattr(user.forum_profile, 'is_moderator', False)
+    
+    def get_tag_list(self, obj):
+        return [tag.name for tag in obj.tags.all()]
 
 
 class DiscussionCreateSerializer(serializers.ModelSerializer):
