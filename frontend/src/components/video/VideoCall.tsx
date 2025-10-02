@@ -79,7 +79,7 @@ const VideoCall: React.FC<VideoCallProps> = ({
   const connectWebSocket = useCallback(() => {
     // Replace with your WebSocket URL
     const wsProtocol = window.location.protocol === "https:" ? "wss:" : "ws:";
-    const wsUrl = `${wsProtocol}//127.0.0.1:8000/ws/video-call/${sessionId}/`;
+    const wsUrl = `${wsProtocol}//bebrivus.nexventures.net/ws/video-call/${sessionId}/`;
 
     socketRef.current = new WebSocket(wsUrl);
 
