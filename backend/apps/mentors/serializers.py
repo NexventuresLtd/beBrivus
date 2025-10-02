@@ -7,6 +7,15 @@ User = get_user_model()
 
 class MentorOnboardingSerializer(serializers.ModelSerializer):
     """Serializer for mentor onboarding"""
+    # Optional availability preferences during onboarding
+    preferred_start_time = serializers.TimeField(required=False, help_text="Preferred daily start time (default: 9:00 AM)")
+    preferred_end_time = serializers.TimeField(required=False, help_text="Preferred daily end time (default: 5:00 PM)")
+    available_weekdays = serializers.ListField(
+        child=serializers.IntegerField(min_value=0, max_value=6),
+        required=False,
+        help_text="List of available weekdays (0=Monday, 6=Sunday, default: 0-4)"
+    )
+    
     class Meta:
         model = MentorProfile
         fields = [
@@ -18,11 +27,22 @@ class MentorOnboardingSerializer(serializers.ModelSerializer):
             'languages_spoken',
             'hourly_rate',
             'time_zone',
+            'preferred_start_time',
+            'preferred_end_time',
+            'available_weekdays',
         ]
     
     def create(self, validated_data):
         # Get user from context
         user = self.context['request'].user
+        
+        # Extract availability preferences (not part of MentorProfile model)
+        preferred_start_time = validated_data.pop('preferred_start_time', None)
+        preferred_end_time = validated_data.pop('preferred_end_time', None)
+        available_weekdays = validated_data.pop('available_weekdays', None)
+        
+        # Store timezone before using validated_data
+        mentor_timezone = validated_data.get('time_zone', 'UTC')
         
         # Create mentor profile
         mentor_profile = MentorProfile.objects.create(
@@ -31,6 +51,24 @@ class MentorOnboardingSerializer(serializers.ModelSerializer):
             available_for_mentoring=True,
             **validated_data
         )
+        
+        # Set up availability preferences
+        from datetime import time
+        start_time = preferred_start_time or time(9, 0)  # Default: 9 AM
+        end_time = preferred_end_time or time(17, 0)     # Default: 5 PM
+        weekdays = available_weekdays or [0, 1, 2, 3, 4]  # Default: Monday to Friday
+        
+        # Create weekly availability based on preferences
+        for day_of_week in weekdays:
+            MentorAvailability.objects.create(
+                mentor=mentor_profile,
+                day_of_week=day_of_week,
+                start_time=start_time,
+                end_time=end_time,
+                timezone=mentor_timezone,
+                is_active=True,
+                is_available=True
+            )
         
         return mentor_profile
 

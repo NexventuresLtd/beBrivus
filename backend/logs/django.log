@@ -11103,3 +11103,1540 @@ Traceback (most recent call last):
 TypeError: '_TaggableManager' object is not iterable
 [35;1mHTTP POST /api/forum/discussions/ 500 [0.15, 127.0.0.1:53716][0m
 C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP OPTIONS /api/forum/discussions/?ordering=-last_activity 200 [0.01, 127.0.0.1:50411][0m
+[mHTTP GET /api/forum/categories/ 200 [0.16, 127.0.0.1:62266][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.21, 127.0.0.1:50411][0m
+[mHTTP GET /api/forum/categories/ 200 [0.07, 127.0.0.1:50411][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.10, 127.0.0.1:62266][0m
+[mHTTP GET /api/forum/categories/ 200 [0.08, 127.0.0.1:62875][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.11, 127.0.0.1:59240][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\forum\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/forum/categories/ 200 [0.08, 127.0.0.1:64589][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.10, 127.0.0.1:64589][0m
+[mHTTP GET /api/forum/categories/ 200 [0.06, 127.0.0.1:55104][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.07, 127.0.0.1:58162][0m
+[mHTTP GET /api/forum/categories/ 200 [0.08, 127.0.0.1:63700][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.20, 127.0.0.1:59884][0m
+[mHTTP GET /api/forum/categories/ 200 [0.07, 127.0.0.1:52953][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.09, 127.0.0.1:61876][0m
+[mHTTP OPTIONS /api/forum/discussions/5/like/ 200 [0.00, 127.0.0.1:61876][0m
+[mHTTP POST /api/forum/discussions/5/like/ 200 [0.07, 127.0.0.1:61876][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.08, 127.0.0.1:61876][0m
+[mHTTP GET /api/forum/categories/ 200 [0.09, 127.0.0.1:61876][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.14, 127.0.0.1:52953][0m
+[mHTTP OPTIONS /api/resources/ 200 [0.00, 127.0.0.1:65325][0m
+[mHTTP OPTIONS /api/resources/categories/ 200 [0.00, 127.0.0.1:65325][0m
+[mHTTP OPTIONS /api/resources/ 200 [0.00, 127.0.0.1:65325][0m
+[mHTTP OPTIONS /api/resources/categories/ 200 [0.00, 127.0.0.1:65325][0m
+[mHTTP GET /api/resources/ 200 [0.03, 127.0.0.1:65325][0m
+[mHTTP GET /api/resources/categories/ 200 [0.02, 127.0.0.1:65325][0m
+[mHTTP GET /api/resources/ 200 [0.03, 127.0.0.1:65325][0m
+[mHTTP GET /api/resources/categories/ 200 [0.03, 127.0.0.1:65325][0m
+[mHTTP GET /api/applications/?ordering=-submitted_at 200 [0.04, 127.0.0.1:65325][0m
+[mHTTP GET /api/applications/?ordering=-submitted_at 200 [0.04, 127.0.0.1:54959][0m
+[mHTTP OPTIONS /api/mentors/ 200 [0.00, 127.0.0.1:63485][0m
+[mHTTP GET /api/mentors/ 200 [0.06, 127.0.0.1:63485][0m
+[mHTTP OPTIONS /api/opportunities/ 200 [0.00, 127.0.0.1:63485][0m
+[mHTTP OPTIONS /api/opportunities/ 200 [0.01, 127.0.0.1:51231][0m
+[mHTTP GET /api/opportunities/ 200 [0.03, 127.0.0.1:51231][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:63485][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:58413][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:58413][0m
+[mHTTP GET /api/opportunities/ 200 [0.05, 127.0.0.1:52494][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:52494][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:55032][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:55032][0m
+[mHTTP OPTIONS /api/auth/login/ 200 [0.00, 127.0.0.1:65471][0m
+Bad Request: /api/auth/login/
+[31;1mHTTP POST /api/auth/login/ 400 [0.88, 127.0.0.1:65471][0m
+[mHTTP POST /api/auth/login/ 200 [0.84, 127.0.0.1:65471][0m
+[mHTTP OPTIONS /api/auth/profile/ 200 [0.00, 127.0.0.1:65471][0m
+[mHTTP GET /api/auth/profile/ 200 [0.05, 127.0.0.1:65471][0m
+[mHTTP OPTIONS /api/mentors/ 200 [0.00, 127.0.0.1:65471][0m
+[mHTTP GET /api/mentors/ 200 [0.05, 127.0.0.1:65471][0m
+[mHTTP OPTIONS /api/mentors/onboarding/ 200 [0.01, 127.0.0.1:65471][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.06, 127.0.0.1:65471][0m
+[mHTTP OPTIONS /api/mentors/dashboard/pending_sessions/ 200 [0.01, 127.0.0.1:65471][0m
+[mHTTP OPTIONS /api/mentors/dashboard/upcoming_sessions/ 200 [0.01, 127.0.0.1:51398][0m
+[mHTTP OPTIONS /api/mentors/dashboard/my_sessions/? 200 [0.01, 127.0.0.1:65471][0m
+[mHTTP OPTIONS /api/mentors/dashboard/my_mentees/ 200 [0.01, 127.0.0.1:51398][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.10, 127.0.0.1:65471][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.10, 127.0.0.1:51398][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.09, 127.0.0.1:65471][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.11, 127.0.0.1:51398][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.14, 127.0.0.1:65372][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:65372][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.03, 127.0.0.1:65372][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.03, 127.0.0.1:49998][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.03, 127.0.0.1:65372][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.03, 127.0.0.1:49998][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.02, 127.0.0.1:49998][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.02, 127.0.0.1:49998][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.02, 127.0.0.1:49998][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.03, 127.0.0.1:49998][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.02, 127.0.0.1:49998][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.07, 127.0.0.1:49998][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.07, 127.0.0.1:62601][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.08, 127.0.0.1:65372][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:63549][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.04, 127.0.0.1:63549][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:63549][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.04, 127.0.0.1:63549][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.05, 127.0.0.1:63549][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.05, 127.0.0.1:52209][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.03, 127.0.0.1:63549][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.02, 127.0.0.1:52209][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:62737][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:62737][0m
+[mHTTP GET /api/mentors/ 200 [0.07, 127.0.0.1:60841][0m
+[mHTTP OPTIONS /api/mentors/7/book/ 200 [0.00, 127.0.0.1:60841][0m
+Bad Request: /api/mentors/7/book/
+[31;1mHTTP POST /api/mentors/7/book/ 400 [0.04, 127.0.0.1:60841][0m
+Bad Request: /api/mentors/7/book/
+[31;1mHTTP POST /api/mentors/7/book/ 400 [0.03, 127.0.0.1:64536][0m
+Bad Request: /api/mentors/7/book/
+[31;1mHTTP POST /api/mentors/7/book/ 400 [0.03, 127.0.0.1:64380][0m
+Bad Request: /api/mentors/7/book/
+[31;1mHTTP POST /api/mentors/7/book/ 400 [0.04, 127.0.0.1:64380][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.02, 127.0.0.1:52084][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.03, 127.0.0.1:52084][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.02, 127.0.0.1:52084][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.03, 127.0.0.1:52084][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.02, 127.0.0.1:52084][0m
+Bad Request: /api/mentors/7/book/
+[31;1mHTTP POST /api/mentors/7/book/ 400 [0.03, 127.0.0.1:61096][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Internal Server Error: /api/mentors/7/book/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py", line 304, in post
+    availability.is_available = False
+    ^^^^^^^^^^^^
+NameError: name 'availability' is not defined
+[35;1mHTTP POST /api/mentors/7/book/ 500 [0.18, 127.0.0.1:53491][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /admin/ 200 [0.45, 127.0.0.1:60994][0m
+[mHTTP GET /static/admin/css/base.css 200 [0.04, 127.0.0.1:60994][0m
+[mHTTP GET /static/admin/css/dark_mode.css 200 [0.04, 127.0.0.1:60718][0m
+[mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.04, 127.0.0.1:51929][0m
+[mHTTP GET /static/admin/css/responsive.css 200 [0.04, 127.0.0.1:62752][0m
+[mHTTP GET /static/admin/css/dashboard.css 200 [0.04, 127.0.0.1:63088][0m
+[mHTTP GET /static/admin/js/theme.js 200 [0.04, 127.0.0.1:56432][0m
+[mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.01, 127.0.0.1:62752][0m
+[mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.01, 127.0.0.1:56432][0m
+[mHTTP GET /static/admin/img/icon-addlink.svg 200 [0.01, 127.0.0.1:62752][0m
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:62752][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\admin.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /admin/ 200 [0.21, 127.0.0.1:53643][0m
+[mHTTP GET /admin/mentors/mentoravailability/ 200 [0.26, 127.0.0.1:53088][0m
+[mHTTP GET /static/admin/css/changelists.css 200 [0.02, 127.0.0.1:53088][0m
+[mHTTP GET /static/admin/js/jquery.init.js 200 [0.02, 127.0.0.1:53223][0m
+[mHTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [0.03, 127.0.0.1:57953][0m
+[mHTTP GET /static/admin/js/core.js 200 [0.02, 127.0.0.1:50320][0m
+[mHTTP GET /static/admin/js/actions.js 200 [0.03, 127.0.0.1:55411][0m
+[mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [0.03, 127.0.0.1:63134][0m
+[mHTTP GET /static/admin/js/urlify.js 200 [0.02, 127.0.0.1:53088][0m
+[mHTTP GET /static/admin/js/prepopulate.js 200 [0.01, 127.0.0.1:53223][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:63134][0m
+[mHTTP GET /static/admin/js/filters.js 200 [0.01, 127.0.0.1:63134][0m
+[mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.25, 127.0.0.1:50320][0m
+[mHTTP GET /static/admin/img/tooltag-add.svg 200 [0.02, 127.0.0.1:50320][0m
+[mHTTP GET /admin/mentors/mentoravailability/add/ 200 [0.13, 127.0.0.1:50320][0m
+[mHTTP GET /static/admin/css/forms.css 200 [0.03, 127.0.0.1:50320][0m
+[mHTTP GET /static/admin/js/admin/DateTimeShortcuts.js 200 [0.03, 127.0.0.1:57953][0m
+[mHTTP GET /static/admin/js/prepopulate_init.js 200 [0.04, 127.0.0.1:53088][0m
+[mHTTP GET /static/admin/js/calendar.js 200 [0.04, 127.0.0.1:53223][0m
+[mHTTP GET /static/admin/css/widgets.css 200 [0.02, 127.0.0.1:50320][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.08, 127.0.0.1:63134][0m
+[mHTTP GET /static/admin/img/icon-viewlink.svg 200 [0.03, 127.0.0.1:50320][0m
+[mHTTP GET /static/admin/js/change_form.js 200 [0.12, 127.0.0.1:63134][0m
+[mHTTP GET /static/admin/img/icon-clock.svg 200 [0.01, 127.0.0.1:63134][0m
+[mHTTP POST /admin/mentors/mentoravailability/add/ 200 [0.10, 127.0.0.1:64019][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:64019][0m
+[32mHTTP POST /admin/mentors/mentoravailability/add/ 302 [0.06, 127.0.0.1:64019][0m
+[mHTTP GET /admin/mentors/mentoravailability/ 200 [0.22, 127.0.0.1:64019][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:64019][0m
+[mHTTP GET /static/admin/img/icon-yes.svg 200 [0.01, 127.0.0.1:64019][0m
+Bad Request: /api/mentors/7/book/
+[31;1mHTTP POST /api/mentors/7/book/ 400 [0.06, 127.0.0.1:61652][0m
+Bad Request: /api/mentors/7/book/
+[31;1mHTTP POST /api/mentors/7/book/ 400 [0.03, 127.0.0.1:58718][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Bad Request: /api/mentors/7/book/
+[31;1mHTTP POST /api/mentors/7/book/ 400 [0.06, 127.0.0.1:62821][0m
+Bad Request: /api/mentors/7/book/
+[31;1mHTTP POST /api/mentors/7/book/ 400 [0.05, 127.0.0.1:62821][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Bad Request: /api/mentors/7/book/
+[31;1mHTTP POST /api/mentors/7/book/ 400 [0.06, 127.0.0.1:61396][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Bad Request: /api/mentors/7/book/
+[31;1mHTTP POST /api/mentors/7/book/ 400 [0.05, 127.0.0.1:59384][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP POST /api/mentors/7/book/ 201 [0.18, 127.0.0.1:52257][0m
+[mHTTP OPTIONS /api/mentors/bookings/ 200 [0.00, 127.0.0.1:52257][0m
+[mHTTP GET /api/mentors/bookings/ 200 [0.05, 127.0.0.1:52257][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.01, 127.0.0.1:50560][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.03, 127.0.0.1:50560][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.04, 127.0.0.1:50560][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.04, 127.0.0.1:50560][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.04, 127.0.0.1:50560][0m
+[mHTTP OPTIONS /api/mentors/dashboard/start_session/ 200 [0.01, 127.0.0.1:50560][0m
+Bad Request: /api/mentors/dashboard/start_session/
+[31;1mHTTP POST /api/mentors/dashboard/start_session/ 400 [0.05, 127.0.0.1:50560][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.04, 127.0.0.1:50560][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.04, 127.0.0.1:57148][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.17, 127.0.0.1:57148][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.17, 127.0.0.1:64898][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.20, 127.0.0.1:50560][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.20, 127.0.0.1:57769][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:50560][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:64898][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.10, 127.0.0.1:64898][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.14, 127.0.0.1:57148][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.15, 127.0.0.1:50560][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.07, 127.0.0.1:64898][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.08, 127.0.0.1:64898][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.08, 127.0.0.1:50560][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.08, 127.0.0.1:57148][0m
+[mHTTP GET /api/mentors/ 200 [0.06, 127.0.0.1:60058][0m
+[mHTTP GET /api/mentors/bookings/ 200 [0.05, 127.0.0.1:60058][0m
+[mHTTP GET /admin/mentors/mentoravailability/add/ 200 [0.28, 127.0.0.1:50490][0m
+[mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:50490][0m
+[mHTTP GET /admin/mentors/ 200 [0.03, 127.0.0.1:50490][0m
+Internal Server Error: /admin/mentors/mentorshipsession/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\options.py", line 685, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: MentorshipSession has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\template\library.py", line 359, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in __init__
+    super().__init__(*items)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 219, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1031, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\models.py", line 160, in __str__
+    return f"Session: {self.mentorship_request.mentee.full_name} with {self.mentorship_request.mentor.user.full_name}"
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MentorshipSession' object has no attribute 'mentorship_request'
+[35;1mHTTP GET /admin/mentors/mentorshipsession/ 500 [0.48, 127.0.0.1:50490][0m
+[mHTTP GET /api/mentors/ 200 [0.12, 127.0.0.1:58728][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:52353][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.03, 127.0.0.1:52353][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.05, 127.0.0.1:52353][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.09, 127.0.0.1:51934][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.09, 127.0.0.1:52353][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.02, 127.0.0.1:52160][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:52160][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.04, 127.0.0.1:52160][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.04, 127.0.0.1:52160][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.04, 127.0.0.1:52160][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.05, 127.0.0.1:61111][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/mentors/onboarding/ 200 [0.09, 127.0.0.1:62606][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.03, 127.0.0.1:63174][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.05, 127.0.0.1:62606][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.03, 127.0.0.1:63174][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.05, 127.0.0.1:62606][0m
+[mHTTP OPTIONS /api/mentors/dashboard/confirm_session/ 200 [0.00, 127.0.0.1:50105][0m
+Not Found: /api/mentors/dashboard/confirm_session/
+[33mHTTP POST /api/mentors/dashboard/confirm_session/ 404 [0.04, 127.0.0.1:50105][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/mentors/bookings/ 200 [0.11, 127.0.0.1:53189][0m
+Not Found: /api/mentors/dashboard/confirm_session/
+[33mHTTP POST /api/mentors/dashboard/confirm_session/ 404 [0.03, 127.0.0.1:62680][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP POST /api/mentors/dashboard/confirm_session/ 200 [0.15, 127.0.0.1:62183][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.05, 127.0.0.1:62183][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.03, 127.0.0.1:62183][0m
+[mHTTP OPTIONS /api/mentors/dashboard/end_session/ 200 [0.00, 127.0.0.1:62183][0m
+[mHTTP POST /api/mentors/dashboard/end_session/ 200 [0.08, 127.0.0.1:62183][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.04, 127.0.0.1:62183][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.05, 127.0.0.1:64674][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:64674][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.04, 127.0.0.1:62183][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.10, 127.0.0.1:64674][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.11, 127.0.0.1:62183][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.11, 127.0.0.1:55652][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.06, 127.0.0.1:64674][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.04, 127.0.0.1:64674][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.12, 127.0.0.1:55652][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.13, 127.0.0.1:64674][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.13, 127.0.0.1:62183][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.14, 127.0.0.1:56292][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.12, 127.0.0.1:61534][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.15, 127.0.0.1:55837][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.17, 127.0.0.1:56387][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.17, 127.0.0.1:59578][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.15, 127.0.0.1:59578][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.15, 127.0.0.1:55837][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.16, 127.0.0.1:56387][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.16, 127.0.0.1:61534][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.04, 127.0.0.1:65308][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.04, 127.0.0.1:65308][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.03, 127.0.0.1:65308][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.07, 127.0.0.1:51182][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.08, 127.0.0.1:65308][0m
+[mHTTP POST /api/mentors/dashboard/confirm_session/ 200 [0.06, 127.0.0.1:65308][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.07, 127.0.0.1:65308][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.07, 127.0.0.1:51182][0m
+[mHTTP GET /api/mentors/ 200 [0.05, 127.0.0.1:56783][0m
+[mHTTP GET /api/mentors/bookings/ 200 [0.06, 127.0.0.1:56783][0m
+[mHTTP OPTIONS /api/bookings/sessions/11/ 200 [0.01, 127.0.0.1:56783][0m
+Not Found: /api/bookings/sessions/11/
+[33mHTTP GET /api/bookings/sessions/11/ 404 [0.12, 127.0.0.1:56783][0m
+Not Found: /api/bookings/sessions/11/
+[33mHTTP GET /api/bookings/sessions/11/ 404 [0.02, 127.0.0.1:56783][0m
+[mHTTP OPTIONS /api/bookings/sessions/11/join/ 200 [0.00, 127.0.0.1:56783][0m
+Not Found: /api/bookings/sessions/11/join/
+[33mHTTP POST /api/bookings/sessions/11/join/ 404 [0.03, 127.0.0.1:56783][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:51802][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:51802][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.07, 127.0.0.1:51802][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.07, 127.0.0.1:55676][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.07, 127.0.0.1:51802][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.08, 127.0.0.1:55676][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.04, 127.0.0.1:51802][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:62253][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.13, 127.0.0.1:62253][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.15, 127.0.0.1:51802][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.16, 127.0.0.1:59250][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.16, 127.0.0.1:54160][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.02, 127.0.0.1:65237][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.02, 127.0.0.1:65237][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.08, 127.0.0.1:65237][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.06, 127.0.0.1:64829][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.04, 127.0.0.1:55076][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.06, 127.0.0.1:57338][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.02, 127.0.0.1:56262][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:56262][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.04, 127.0.0.1:56262][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.04, 127.0.0.1:56262][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.06, 127.0.0.1:54854][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.06, 127.0.0.1:56262][0m
+Not Found: /api/mentors/dashboard/start_session/
+[33mHTTP POST /api/mentors/dashboard/start_session/ 404 [0.07, 127.0.0.1:56262][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:53044][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.05, 127.0.0.1:53044][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.05, 127.0.0.1:53044][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.09, 127.0.0.1:55681][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.10, 127.0.0.1:49333][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.04, 127.0.0.1:53044][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.06, 127.0.0.1:51517][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.05, 127.0.0.1:51517][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.03, 127.0.0.1:51517][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.09, 127.0.0.1:59605][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.11, 127.0.0.1:51517][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.05, 127.0.0.1:59605][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.04, 127.0.0.1:57723][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.03, 127.0.0.1:57723][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.04, 127.0.0.1:57723][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.04, 127.0.0.1:57723][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.04, 127.0.0.1:64839][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.03, 127.0.0.1:64839][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.04, 127.0.0.1:64839][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.08, 127.0.0.1:64839][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.09, 127.0.0.1:57723][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.10, 127.0.0.1:51004][0m
+[mHTTP GET /api/opportunities/ 200 [0.11, 127.0.0.1:53350][0m
+[mHTTP GET /api/opportunities/ 200 [0.04, 127.0.0.1:53350][0m
+[mHTTP GET /api/mentors/ 200 [0.12, 127.0.0.1:53350][0m
+[mHTTP GET /api/mentors/bookings/ 200 [0.06, 127.0.0.1:53350][0m
+Not Found: /api/bookings/sessions/11/
+[33mHTTP GET /api/bookings/sessions/11/ 404 [0.05, 127.0.0.1:53350][0m
+Not Found: /api/bookings/sessions/11/
+[33mHTTP GET /api/bookings/sessions/11/ 404 [0.02, 127.0.0.1:53350][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:61035][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.03, 127.0.0.1:61035][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.03, 127.0.0.1:61035][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.03, 127.0.0.1:61035][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.03, 127.0.0.1:61035][0m
+WebSocket HANDSHAKING /ws/video-call/11/ [127.0.0.1:57316]
+WebSocket DISCONNECT /ws/video-call/11/ [127.0.0.1:57316]
+WebSocket HANDSHAKING /ws/video-call/11/ [127.0.0.1:64060]
+WebSocket DISCONNECT /ws/video-call/11/ [127.0.0.1:64060]
+[mHTTP GET /api/mentors/onboarding/ 200 [0.22, 127.0.0.1:53632][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:59969][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.07, 127.0.0.1:59969][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.08, 127.0.0.1:53632][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.08, 127.0.0.1:59180][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.09, 127.0.0.1:56187][0m
+Exception inside application: Error 10061 connecting to 127.0.0.1:6379. Connect call failed ('127.0.0.1', 6379).
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\retry.py", line 50, in call_with_retry
+    return await do()
+           ^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1073, in create_connection
+    raise exceptions[0]
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1058, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 964, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\selector_events.py", line 633, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\selector_events.py", line 668, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\consumer.py", line 74, in dispatch
+    await handler(message)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\generic\websocket.py", line 250, in websocket_disconnect
+    await self.disconnect(message["code"])
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\video\consumers.py", line 50, in disconnect
+    await self.channel_layer.group_discard(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels_redis\core.py", line 507, in group_discard
+    await connection.zrem(key, channel)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 315, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Connect call failed ('127.0.0.1', 6379).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\contrib\staticfiles\handlers.py", line 101, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\sessions.py", line 44, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\sessions.py", line 261, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\routing.py", line 118, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\consumer.py", line 95, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\utils.py", line 57, in await_many_dispatch
+    await task
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels_redis\core.py", line 340, in receive
+    message_channel, message = await self.receive_single(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels_redis\core.py", line 397, in receive_single
+    content = await self._brpop_with_clean(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels_redis\core.py", line 231, in _brpop_with_clean
+    await connection.eval(cleanup_script, 0, channel, backup_queue)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 315, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Connect call failed ('127.0.0.1', 6379).
+Exception inside application: Error 10061 connecting to 127.0.0.1:6379. Connect call failed ('127.0.0.1', 6379).
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\retry.py", line 50, in call_with_retry
+    return await do()
+           ^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1073, in create_connection
+    raise exceptions[0]
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1058, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 964, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\selector_events.py", line 633, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\selector_events.py", line 668, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\contrib\staticfiles\handlers.py", line 101, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\sessions.py", line 44, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\sessions.py", line 261, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\routing.py", line 118, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\consumer.py", line 95, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\consumer.py", line 74, in dispatch
+    await handler(message)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\generic\websocket.py", line 250, in websocket_disconnect
+    await self.disconnect(message["code"])
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\video\consumers.py", line 50, in disconnect
+    await self.channel_layer.group_discard(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels_redis\core.py", line 507, in group_discard
+    await connection.zrem(key, channel)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 315, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Connect call failed ('127.0.0.1', 6379).
+Starting server at tcp:port=8000:interface=127.0.0.1
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Not Found: /api/mentors/dashboard/start_session/
+Exception inside application: Error 10061 connecting to 127.0.0.1:6379. Connect call failed ('127.0.0.1', 6379).
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\retry.py", line 50, in call_with_retry
+    return await do()
+           ^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1073, in create_connection
+    raise exceptions[0]
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1058, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 964, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\selector_events.py", line 633, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\selector_events.py", line 668, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\consumer.py", line 74, in dispatch
+    await handler(message)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\generic\websocket.py", line 250, in websocket_disconnect
+    await self.disconnect(message["code"])
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\video\consumers.py", line 50, in disconnect
+    await self.channel_layer.group_discard(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels_redis\core.py", line 507, in group_discard
+    await connection.zrem(key, channel)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 315, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Connect call failed ('127.0.0.1', 6379).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\sessions.py", line 44, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\sessions.py", line 261, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\routing.py", line 118, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\consumer.py", line 95, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\utils.py", line 57, in await_many_dispatch
+    await task
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels_redis\core.py", line 340, in receive
+    message_channel, message = await self.receive_single(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels_redis\core.py", line 397, in receive_single
+    content = await self._brpop_with_clean(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels_redis\core.py", line 231, in _brpop_with_clean
+    await connection.eval(cleanup_script, 0, channel, backup_queue)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 315, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Connect call failed ('127.0.0.1', 6379).
+Exception inside application: Error 10061 connecting to 127.0.0.1:6379. Connect call failed ('127.0.0.1', 6379).
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\retry.py", line 50, in call_with_retry
+    return await do()
+           ^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1073, in create_connection
+    raise exceptions[0]
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1058, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 964, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\selector_events.py", line 633, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\asyncio\selector_events.py", line 668, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\routing.py", line 48, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\sessions.py", line 44, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\sessions.py", line 261, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\routing.py", line 118, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\consumer.py", line 95, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\consumer.py", line 74, in dispatch
+    await handler(message)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels\generic\websocket.py", line 250, in websocket_disconnect
+    await self.disconnect(message["code"])
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\video\consumers.py", line 50, in disconnect
+    await self.channel_layer.group_discard(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\channels_redis\core.py", line 507, in group_discard
+    await connection.zrem(key, channel)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\redis\asyncio\connection.py", line 315, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Connect call failed ('127.0.0.1', 6379).
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/mentors/onboarding/ 200 [0.06, 127.0.0.1:54885][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.04, 127.0.0.1:54885][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.03, 127.0.0.1:54885][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.04, 127.0.0.1:54885][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.05, 127.0.0.1:50498][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.02, 127.0.0.1:61503][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.02, 127.0.0.1:61503][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.02, 127.0.0.1:61503][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.03, 127.0.0.1:61503][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.03, 127.0.0.1:61503][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.13, 127.0.0.1:61503][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.13, 127.0.0.1:49970][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.14, 127.0.0.1:54213][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.08, 127.0.0.1:54213][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.04, 127.0.0.1:54213][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.13, 127.0.0.1:54213][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.13, 127.0.0.1:49970][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.14, 127.0.0.1:61503][0m
+[mHTTP GET /api/mentors/ 200 [0.13, 127.0.0.1:58436][0m
+[mHTTP GET /api/mentors/bookings/ 200 [0.05, 127.0.0.1:58436][0m
+Not Found: /api/bookings/sessions/11/
+[33mHTTP GET /api/bookings/sessions/11/ 404 [0.04, 127.0.0.1:58436][0m
+Not Found: /api/bookings/sessions/11/
+[33mHTTP GET /api/bookings/sessions/11/ 404 [0.02, 127.0.0.1:58436][0m
+Not Found: /api/bookings/sessions/11/join/
+[33mHTTP POST /api/bookings/sessions/11/join/ 404 [0.02, 127.0.0.1:58436][0m
+Not Found: /api/bookings/sessions/11/join/
+[33mHTTP POST /api/bookings/sessions/11/join/ 404 [0.05, 127.0.0.1:58436][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.02, 127.0.0.1:62064][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.04, 127.0.0.1:62064][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.04, 127.0.0.1:58137][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.04, 127.0.0.1:62064][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.03, 127.0.0.1:58137][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:58137][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.07, 127.0.0.1:62064][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.08, 127.0.0.1:58137][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.08, 127.0.0.1:57411][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.09, 127.0.0.1:64211][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/mentors/onboarding/ 200 [0.09, 127.0.0.1:61764][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.04, 127.0.0.1:61764][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.05, 127.0.0.1:63776][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.07, 127.0.0.1:63776][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.09, 127.0.0.1:61764][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/mentors/onboarding/ 200 [0.12, 127.0.0.1:62791][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.22, 127.0.0.1:62791][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.06, 127.0.0.1:62791][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.06, 127.0.0.1:62791][0m
+Internal Server Error: /api/mentors/dashboard/upcoming_sessions/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py", line 595, in upcoming_sessions
+    print(MentorshipSession.objects.filter(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 363, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\base.py", line 590, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\models.py", line 160, in __str__
+    return f"Session: {self.mentorship_request.mentee.full_name} with {self.mentorship_request.mentor.user.full_name}"
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MentorshipSession' object has no attribute 'mentorship_request'
+[35;1mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 500 [0.60, 127.0.0.1:65266][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/mentors/onboarding/ 200 [0.09, 127.0.0.1:62729][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.11, 127.0.0.1:62729][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.09, 127.0.0.1:62729][0m
+Internal Server Error: /api/mentors/dashboard/upcoming_sessions/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py", line 595, in upcoming_sessions
+    print(MentorshipSession.objects.filter(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 363, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\base.py", line 590, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\models.py", line 160, in __str__
+    return f"Session: {self.mentorship_request.mentee.full_name} with {self.mentorship_request.mentor.user.full_name}"
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MentorshipSession' object has no attribute 'mentorship_request'
+[35;1mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 500 [0.31, 127.0.0.1:53888][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.12, 127.0.0.1:62729][0m
+Internal Server Error: /api/mentors/dashboard/upcoming_sessions/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py", line 595, in upcoming_sessions
+    print(MentorshipSession.objects.filter(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 363, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\base.py", line 590, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\models.py", line 160, in __str__
+    return f"Session: {self.mentorship_request.mentee.full_name} with {self.mentorship_request.mentor.user.full_name}"
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MentorshipSession' object has no attribute 'mentorship_request'
+[35;1mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 500 [0.10, 127.0.0.1:62729][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/mentors/onboarding/ 200 [0.04, 127.0.0.1:60375][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.15, 127.0.0.1:60375][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.11, 127.0.0.1:60375][0m
+Internal Server Error: /api/mentors/dashboard/upcoming_sessions/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py", line 595, in upcoming_sessions
+    print(MentorshipSession.objects.filter(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 363, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\base.py", line 590, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\models.py", line 160, in __str__
+    return f"Session: {self.mentorship_request.mentee.full_name} with {self.mentorship_request.mentor.user.full_name}"
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MentorshipSession' object has no attribute 'mentorship_request'
+[35;1mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 500 [0.35, 127.0.0.1:63413][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.08, 127.0.0.1:60375][0m
+Internal Server Error: /api/mentors/dashboard/upcoming_sessions/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py", line 595, in upcoming_sessions
+    print(MentorshipSession.objects.filter(
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 363, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\base.py", line 590, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\models.py", line 160, in __str__
+    return f"Session: {self.mentorship_request.mentee.full_name} with {self.mentorship_request.mentor.user.full_name}"
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MentorshipSession' object has no attribute 'mentorship_request'
+[35;1mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 500 [0.25, 127.0.0.1:60375][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\models.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\models.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/mentors/onboarding/ 200 [0.09, 127.0.0.1:58569][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.09, 127.0.0.1:58569][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.09, 127.0.0.1:62246][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.07, 127.0.0.1:62246][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.09, 127.0.0.1:58569][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/mentors/onboarding/ 200 [0.06, 127.0.0.1:52914][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.07, 127.0.0.1:52914][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.08, 127.0.0.1:59470][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.06, 127.0.0.1:59470][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.09, 127.0.0.1:52914][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/mentors/onboarding/ 200 [0.06, 127.0.0.1:60009][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.03, 127.0.0.1:60009][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.04, 127.0.0.1:60009][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.07, 127.0.0.1:60009][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.08, 127.0.0.1:64249][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\mentors\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/mentors/onboarding/ 200 [0.04, 127.0.0.1:63880][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.02, 127.0.0.1:63880][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.04, 127.0.0.1:63880][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.03, 127.0.0.1:63880][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.04, 127.0.0.1:63880][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.10, 127.0.0.1:56788][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.11, 127.0.0.1:61290][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.11, 127.0.0.1:49758][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.12, 127.0.0.1:54238][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.03, 127.0.0.1:54238][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.10, 127.0.0.1:61290][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.10, 127.0.0.1:49758][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.10, 127.0.0.1:56788][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.03, 127.0.0.1:53737][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.08, 127.0.0.1:63149][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.08, 127.0.0.1:61894][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.08, 127.0.0.1:58195][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.13, 127.0.0.1:58195][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.15, 127.0.0.1:63149][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.15, 127.0.0.1:53737][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.17, 127.0.0.1:61894][0m
+[mHTTP OPTIONS /api/mentors/ 200 [0.00, 127.0.0.1:65148][0m
+[mHTTP GET /api/mentors/ 200 [0.09, 127.0.0.1:65148][0m
+Not Found: /api/mentors/dashboard/start_session/
+[33mHTTP POST /api/mentors/dashboard/start_session/ 404 [0.09, 127.0.0.1:61894][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:61894][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.04, 127.0.0.1:53737][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.11, 127.0.0.1:53737][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.15, 127.0.0.1:61894][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.17, 127.0.0.1:63149][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.18, 127.0.0.1:58195][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.04, 127.0.0.1:65192][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.10, 127.0.0.1:62436][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.15, 127.0.0.1:63376][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.15, 127.0.0.1:65214][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.06, 127.0.0.1:65214][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.15, 127.0.0.1:63376][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.17, 127.0.0.1:65214][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.19, 127.0.0.1:62436][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.22, 127.0.0.1:65192][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.05, 127.0.0.1:65192][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.10, 127.0.0.1:62436][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.11, 127.0.0.1:63376][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.11, 127.0.0.1:65214][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.09, 127.0.0.1:65214][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.10, 127.0.0.1:63376][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.10, 127.0.0.1:62436][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.11, 127.0.0.1:65192][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.04, 127.0.0.1:65192][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.08, 127.0.0.1:62436][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.08, 127.0.0.1:65214][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.09, 127.0.0.1:63376][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.02, 127.0.0.1:49670][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.03, 127.0.0.1:49670][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.04, 127.0.0.1:49670][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.05, 127.0.0.1:49670][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.06, 127.0.0.1:55208][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.01, 127.0.0.1:54413][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.02, 127.0.0.1:54413][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.03, 127.0.0.1:54413][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.03, 127.0.0.1:58394][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.03, 127.0.0.1:54413][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.05, 127.0.0.1:54413][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.08, 127.0.0.1:58394][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.09, 127.0.0.1:50208][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.08, 127.0.0.1:61230][0m
+[mHTTP GET /api/mentors/bookings/ 200 [0.06, 127.0.0.1:60916][0m
+Not Found: /api/bookings/sessions/11/
+[33mHTTP GET /api/bookings/sessions/11/ 404 [0.09, 127.0.0.1:60916][0m
+Not Found: /api/bookings/sessions/11/
+[33mHTTP GET /api/bookings/sessions/11/ 404 [0.01, 127.0.0.1:60916][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:49398][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:49398][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.03, 127.0.0.1:49398][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.06, 127.0.0.1:49398][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.06, 127.0.0.1:62038][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.05, 127.0.0.1:49398][0m
+Not Found: /api/bookings/sessions/11/join/
+[33mHTTP POST /api/bookings/sessions/11/join/ 404 [0.03, 127.0.0.1:59592][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.06, 127.0.0.1:56581][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.08, 127.0.0.1:56581][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.04, 127.0.0.1:56581][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.04, 127.0.0.1:61550][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.05, 127.0.0.1:62464][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.05, 127.0.0.1:59533][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.02, 127.0.0.1:49964][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.03, 127.0.0.1:49964][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.03, 127.0.0.1:49964][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.03, 127.0.0.1:62054][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.03, 127.0.0.1:49964][0m
+Not Found: /api/mentors/dashboard/start_session/
+[33mHTTP POST /api/mentors/dashboard/start_session/ 404 [0.03, 127.0.0.1:49964][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:49964][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.02, 127.0.0.1:62054][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.02, 127.0.0.1:62054][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.11, 127.0.0.1:49964][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.11, 127.0.0.1:62054][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.11, 127.0.0.1:58422][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.06, 127.0.0.1:59356][0m
+[mHTTP GET /api/mentors/onboarding/ 200 [0.03, 127.0.0.1:59356][0m
+[mHTTP GET /api/mentors/dashboard/pending_sessions/ 200 [0.02, 127.0.0.1:59356][0m
+[mHTTP GET /api/mentors/dashboard/upcoming_sessions/ 200 [0.04, 127.0.0.1:50153][0m
+[mHTTP GET /api/mentors/dashboard/my_sessions/? 200 [0.06, 127.0.0.1:59356][0m
+[mHTTP GET /api/mentors/dashboard/my_mentees/ 200 [0.02, 127.0.0.1:50153][0m
+Starting server at tcp:port=8000:interface=127.0.0.1
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Not Found: /api/mentors/dashboard/start_session/
+User disconnected from video call 11
+User disconnected from video call 11
+Killed 0 pending application instances
+Starting server at tcp:port=8000:interface=127.0.0.1
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Not Found: /api/mentors/dashboard/start_session/
+User disconnected from video call 11
+User disconnected from video call 11
+User disconnected from video call 11
+User disconnected from video call 11
+Not Found: /api/mentors/dashboard/start_session/
+User disconnected from video call 11
+User disconnected from video call 11
+Not Found: /api/mentors/dashboard/start_session/
+User disconnected from video call 11
+Not Found: /api/mentors/dashboard/start_session/
+Killed 0 pending application instances
+Starting server at tcp:port=8000:interface=127.0.0.1
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+User disconnected from video call 11
+User disconnected from video call 11
+Not Found: /api/mentors/dashboard/start_session/
+User disconnected from video call 11
+User disconnected from video call 11
+Not Found: /api/mentors/dashboard/start_session/
+User disconnected from video call 11
+User disconnected from video call 11
+User disconnected from video call 11
+Not Found: /api/mentors/dashboard/start_session/
+Not Found: /api/mentors/dashboard/start_session/
+User disconnected from video call 11
+Killed 0 pending application instances

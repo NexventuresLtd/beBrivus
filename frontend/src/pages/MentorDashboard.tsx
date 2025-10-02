@@ -289,7 +289,7 @@ const MentorDashboard: React.FC = () => {
                         {session.mentee_name}
                       </p>
                       <p className="text-sm text-neutral-600">
-                        {new Date(session.scheduled_start).toLocaleDateString()}
+                        {new Date(session.session_date).toLocaleDateString()}
                       </p>
                     </div>
                   </div>
@@ -356,12 +356,12 @@ const MentorDashboard: React.FC = () => {
                         {session.mentee_name}
                       </p>
                       <p className="text-sm text-neutral-600">
-                        {new Date(session.scheduled_start).toLocaleString()}
+                        {new Date(session.session_date).toLocaleString()}
                       </p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-2">
-                    {session.status === "scheduled" && (
+                    {session.status === "in_progress" && (
                       <Button
                         size="sm"
                         onClick={() => handleStartSession(session)}
@@ -376,7 +376,7 @@ const MentorDashboard: React.FC = () => {
                         Start
                       </Button>
                     )}
-                    {session.status === "in_progress" && (
+                    {session.status === "inprogress" && (
                       <Button
                         size="sm"
                         variant="outline"
@@ -438,13 +438,13 @@ const MentorDashboard: React.FC = () => {
                     <span className="flex items-center space-x-1">
                       <Calendar className="w-4 h-4" />
                       <span>
-                        {new Date(session.scheduled_start).toLocaleDateString()}
+                        {new Date(session.session_date).toLocaleDateString()}
                       </span>
                     </span>
                     <span className="flex items-center space-x-1">
                       <Clock className="w-4 h-4" />
                       <span>
-                        {new Date(session.scheduled_start).toLocaleTimeString()}
+                        {new Date(session.start_time).toLocaleTimeString()}
                       </span>
                     </span>
                     <span className="flex items-center space-x-1">
@@ -538,13 +538,13 @@ const MentorDashboard: React.FC = () => {
                     <span className="flex items-center space-x-1">
                       <Calendar className="w-4 h-4" />
                       <span>
-                        {new Date(session.scheduled_start).toLocaleDateString()}
+                        {new Date(session.session_date).toLocaleDateString()}
                       </span>
                     </span>
                     <span className="flex items-center space-x-1">
                       <Clock className="w-4 h-4" />
                       <span>
-                        {new Date(session.scheduled_start).toLocaleTimeString()}
+                        {new Date(session.start_time).toLocaleTimeString()}
                       </span>
                     </span>
                   </div>

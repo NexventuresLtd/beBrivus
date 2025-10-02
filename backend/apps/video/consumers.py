@@ -19,6 +19,7 @@ class VideoCallConsumer(AsyncWebsocketConsumer):
             await self.close(code=4001)  # Unauthorized
             return
             
+        print(f"Connecting to video call session {self.session_id} {self.room_group_name} {self.channel_name}")
         # Verify user has access to this session
         has_access = await self.check_session_access()
         if not has_access:

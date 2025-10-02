@@ -1,3 +1,4 @@
+from re import M
 from rest_framework import viewsets, status, generics
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -569,7 +570,7 @@ class MentorDashboardViewSet(viewsets.GenericViewSet):
         
         pending_sessions = MentorshipSession.objects.filter(
             mentor=mentor_profile,
-            status='requested'
+            status='scheduled'
         ).select_related('mentee').order_by('-created_at')
         
         serializer = MentorSessionSerializer(pending_sessions, many=True)
@@ -588,10 +589,9 @@ class MentorDashboardViewSet(viewsets.GenericViewSet):
         now = timezone.now()
         upcoming_sessions = MentorshipSession.objects.filter(
             mentor=mentor_profile,
-            status='scheduled',
+            status='in_progress',
             scheduled_start__gte=now
         ).select_related('mentee').order_by('scheduled_start')
-        
         serializer = MentorSessionSerializer(upcoming_sessions, many=True)
         return Response(serializer.data)
     
@@ -661,7 +661,7 @@ class MentorDashboardViewSet(viewsets.GenericViewSet):
             session = MentorshipSession.objects.get(
                 id=session_id,
                 mentor=mentor_profile,
-                status='requested'
+                status='scheduled'
             )
         except MentorshipSession.DoesNotExist:
             return Response(
@@ -670,7 +670,7 @@ class MentorDashboardViewSet(viewsets.GenericViewSet):
             )
         
         # Update session
-        session.status = 'scheduled'
+        session.status = 'in_progress'
         session.mentor_notes = mentor_notes
         if meeting_link:
             session.meeting_link = meeting_link
@@ -696,7 +696,7 @@ class MentorDashboardViewSet(viewsets.GenericViewSet):
             session = MentorshipSession.objects.get(
                 id=session_id,
                 mentor=mentor_profile,
-                status='requested'
+                status='scheduled'
             )
         except MentorshipSession.DoesNotExist:
             return Response(

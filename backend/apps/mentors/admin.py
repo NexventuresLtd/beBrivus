@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import MentorProfile, MentorshipSession
+from .models import MentorAvailability, MentorProfile, MentorshipSession
 
 # Register your models here.
-admin.site.register([MentorProfile, MentorshipSession])
+admin.site.register([MentorProfile, MentorshipSession, MentorAvailability])

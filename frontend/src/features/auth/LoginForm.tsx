@@ -37,7 +37,12 @@ export const LoginForm: React.FC = () => {
       if (response.needs_onboarding && response.onboarding_type === "mentor") {
         navigate("/mentor/onboarding");
       } else {
-        navigate("/dashboard");
+        // Redirect based on user type
+        if (response.user?.user_type === "mentor") {
+          navigate("/mentor-dashboard");
+        } else {
+          navigate("/dashboard");
+        }
       }
     } catch (err: any) {
       setError(err.response?.data?.detail || "Login failed. Please try again.");

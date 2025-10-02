@@ -40,7 +40,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
       if (accessToken && !tokenManager.isTokenExpired(accessToken)) {
         try {
-          const userProfile = localStorage.getItem('user');
+          const userProfile = localStorage.getItem("user");
           if (userProfile) {
             setUser(JSON.parse(userProfile));
           }
@@ -60,9 +60,9 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       setIsLoading(true);
       const response = await authApi.login({ email, password });
       const userProfile = await authApi.getProfile();
-      localStorage.setItem('user', JSON.stringify(userProfile));
-      setUser(response.user);
-      return response; // Return full response including onboarding info
+      localStorage.setItem("user", JSON.stringify(userProfile));
+      setUser(userProfile); // Use the detailed profile instead of response.user
+      return { ...response, user: userProfile }; // Return response with complete user info
     } catch (error) {
       throw error;
     } finally {

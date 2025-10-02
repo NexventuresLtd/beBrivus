@@ -157,7 +157,7 @@ class MentorshipSession(models.Model):
         ordering = ['-scheduled_start']
     
     def __str__(self):
-        return f"Session: {self.mentorship_request.mentee.full_name} with {self.mentorship_request.mentor.user.full_name}"
+        return f"Session: {self.mentee} with {self.mentee}"
 
 
 class MentorReview(models.Model):

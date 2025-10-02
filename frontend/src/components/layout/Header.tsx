@@ -33,7 +33,14 @@ export const Header: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
+            <Link
+              to={
+                isAuthenticated && user?.user_type === "mentor"
+                  ? "/mentor-dashboard"
+                  : "/"
+              }
+              className="flex items-center space-x-2"
+            >
               <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">B</span>
               </div>
@@ -44,7 +51,7 @@ export const Header: React.FC = () => {
           </div>
 
           {/* Navigation - Desktop */}
-          {isAuthenticated && (
+          {isAuthenticated && user?.user_type !== "mentor" && (
             <nav className="hidden md:flex items-center space-x-8">
               <Link
                 to="/opportunities"
@@ -87,6 +94,26 @@ export const Header: React.FC = () => {
               >
                 <Bot className="w-4 h-4" />
                 <span>AI Coach</span>
+              </Link>
+            </nav>
+          )}
+
+          {/* Mentor Navigation - Simple header for mentors */}
+          {isAuthenticated && user?.user_type === "mentor" && (
+            <nav className="hidden md:flex items-center space-x-8">
+              <Link
+                to="/mentor-dashboard"
+                className="flex items-center space-x-1 text-secondary-700 hover:text-primary-600 transition-colors"
+              >
+                <BarChart3 className="w-4 h-4" />
+                <span>Dashboard</span>
+              </Link>
+              <Link
+                to="/mentorship"
+                className="flex items-center space-x-1 text-secondary-700 hover:text-primary-600 transition-colors"
+              >
+                <Users className="w-4 h-4" />
+                <span>Mentorship</span>
               </Link>
             </nav>
           )}
@@ -147,32 +174,36 @@ export const Header: React.FC = () => {
                         </Link>
                       )}
                     </MenuItem>
-                    <MenuItem>
-                      {({ focus }) => (
-                        <Link
-                          to="/analytics"
-                          className={`${
-                            focus ? "bg-secondary-50" : ""
-                          } flex items-center space-x-2 px-4 py-2 text-sm text-secondary-700`}
-                        >
-                          <BarChart3 className="w-4 h-4" />
-                          <span>Analytics</span>
-                        </Link>
-                      )}
-                    </MenuItem>
-                    <MenuItem>
-                      {({ focus }) => (
-                        <Link
-                          to="/achievements"
-                          className={`${
-                            focus ? "bg-secondary-50" : ""
-                          } flex items-center space-x-2 px-4 py-2 text-sm text-secondary-700`}
-                        >
-                          <Gift className="w-4 h-4" />
-                          <span>Achievements</span>
-                        </Link>
-                      )}
-                    </MenuItem>
+                    {user?.user_type !== "mentor" && (
+                      <>
+                        <MenuItem>
+                          {({ focus }) => (
+                            <Link
+                              to="/analytics"
+                              className={`${
+                                focus ? "bg-secondary-50" : ""
+                              } flex items-center space-x-2 px-4 py-2 text-sm text-secondary-700`}
+                            >
+                              <BarChart3 className="w-4 h-4" />
+                              <span>Analytics</span>
+                            </Link>
+                          )}
+                        </MenuItem>
+                        <MenuItem>
+                          {({ focus }) => (
+                            <Link
+                              to="/achievements"
+                              className={`${
+                                focus ? "bg-secondary-50" : ""
+                              } flex items-center space-x-2 px-4 py-2 text-sm text-secondary-700`}
+                            >
+                              <Gift className="w-4 h-4" />
+                              <span>Achievements</span>
+                            </Link>
+                          )}
+                        </MenuItem>
+                      </>
+                    )}
                     <hr className="my-1 border-secondary-200" />
                     <MenuItem>
                       {({ focus }) => (
