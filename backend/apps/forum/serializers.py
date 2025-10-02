@@ -110,7 +110,7 @@ class DiscussionListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Discussion
         fields = [
-            'id', 'title', 'discussion_type', 'author', 'category',
+            'id', 'title', 'content', 'discussion_type', 'author', 'category',
             'views_count', 'likes_count', 'replies_count',
             'is_pinned', 'is_locked', 'is_resolved',
             'created_at', 'updated_at', 'last_activity',

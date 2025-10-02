@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Search,
   Users,
@@ -14,9 +14,17 @@ import {
 import { useAuth } from "../contexts/AuthContext";
 import { Layout } from "../components/layout";
 import { Button, Card, CardHeader, CardBody, Badge } from "../components/ui";
+import { useNavigate } from "react-router-dom";
 
 export const DashboardPage: React.FC = () => {
   const { user } = useAuth();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (user?.user_type === "mentor") {
+      navigate("/mentor-dashboard");
+    }
+  }, []);
 
   return (
     <Layout>

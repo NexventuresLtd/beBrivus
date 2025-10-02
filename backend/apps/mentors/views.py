@@ -274,7 +274,7 @@ class BookMentorSessionView(APIView):
             # Check availability
             availability = MentorAvailability.objects.filter(
                 mentor=mentor_profile,
-                start_time=serializer.validated_data['start_time'],
+                start_time__lte=serializer.validated_data['start_time'],
                 is_available=True
             ).first()
 
@@ -589,7 +589,7 @@ class MentorDashboardViewSet(viewsets.GenericViewSet):
         now = timezone.now()
         upcoming_sessions = MentorshipSession.objects.filter(
             mentor=mentor_profile,
-            status='in_progress',
+            status='confirmed',
             scheduled_start__gte=now
         ).select_related('mentee').order_by('scheduled_start')
         serializer = MentorSessionSerializer(upcoming_sessions, many=True)
@@ -670,7 +670,7 @@ class MentorDashboardViewSet(viewsets.GenericViewSet):
             )
         
         # Update session
-        session.status = 'in_progress'
+        session.status = 'confirmed'
         session.mentor_notes = mentor_notes
         if meeting_link:
             session.meeting_link = meeting_link

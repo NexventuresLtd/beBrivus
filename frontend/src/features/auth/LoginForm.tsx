@@ -39,6 +39,7 @@ export const LoginForm: React.FC = () => {
       } else {
         // Redirect based on user type
         if (response.user?.user_type === "mentor") {
+          console.log("User type:", response.user?.user_type);
           navigate("/mentor-dashboard");
         } else {
           navigate("/dashboard");

@@ -33,12 +33,8 @@ export const Header: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link
-              to={
-                isAuthenticated && user?.user_type === "mentor"
-                  ? "/mentor-dashboard"
-                  : "/"
-              }
+            <Link 
+              to={isAuthenticated && user?.user_type === 'mentor' ? "/mentor-dashboard" : "/"} 
               className="flex items-center space-x-2"
             >
               <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
@@ -51,7 +47,7 @@ export const Header: React.FC = () => {
           </div>
 
           {/* Navigation - Desktop */}
-          {isAuthenticated && user?.user_type !== "mentor" && (
+          {isAuthenticated && user?.user_type !== 'mentor' && (
             <nav className="hidden md:flex items-center space-x-8">
               <Link
                 to="/opportunities"
@@ -99,7 +95,7 @@ export const Header: React.FC = () => {
           )}
 
           {/* Mentor Navigation - Simple header for mentors */}
-          {isAuthenticated && user?.user_type === "mentor" && (
+          {/* {isAuthenticated && user?.user_type === 'mentor' && (
             <nav className="hidden md:flex items-center space-x-8">
               <Link
                 to="/mentor-dashboard"
@@ -116,7 +112,7 @@ export const Header: React.FC = () => {
                 <span>Mentorship</span>
               </Link>
             </nav>
-          )}
+          )} */}
 
           {/* Right side */}
           <div className="flex items-center space-x-4">
@@ -174,7 +170,7 @@ export const Header: React.FC = () => {
                         </Link>
                       )}
                     </MenuItem>
-                    {user?.user_type !== "mentor" && (
+                    {user?.user_type !== 'mentor' && (
                       <>
                         <MenuItem>
                           {({ focus }) => (

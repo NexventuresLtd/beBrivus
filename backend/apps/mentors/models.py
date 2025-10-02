@@ -119,6 +119,7 @@ class MentorshipSession(models.Model):
         ('rejected', 'Rejected'),
         ('scheduled', 'Scheduled'),
         ('in_progress', 'In Progress'),
+        ('confirmed', 'Confirmed'),
         ('completed', 'Completed'),
         ('cancelled', 'Cancelled'),
         ('no_show', 'No Show'),

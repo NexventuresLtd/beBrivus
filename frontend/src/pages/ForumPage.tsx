@@ -28,7 +28,7 @@ interface Discussion {
   reply_count: number;
   like_count: number;
   last_activity: string;
-  tags: string[];
+  tag_list: string[];
   user_liked: boolean;
   ai_summary?: string;
   created_at: string;
@@ -281,10 +281,10 @@ export const ForumPage: React.FC = () => {
                         </div>
                       </Link>
 
-                      {/* Tags */}
-                      {discussion.tags.length > 0 && (
+                      {/* tag_list */}
+                      {discussion.tag_list.length > 0 && (
                         <div className="flex flex-wrap gap-2 mb-4">
-                          {discussion.tags.slice(0, 4).map((tag, index) => (
+                          {discussion.tag_list.slice(0, 4).map((tag, index) => (
                             <span
                               key={index}
                               className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-neutral-100 text-neutral-600 hover:bg-neutral-200 transition-colors cursor-pointer"
@@ -292,9 +292,9 @@ export const ForumPage: React.FC = () => {
                               {tag}
                             </span>
                           ))}
-                          {discussion.tags.length > 4 && (
+                          {discussion.tag_list.length > 4 && (
                             <span className="text-xs text-neutral-500 px-2 py-1">
-                              +{discussion.tags.length - 4} more
+                              +{discussion.tag_list.length - 4} more
                             </span>
                           )}
                         </div>

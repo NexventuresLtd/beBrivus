@@ -361,7 +361,7 @@ const MentorDashboard: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex items-center space-x-2">
-                    {session.status === "in_progress" && (
+                    {session.status === "confirmed" && (
                       <Button
                         size="sm"
                         onClick={() => handleStartSession(session)}
@@ -376,7 +376,7 @@ const MentorDashboard: React.FC = () => {
                         Start
                       </Button>
                     )}
-                    {session.status === "inprogress" && (
+                    {session.status === "in_progress" && (
                       <Button
                         size="sm"
                         variant="outline"
@@ -433,7 +433,6 @@ const MentorDashboard: React.FC = () => {
                   <h3 className="text-xl font-bold text-secondary-900">
                     {session.mentee_name}
                   </h3>
-                  <p className="text-neutral-600">{session.mentee.email}</p>
                   <div className="flex items-center space-x-4 mt-2 text-sm text-neutral-500">
                     <span className="flex items-center space-x-1">
                       <Calendar className="w-4 h-4" />
@@ -533,7 +532,6 @@ const MentorDashboard: React.FC = () => {
                   <h3 className="text-xl font-bold text-secondary-900">
                     {session.mentee_name}
                   </h3>
-                  <p className="text-neutral-600">{session.mentee.email}</p>
                   <div className="flex items-center space-x-4 mt-2 text-sm text-neutral-500">
                     <span className="flex items-center space-x-1">
                       <Calendar className="w-4 h-4" />

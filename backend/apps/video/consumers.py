@@ -15,16 +15,16 @@ class VideoCallConsumer(AsyncWebsocketConsumer):
         self.room_group_name = f'video_call_{self.session_id}'
         
         # Check if user is authenticated and authorized for this session
-        if isinstance(self.scope['user'], AnonymousUser):
-            await self.close(code=4001)  # Unauthorized
-            return
+        # if isinstance(self.scope['user'], AnonymousUser):
+        #     await self.close(code=4001)  # Unauthorized
+        #     print(f"Connecting to video call session {self.session_id} {self.scope['user']}")
+        #     return
             
-        print(f"Connecting to video call session {self.session_id} {self.room_group_name} {self.channel_name}")
-        # Verify user has access to this session
-        has_access = await self.check_session_access()
-        if not has_access:
-            await self.close(code=4003)  # Forbidden
-            return
+        # # Verify user has access to this session
+        # has_access = await self.check_session_access()
+        # if not has_access:
+        #     await self.close(code=4003)  # Forbidden
+        #     return
 
         # Join room group
         await self.channel_layer.group_add(
