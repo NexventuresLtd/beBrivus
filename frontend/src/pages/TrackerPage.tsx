@@ -362,6 +362,294 @@ const AddApplicationModal: React.FC<{
   );
 };
 
+// View Application Modal Component
+const ViewApplicationModal: React.FC<{
+  isOpen: boolean;
+  application: Application;
+  onClose: () => void;
+  onEdit: () => void;
+}> = ({ isOpen, application, onClose, onEdit }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+      <div className="bg-white rounded-lg p-6 w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+        <div className="flex justify-between items-center mb-6">
+          <h2 className="text-2xl font-semibold">Application Details</h2>
+          <div className="flex gap-2">
+            <Button variant="outline" size="sm" onClick={onEdit}>
+              <Edit className="h-4 w-4 mr-2" />
+              Edit
+            </Button>
+            <Button variant="ghost" size="sm" onClick={onClose}>
+              <X className="h-4 w-4" />
+            </Button>
+          </div>
+        </div>
+
+        <div className="space-y-6">
+          {/* Job Information */}
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              {application.opportunity_title}
+            </h3>
+            <p className="text-lg text-gray-700 mb-1">
+              {application.company_name}
+            </p>
+            <p className="text-gray-600">{application.location}</p>
+            <div className="flex items-center gap-2 mt-2">
+              <Badge
+                variant={getStatusColor(application.status)}
+                className="flex items-center gap-1"
+              >
+                {getStatusIcon(application.status)}
+                {getStatusLabel(application.status)}
+              </Badge>
+            </div>
+          </div>
+
+          {/* Details Grid */}
+          <div className="grid grid-cols-2 gap-4 p-4 bg-gray-50 rounded-lg">
+            <div>
+              <p className="text-sm font-medium text-gray-500 mb-1">
+                Employment Type
+              </p>
+              <p className="text-gray-900">
+                {application.employment_type || "Not specified"}
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-medium text-gray-500 mb-1">
+                Salary Range
+              </p>
+              <p className="text-gray-900">{application.salary_range}</p>
+            </div>
+            <div>
+              <p className="text-sm font-medium text-gray-500 mb-1">
+                Submitted Date
+              </p>
+              <p className="text-gray-900">
+                {application.submitted_at
+                  ? new Date(application.submitted_at).toLocaleDateString()
+                  : "Not submitted yet"}
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-medium text-gray-500 mb-1">
+                Days Since Applied
+              </p>
+              <p className="text-gray-900">
+                {application.days_since_applied} days
+              </p>
+            </div>
+            {application.interview_date && (
+              <div className="col-span-2">
+                <p className="text-sm font-medium text-gray-500 mb-1">
+                  Interview Date
+                </p>
+                <p className="text-gray-900">
+                  {new Date(application.interview_date).toLocaleDateString()} at{" "}
+                  {new Date(application.interview_date).toLocaleTimeString()}
+                </p>
+              </div>
+            )}
+          </div>
+
+          {/* Notes */}
+          {application.notes && (
+            <div>
+              <h4 className="text-sm font-medium text-gray-900 mb-2">Notes</h4>
+              <p className="text-gray-700 whitespace-pre-wrap bg-gray-50 p-4 rounded-lg">
+                {application.notes}
+              </p>
+            </div>
+          )}
+
+          {/* Cover Letter */}
+          {application.cover_letter && (
+            <div>
+              <h4 className="text-sm font-medium text-gray-900 mb-2">
+                Cover Letter
+              </h4>
+              <p className="text-gray-700 whitespace-pre-wrap bg-gray-50 p-4 rounded-lg">
+                {application.cover_letter}
+              </p>
+            </div>
+          )}
+
+          {/* Next Action */}
+          {application.next_action_date && (
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+              <div className="flex items-center gap-2 mb-2">
+                <AlertCircle className="h-5 w-5 text-yellow-600" />
+                <h4 className="text-sm font-medium text-gray-900">
+                  Upcoming Action
+                </h4>
+              </div>
+              <p className="text-sm text-gray-700">
+                Follow up required by{" "}
+                {new Date(application.next_action_date).toLocaleDateString()}
+              </p>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Edit Application Modal Component
+const EditApplicationModal: React.FC<{
+  isOpen: boolean;
+  application: Application;
+  onClose: () => void;
+  onSubmit: (data: any) => void;
+}> = ({ isOpen, application, onClose, onSubmit }) => {
+  const [formData, setFormData] = useState({
+    status: application.status,
+    submitted_at: application.submitted_at
+      ? new Date(application.submitted_at).toISOString().split("T")[0]
+      : "",
+    interview_date: application.interview_date
+      ? new Date(application.interview_date).toISOString().slice(0, 16)
+      : "",
+    notes: application.notes || "",
+    cover_letter: application.cover_letter || "",
+  });
+
+  useEffect(() => {
+    if (isOpen) {
+      setFormData({
+        status: application.status,
+        submitted_at: application.submitted_at
+          ? new Date(application.submitted_at).toISOString().split("T")[0]
+          : "",
+        interview_date: application.interview_date
+          ? new Date(application.interview_date).toISOString().slice(0, 16)
+          : "",
+        notes: application.notes || "",
+        cover_letter: application.cover_letter || "",
+      });
+    }
+  }, [isOpen, application]);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    onSubmit({
+      ...formData,
+      interview_date: formData.interview_date || null,
+    });
+  };
+
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+      <div className="bg-white rounded-lg p-6 w-full max-w-md max-h-[90vh] overflow-y-auto">
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-xl font-semibold">Edit Application</h2>
+          <Button variant="ghost" size="sm" onClick={onClose}>
+            <X className="h-4 w-4" />
+          </Button>
+        </div>
+
+        <form onSubmit={handleSubmit} className="space-y-4">
+          {/* Read-only job info */}
+          <div className="bg-gray-50 p-4 rounded-lg">
+            <p className="font-semibold text-gray-900">
+              {application.opportunity_title}
+            </p>
+            <p className="text-sm text-gray-600">{application.company_name}</p>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">Status *</label>
+            <select
+              value={formData.status}
+              onChange={(e) =>
+                setFormData({ ...formData, status: e.target.value })
+              }
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+              required
+            >
+              <option value="draft">Draft</option>
+              <option value="submitted">Submitted</option>
+              <option value="under_review">Under Review</option>
+              <option value="interview_scheduled">Interview Scheduled</option>
+              <option value="accepted">Accepted</option>
+              <option value="rejected">Rejected</option>
+              <option value="withdrawn">Withdrawn</option>
+            </select>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">
+              Submitted Date
+            </label>
+            <Input
+              type="date"
+              value={formData.submitted_at}
+              onChange={(e) =>
+                setFormData({ ...formData, submitted_at: e.target.value })
+              }
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">
+              Interview Date & Time
+            </label>
+            <Input
+              type="datetime-local"
+              value={formData.interview_date}
+              onChange={(e) =>
+                setFormData({ ...formData, interview_date: e.target.value })
+              }
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">Notes</label>
+            <textarea
+              value={formData.notes}
+              onChange={(e) =>
+                setFormData({ ...formData, notes: e.target.value })
+              }
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+              rows={3}
+              placeholder="Add any notes about this application..."
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">
+              Cover Letter
+            </label>
+            <textarea
+              value={formData.cover_letter}
+              onChange={(e) =>
+                setFormData({ ...formData, cover_letter: e.target.value })
+              }
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+              rows={4}
+              placeholder="Your cover letter content..."
+            />
+          </div>
+
+          <div className="flex gap-2 pt-4">
+            <Button type="submit" className="flex-1">
+              Save Changes
+            </Button>
+            <Button type="button" variant="outline" onClick={onClose}>
+              Cancel
+            </Button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
+
 export const TrackerPage: React.FC = () => {
   const [applications, setApplications] = useState<Application[]>([]);
   const [loading, setLoading] = useState(true);
@@ -371,6 +659,10 @@ export const TrackerPage: React.FC = () => {
 
   const [sortBy, setSortBy] = useState<string>("date");
   const [showAddModal, setShowAddModal] = useState(false);
+  const [showViewModal, setShowViewModal] = useState(false);
+  const [showEditModal, setShowEditModal] = useState(false);
+  const [selectedApplication, setSelectedApplication] =
+    useState<Application | null>(null);
 
   // Load applications on component mount
   useEffect(() => {
@@ -413,6 +705,37 @@ export const TrackerPage: React.FC = () => {
     } catch (err) {
       console.error("Failed to create application:", err);
       alert("Failed to create application. Please try again.");
+    }
+  };
+
+  const handleViewApplication = (application: Application) => {
+    setSelectedApplication(application);
+    setShowViewModal(true);
+  };
+
+  const handleEditApplication = (application: Application) => {
+    setSelectedApplication(application);
+    setShowEditModal(true);
+  };
+
+  const handleUpdateApplication = async (data: any) => {
+    if (!selectedApplication) return;
+
+    try {
+      const updatedApplication = await applicationsApi.updateApplication(
+        selectedApplication.id,
+        data
+      );
+      setApplications(
+        applications.map((app) =>
+          app.id === selectedApplication.id ? updatedApplication : app
+        )
+      );
+      setShowEditModal(false);
+      setSelectedApplication(null);
+    } catch (err) {
+      console.error("Failed to update application:", err);
+      alert("Failed to update application. Please try again.");
     }
   };
 
@@ -522,9 +845,9 @@ export const TrackerPage: React.FC = () => {
               <div>
                 <p className="text-sm text-gray-600">In Progress</p>
                 <p className="text-2xl font-bold text-gray-900">
-                  {(statusCounts["applied"] || 0) +
+                  {(statusCounts["submitted"] || 0) +
                     (statusCounts["under_review"] || 0) +
-                    (statusCounts["interview"] || 0)}
+                    (statusCounts["interview_scheduled"] || 0)}
                 </p>
               </div>
             </div>
@@ -535,9 +858,9 @@ export const TrackerPage: React.FC = () => {
                 <CheckCircle className="h-5 w-5 text-green-600" />
               </div>
               <div>
-                <p className="text-sm text-gray-600">Offers</p>
+                <p className="text-sm text-gray-600">Accepted</p>
                 <p className="text-2xl font-bold text-gray-900">
-                  {statusCounts["offer"] || 0}
+                  {statusCounts["accepted"] || 0}
                 </p>
               </div>
             </div>
@@ -564,23 +887,46 @@ export const TrackerPage: React.FC = () => {
               Upcoming Actions
             </h2>
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {upcomingActions.map((app) => (
                   <div
                     key={app.id}
-                    className="flex items-center justify-between"
+                    className="flex items-center justify-between p-3 rounded-lg hover:shadow-sm transition-shadow"
                   >
-                    <div>
-                      <span className="font-medium">Follow up required</span>
-                      <span className="text-gray-600 ml-2">
-                        for {app.company_name}
-                      </span>
+                    <div className="flex items-center gap-3 flex-1">
+                      <div className="flex-shrink-0">
+                        <AlertCircle className="h-5 w-5 text-yellow-600" />
+                      </div>
+                      <div className="flex-1">
+                        <p className="font-medium text-gray-900">
+                          Follow up required for {app.opportunity_title}
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          {app.company_name} • {app.location}
+                        </p>
+                      </div>
                     </div>
-                    <span className="text-sm text-gray-500">
-                      {app.next_action_date
-                        ? new Date(app.next_action_date).toLocaleDateString()
-                        : "Soon"}
-                    </span>
+                    <div className="flex items-center gap-3">
+                      <div className="text-right">
+                        <p className="text-sm font-medium text-gray-900">
+                          {app.next_action_date
+                            ? new Date(
+                                app.next_action_date
+                              ).toLocaleDateString()
+                            : "Soon"}
+                        </p>
+                        <p className="text-xs text-gray-500">
+                          {app.days_since_applied} days since applied
+                        </p>
+                      </div>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => handleViewApplication(app)}
+                      >
+                        View
+                      </Button>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -649,6 +995,8 @@ export const TrackerPage: React.FC = () => {
             <ApplicationCard
               key={application.id}
               application={application}
+              onView={handleViewApplication}
+              onEdit={handleEditApplication}
               onDelete={handleDeleteApplication}
             />
           ))}
@@ -676,6 +1024,35 @@ export const TrackerPage: React.FC = () => {
           onClose={() => setShowAddModal(false)}
           onSubmit={handleAddApplication}
         />
+
+        {/* View Application Modal */}
+        {selectedApplication && (
+          <ViewApplicationModal
+            isOpen={showViewModal}
+            application={selectedApplication}
+            onClose={() => {
+              setShowViewModal(false);
+              setSelectedApplication(null);
+            }}
+            onEdit={() => {
+              setShowViewModal(false);
+              setShowEditModal(true);
+            }}
+          />
+        )}
+
+        {/* Edit Application Modal */}
+        {selectedApplication && (
+          <EditApplicationModal
+            isOpen={showEditModal}
+            application={selectedApplication}
+            onClose={() => {
+              setShowEditModal(false);
+              setSelectedApplication(null);
+            }}
+            onSubmit={handleUpdateApplication}
+          />
+        )}
       </div>
     </Layout>
   );

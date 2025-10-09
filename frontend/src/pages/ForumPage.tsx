@@ -24,12 +24,12 @@ interface Discussion {
   };
   is_pinned: boolean;
   is_locked: boolean;
-  view_count: number;
-  reply_count: number;
-  like_count: number;
+  views_count: number;
+  replies_count: number;
+  likes_count: number;
   last_activity: string;
   tag_list: string[];
-  user_liked: boolean;
+  is_liked_by_user: boolean;
   ai_summary?: string;
   created_at: string;
 }
@@ -37,11 +37,11 @@ interface Discussion {
 interface ForumCategory {
   id: number;
   name: string;
-  description: string;
   slug: string;
+  description: string;
   icon: string;
   color: string;
-  discussion_count: number;
+  discussions_count: number;
   latest_discussion?: Discussion;
 }
 
@@ -114,8 +114,18 @@ export const ForumPage: React.FC = () => {
           {/* Search Bar */}
           <div className="flex-1 relative">
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-              <svg className="h-5 w-5 text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              <svg
+                className="h-5 w-5 text-neutral-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
               </svg>
             </div>
             <input
@@ -142,8 +152,18 @@ export const ForumPage: React.FC = () => {
               ))}
             </select>
             <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-              <svg className="w-4 h-4 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+              <svg
+                className="w-4 h-4 text-neutral-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
               </svg>
             </div>
           </div>
@@ -162,19 +182,39 @@ export const ForumPage: React.FC = () => {
               <option value="-view_count">Most Viewed</option>
             </select>
             <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-              <svg className="w-4 h-4 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+              <svg
+                className="w-4 h-4 text-neutral-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
               </svg>
             </div>
           </div>
 
           {/* New Post Button */}
-          <Link 
-            to="/forum/new" 
+          <Link
+            to="/forum/new"
             className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 transition-colors whitespace-nowrap"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M12 4v16m8-8H4"
+              ></path>
             </svg>
             New Post
           </Link>
@@ -184,7 +224,10 @@ export const ForumPage: React.FC = () => {
         {isLoading ? (
           <div className="space-y-6">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-2xl shadow-sm border border-neutral-100 overflow-hidden animate-pulse">
+              <div
+                key={i}
+                className="bg-white rounded-2xl shadow-sm border border-neutral-100 overflow-hidden animate-pulse"
+              >
                 <div className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-neutral-200"></div>
@@ -232,17 +275,21 @@ export const ForumPage: React.FC = () => {
                   <div className="flex items-start gap-4">
                     {/* User Avatar */}
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center text-white font-semibold text-lg flex-shrink-0">
-                      {(discussion.author.first_name?.[0] || discussion.author.username[0]).toUpperCase()}
+                      {(
+                        discussion.author.first_name?.[0] ||
+                        discussion.author.username[0]
+                      ).toUpperCase()}
                     </div>
 
                     <div className="flex-1 min-w-0">
                       {/* User Info and Time */}
                       <div className="flex items-center gap-2 mb-1">
                         <h4 className="font-semibold text-neutral-900">
-                          {discussion.author.first_name 
-                            ? `${discussion.author.first_name} ${discussion.author.last_name || ''}`.trim()
-                            : discussion.author.username
-                          }
+                          {discussion.author.first_name
+                            ? `${discussion.author.first_name} ${
+                                discussion.author.last_name || ""
+                              }`.trim()
+                            : discussion.author.username}
                         </h4>
                         <span className="text-neutral-500 text-sm">•</span>
                         <time className="text-neutral-500 text-sm">
@@ -270,13 +317,18 @@ export const ForumPage: React.FC = () => {
                       </div>
 
                       {/* Post Content */}
-                      <Link to={`/forum/discussion/${discussion.slug}`} className="block group">
+                      <Link
+                        to={`/forum/discussion/${discussion.slug}`}
+                        className="block group"
+                      >
                         <h2 className="text-xl font-bold text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors line-clamp-2">
                           {discussion.title}
                         </h2>
 
                         <div className="text-neutral-700 mb-4 line-clamp-3 leading-relaxed">
-                          {discussion.content.replace(/<[^>]*>/g, "").substring(0, 200)}
+                          {discussion.content
+                            .replace(/<[^>]*>/g, "")
+                            .substring(0, 200)}
                           {discussion.content.length > 200 && "..."}
                         </div>
                       </Link>
@@ -305,8 +357,18 @@ export const ForumPage: React.FC = () => {
                         <div className="bg-gradient-to-r from-primary-50 to-secondary-50 border border-primary-200 rounded-xl p-4 mb-4">
                           <div className="flex items-center gap-2 mb-2">
                             <div className="w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center">
-                              <svg className="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                              <svg
+                                className="w-4 h-4 text-primary-600"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="2"
+                                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                                ></path>
                               </svg>
                             </div>
                             <span className="text-primary-700 font-medium text-sm">
@@ -330,16 +392,30 @@ export const ForumPage: React.FC = () => {
                       <button
                         onClick={() => likeMutation.mutate(discussion.id)}
                         className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all duration-200 ${
-                          discussion.user_liked
+                          discussion.is_liked_by_user
                             ? "bg-error-100 text-error-600 hover:bg-error-200"
                             : "text-neutral-600 hover:bg-neutral-200 hover:text-error-600"
                         }`}
                       >
-                        <svg className="w-5 h-5" fill={discussion.user_liked ? "currentColor" : "none"} stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        <svg
+                          className="w-5 h-5"
+                          fill={
+                            discussion.is_liked_by_user
+                              ? "currentColor"
+                              : "none"
+                          }
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                          ></path>
                         </svg>
                         <span className="font-medium text-sm">
-                          {discussion.like_count}
+                          {discussion.likes_count}
                         </span>
                       </button>
 
@@ -348,30 +424,65 @@ export const ForumPage: React.FC = () => {
                         to={`/forum/discussion/${discussion.slug}`}
                         className="flex items-center gap-2 px-3 py-2 rounded-lg text-neutral-600 hover:bg-neutral-200 hover:text-primary-600 transition-all duration-200"
                       >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        <svg
+                          className="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                          ></path>
                         </svg>
                         <span className="font-medium text-sm">
-                          {discussion.reply_count}
+                          {discussion.replies_count}
                         </span>
                       </Link>
 
                       {/* Views */}
                       <div className="flex items-center gap-2 px-3 py-2 text-neutral-500">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        <svg
+                          className="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                          ></path>
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                          ></path>
                         </svg>
                         <span className="font-medium text-sm">
-                          {discussion.view_count}
+                          {discussion.views_count}
                         </span>
                       </div>
                     </div>
 
                     {/* Share Button */}
                     <button className="flex items-center gap-2 px-3 py-2 rounded-lg text-neutral-600 hover:bg-neutral-200 hover:text-primary-600 transition-all duration-200">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"></path>
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"
+                        ></path>
                       </svg>
                       <span className="font-medium text-sm">Share</span>
                     </button>
@@ -389,7 +500,9 @@ export const ForumPage: React.FC = () => {
               <span className="text-4xl">�</span>
             </div>
             <h3 className="text-2xl font-bold text-neutral-900 mb-3">
-              {searchQuery || selectedCategory ? "No posts found" : "Start the conversation!"}
+              {searchQuery || selectedCategory
+                ? "No posts found"
+                : "Start the conversation!"}
             </h3>
             <p className="text-neutral-600 mb-8 max-w-md mx-auto leading-relaxed">
               {searchQuery || selectedCategory
@@ -397,12 +510,22 @@ export const ForumPage: React.FC = () => {
                 : "Be the pioneer! Share your entrepreneurial journey, ask questions, or spark meaningful discussions that inspire others."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                to="/forum/new" 
+              <Link
+                to="/forum/new"
                 className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-full font-medium flex items-center gap-2 transition-all duration-200 shadow-lg hover:shadow-xl"
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M12 4v16m8-8H4"
+                  ></path>
                 </svg>
                 Create First Post
               </Link>

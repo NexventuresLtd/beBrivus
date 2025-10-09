@@ -158,22 +158,33 @@ class DiscussionViewSet(viewsets.ModelViewSet):
     
     @action(detail=True, methods=['post', 'delete'])
     def like(self, request, pk=None):
-        """Like or unlike a discussion"""
+        """Like or unlike a discussion (toggle)"""
         discussion = self.get_object()
         
         if request.method == 'POST':
-            like, created = DiscussionLike.objects.get_or_create(
+            # Check if already liked
+            existing_like = DiscussionLike.objects.filter(
                 user=request.user,
                 discussion=discussion
-            )
+            ).first()
             
-            if created:
+            if existing_like:
+                # Unlike - delete the like
+                existing_like.delete()
+                Discussion.objects.filter(id=discussion.id).update(
+                    likes_count=F('likes_count') - 1
+                )
+                return Response({'liked': False, 'message': 'Unliked'})
+            else:
+                # Like - create the like
+                DiscussionLike.objects.create(
+                    user=request.user,
+                    discussion=discussion
+                )
                 Discussion.objects.filter(id=discussion.id).update(
                     likes_count=F('likes_count') + 1
                 )
-                return Response({'liked': True})
-            else:
-                return Response({'liked': True, 'message': 'Already liked'})
+                return Response({'liked': True, 'message': 'Liked'})
         
         elif request.method == 'DELETE':
             deleted_count = DiscussionLike.objects.filter(
@@ -296,22 +307,33 @@ class ReplyViewSet(viewsets.ModelViewSet):
     
     @action(detail=True, methods=['post', 'delete'])
     def like(self, request, discussion_pk=None, pk=None):
-        """Like or unlike a reply"""
+        """Like or unlike a reply (toggle)"""
         reply = self.get_object()
         
         if request.method == 'POST':
-            like, created = DiscussionLike.objects.get_or_create(
+            # Check if already liked
+            existing_like = DiscussionLike.objects.filter(
                 user=request.user,
                 reply=reply
-            )
+            ).first()
             
-            if created:
+            if existing_like:
+                # Unlike - delete the like
+                existing_like.delete()
+                Reply.objects.filter(id=reply.id).update(
+                    likes_count=F('likes_count') - 1
+                )
+                return Response({'liked': False, 'message': 'Unliked'})
+            else:
+                # Like - create the like
+                DiscussionLike.objects.create(
+                    user=request.user,
+                    reply=reply
+                )
                 Reply.objects.filter(id=reply.id).update(
                     likes_count=F('likes_count') + 1
                 )
-                return Response({'liked': True})
-            else:
-                return Response({'liked': True, 'message': 'Already liked'})
+                return Response({'liked': True, 'message': 'Liked'})
         
         elif request.method == 'DELETE':
             deleted_count = DiscussionLike.objects.filter(

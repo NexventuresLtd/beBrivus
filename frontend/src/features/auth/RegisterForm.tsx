@@ -67,8 +67,12 @@ export const RegisterForm: React.FC = () => {
         <Card>
           <CardHeader>
             <div className="text-center">
-              <div className="mx-auto w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white font-bold text-xl">B</span>
+              <div className="mx-auto my-4 rounded-lg flex items-center justify-center mb-4">
+                <img
+                  className="max-w-20"
+                  src="/beBivus.png"
+                  alt="beBrivus Logo"
+                />
               </div>
               <h2 className="text-2xl font-bold text-secondary-900">
                 Join beBrivus

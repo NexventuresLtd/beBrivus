@@ -405,54 +405,6 @@ export const OpportunitiesPage: React.FC = () => {
             </CardBody>
           </Card>
 
-          {/* AI Recommendations */}
-          <Card className="mb-8 bg-gradient-to-r from-primary-50 to-secondary-50">
-            <CardBody className="p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="bg-primary-100 p-2 rounded-lg">
-                  <Star className="h-5 w-5 text-primary-600" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-neutral-900">
-                    AI-Powered Recommendations
-                  </h3>
-                  <p className="text-neutral-600">
-                    Based on your profile and preferences
-                  </p>
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="bg-white p-4 rounded-lg">
-                  <h4 className="font-medium text-neutral-900 mb-2 flex items-center">
-                    <GraduationCap className="w-4 h-4 mr-2" />
-                    Academic Match
-                  </h4>
-                  <p className="text-sm text-neutral-600">
-                    92% alignment with your academic profile
-                  </p>
-                </div>
-                <div className="bg-white p-4 rounded-lg">
-                  <h4 className="font-medium text-neutral-900 mb-2 flex items-center">
-                    <DollarSign className="w-4 h-4 mr-2" />
-                    Funding Range
-                  </h4>
-                  <p className="text-sm text-neutral-600">
-                    $50K - $100K based on your field
-                  </p>
-                </div>
-                <div className="bg-white p-4 rounded-lg">
-                  <h4 className="font-medium text-neutral-900 mb-2 flex items-center">
-                    <MapPin className="w-4 h-4 mr-2" />
-                    Location Match
-                  </h4>
-                  <p className="text-sm text-neutral-600">
-                    International and US opportunities prioritized
-                  </p>
-                </div>
-              </div>
-            </CardBody>
-          </Card>
-
           {/* Results Summary */}
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-xl font-semibold text-neutral-900">

@@ -472,12 +472,6 @@ export const ResourcesPage: React.FC = () => {
                     <Filter className="w-4 h-4 mr-2" />
                     More Filters
                   </Button>
-
-                  {/* Upload Button for Admin Users */}
-                  <Button className="flex items-center">
-                    <Download className="w-4 h-4 mr-2" />
-                    Upload Resource
-                  </Button>
                 </div>
 
                 <div className="flex items-center gap-2">

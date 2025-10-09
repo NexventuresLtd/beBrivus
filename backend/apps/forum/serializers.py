@@ -14,7 +14,7 @@ class ForumCategorySerializer(serializers.ModelSerializer):
     
     class Meta:
         model = ForumCategory
-        fields = ['id', 'name', 'description', 'color', 'icon', 'is_active', 'order', 'discussions_count']
+        fields = ['id', 'name', 'slug', 'description', 'color', 'icon', 'is_active', 'order', 'discussions_count']
         read_only_fields = ['discussions_count']
     
     def get_discussions_count(self, obj):
@@ -110,7 +110,7 @@ class DiscussionListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Discussion
         fields = [
-            'id', 'title', 'content', 'discussion_type', 'author', 'category',
+            'id', 'title', 'slug', 'content', 'discussion_type', 'author', 'category',
             'views_count', 'likes_count', 'replies_count',
             'is_pinned', 'is_locked', 'is_resolved',
             'created_at', 'updated_at', 'last_activity',

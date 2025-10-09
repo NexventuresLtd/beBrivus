@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 from django.utils import timezone
+from django.utils.text import slugify
 from taggit.managers import TaggableManager
 
 
@@ -9,6 +10,7 @@ class ForumCategory(models.Model):
     Categories for forum discussions
     """
     name = models.CharField(max_length=100)
+    slug = models.SlugField(max_length=120, unique=True, blank=True)
     description = models.TextField(blank=True)
     color = models.CharField(max_length=7, default='#6366f1')  # Hex color
     icon = models.CharField(max_length=50, blank=True)  # Icon name/class
@@ -22,6 +24,11 @@ class ForumCategory(models.Model):
         db_table = 'forum_categories'
         ordering = ['order', 'name']
         verbose_name_plural = 'Forum Categories'
+    
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.name)
+        super().save(*args, **kwargs)
     
     def __str__(self):
         return self.name
@@ -40,6 +47,7 @@ class Discussion(models.Model):
     ]
     
     title = models.CharField(max_length=200)
+    slug = models.SlugField(max_length=220, unique=True, blank=True)
     content = models.TextField()
     discussion_type = models.CharField(max_length=20, choices=DISCUSSION_TYPES, default='discussion')
     
@@ -74,6 +82,17 @@ class Discussion(models.Model):
             models.Index(fields=['last_activity']),
             models.Index(fields=['created_at']),
         ]
+    
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            base_slug = slugify(self.title)
+            slug = base_slug
+            counter = 1
+            while Discussion.objects.filter(slug=slug).exists():
+                slug = f"{base_slug}-{counter}"
+                counter += 1
+            self.slug = slug
+        super().save(*args, **kwargs)
     
     def __str__(self):
         return self.title

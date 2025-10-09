@@ -33,21 +33,24 @@ export const Header: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link 
-              to={isAuthenticated && user?.user_type === 'mentor' ? "/mentor-dashboard" : "/"} 
+            <Link
+              to={
+                isAuthenticated && user?.user_type === "mentor"
+                  ? "/mentor-dashboard"
+                  : "/"
+              }
               className="flex items-center space-x-2"
             >
-              <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">B</span>
-              </div>
-              <span className="text-xl font-bold text-secondary-900">
-                beBrivus
-              </span>
+              <img
+                className="max-w-20"
+                src="/beBivus.png"
+                alt="beBrivus Logo"
+              />
             </Link>
           </div>
 
           {/* Navigation - Desktop */}
-          {isAuthenticated && user?.user_type !== 'mentor' && (
+          {isAuthenticated && user?.user_type !== "mentor" && (
             <nav className="hidden md:flex items-center space-x-8">
               <Link
                 to="/opportunities"
@@ -157,49 +160,6 @@ export const Header: React.FC = () => {
                         </Link>
                       )}
                     </MenuItem>
-                    <MenuItem>
-                      {({ focus }) => (
-                        <Link
-                          to="/settings"
-                          className={`${
-                            focus ? "bg-secondary-50" : ""
-                          } flex items-center space-x-2 px-4 py-2 text-sm text-secondary-700`}
-                        >
-                          <Settings className="w-4 h-4" />
-                          <span>Settings</span>
-                        </Link>
-                      )}
-                    </MenuItem>
-                    {user?.user_type !== 'mentor' && (
-                      <>
-                        <MenuItem>
-                          {({ focus }) => (
-                            <Link
-                              to="/analytics"
-                              className={`${
-                                focus ? "bg-secondary-50" : ""
-                              } flex items-center space-x-2 px-4 py-2 text-sm text-secondary-700`}
-                            >
-                              <BarChart3 className="w-4 h-4" />
-                              <span>Analytics</span>
-                            </Link>
-                          )}
-                        </MenuItem>
-                        <MenuItem>
-                          {({ focus }) => (
-                            <Link
-                              to="/achievements"
-                              className={`${
-                                focus ? "bg-secondary-50" : ""
-                              } flex items-center space-x-2 px-4 py-2 text-sm text-secondary-700`}
-                            >
-                              <Gift className="w-4 h-4" />
-                              <span>Achievements</span>
-                            </Link>
-                          )}
-                        </MenuItem>
-                      </>
-                    )}
                     <hr className="my-1 border-secondary-200" />
                     <MenuItem>
                       {({ focus }) => (

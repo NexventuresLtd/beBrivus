@@ -36,6 +36,7 @@ import { ForumManagement } from "./pages/admin/ForumManagement";
 import { AdminLayout } from "./components/admin/AdminLayout";
 import { AdminProtectedRoute } from "./components/admin/AdminProtectedRoute";
 import { ForumNewPostPage } from "./pages/ForumNewPostPage";
+import { ForumDiscussionPage } from "./pages/ForumDiscussionPage";
 
 // Create a client
 const queryClient = new QueryClient({
@@ -153,6 +154,14 @@ function AppRoutes() {
         element={
           <ProtectedRoute>
             <ForumNewPostPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/forum/discussion/:slug"
+        element={
+          <ProtectedRoute>
+            <ForumDiscussionPage />
           </ProtectedRoute>
         }
       />
