@@ -83,7 +83,7 @@ class ChatSessionViewSet(viewsets.ModelViewSet):
                 session=session,
                 is_user=False,
                 content=ai_response,
-                model_version='gemini-1.5-flash',
+                model_version='gemini-2.5-flash',
                 processing_time_ms=processing_time,
                 confidence_score=0.8
             )
@@ -345,5 +345,50 @@ class InterviewPrepView(APIView):
         except Exception as e:
             return Response(
                 {'error': f'Failed to generate questions: {str(e)}'},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
+
+class ChatView(APIView):
+    """Simple chat endpoint for AI coach"""
+    permission_classes = [IsAuthenticated]
+    
+    def post(self, request):
+        message = request.data.get('message', '')
+        context = request.data.get('context', 'career_coach')
+        
+        if not message:
+            return Response(
+                {'error': 'Message is required'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        try:
+            # Build context-specific system prompt
+            system_prompts = {
+                'career_coach': "You are a helpful career coach and counselor. Provide guidance on career development, job search, interview preparation, resume writing, and professional growth.",
+                'application_help': "You are an expert in job applications. Help users craft compelling applications, cover letters, and prepare for interviews.",
+                'general': "You are a helpful AI assistant focused on career and professional development."
+            }
+            
+            system_prompt = system_prompts.get(context, system_prompts['general'])
+            full_prompt = f"{system_prompt}\n\nUser: {message}\n\nAssistant:"
+            
+            # Generate response using Gemini
+            start_time = time.time()
+            response = gemini_service.generate_content(full_prompt)
+            processing_time = int((time.time() - start_time) * 1000)
+            
+            # Optionally save to chat session (simplified)
+            # You can create a default session or skip saving for now
+            
+            return Response({
+                'response': response,
+                'processing_time_ms': processing_time
+            })
+            
+        except Exception as e:
+            return Response(
+                {'error': f'Failed to generate response: {str(e)}'},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )

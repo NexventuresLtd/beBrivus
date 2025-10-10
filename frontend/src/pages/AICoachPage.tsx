@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useMutation } from "@tanstack/react-query";
+import ReactMarkdown from "react-markdown";
 import { api } from "../api";
 import { Layout } from "../components/layout";
 import {
@@ -264,7 +265,61 @@ export const AICoachPage: React.FC = () => {
                   }`}
                 >
                   <div className="whitespace-pre-wrap break-words">
-                    {message.content}
+                    {message.role === "assistant" ? (
+                      <ReactMarkdown
+                        components={{
+                          // Style markdown elements
+                          p: ({ children }) => (
+                            <p className="mb-2 last:mb-0">{children}</p>
+                          ),
+                          ul: ({ children }) => (
+                            <ul className="list-disc list-inside mb-2 space-y-1">
+                              {children}
+                            </ul>
+                          ),
+                          ol: ({ children }) => (
+                            <ol className="list-decimal list-inside mb-2 space-y-1">
+                              {children}
+                            </ol>
+                          ),
+                          li: ({ children }) => (
+                            <li className="ml-2">{children}</li>
+                          ),
+                          strong: ({ children }) => (
+                            <strong className="font-semibold text-secondary-900">
+                              {children}
+                            </strong>
+                          ),
+                          em: ({ children }) => (
+                            <em className="italic">{children}</em>
+                          ),
+                          h1: ({ children }) => (
+                            <h1 className="text-lg font-bold mb-2">
+                              {children}
+                            </h1>
+                          ),
+                          h2: ({ children }) => (
+                            <h2 className="text-base font-bold mb-2">
+                              {children}
+                            </h2>
+                          ),
+                          h3: ({ children }) => (
+                            <h3 className="text-sm font-bold mb-1">
+                              {children}
+                            </h3>
+                          ),
+                          code: ({ children }) => (
+                            <code className="bg-secondary-200 px-1 py-0.5 rounded text-sm">
+                              {children}
+                            </code>
+                          ),
+                        }}
+                      >
+                        {message.content}
+                      </ReactMarkdown>
+                    ) : (
+                      message.content
+                    )}
                   </div>
                   <div
                     className={`text-xs mt-2 opacity-75 ${

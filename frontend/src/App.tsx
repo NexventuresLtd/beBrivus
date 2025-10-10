@@ -37,6 +37,7 @@ import { AdminLayout } from "./components/admin/AdminLayout";
 import { AdminProtectedRoute } from "./components/admin/AdminProtectedRoute";
 import { ForumNewPostPage } from "./pages/ForumNewPostPage";
 import { ForumDiscussionPage } from "./pages/ForumDiscussionPage";
+import { ProfilePage } from "./pages/ProfilePage";
 
 // Create a client
 const queryClient = new QueryClient({
@@ -185,9 +186,7 @@ function AppRoutes() {
         path="/profile"
         element={
           <ProtectedRoute>
-            <div className="min-h-screen flex items-center justify-center">
-              <h1 className="text-2xl">Profile Page (Coming Soon)</h1>
-            </div>
+            <ProfilePage />
           </ProtectedRoute>
         }
       />

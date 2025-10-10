@@ -29,7 +29,7 @@ class AIAnalysis(models.Model):
     confidence_score = models.FloatField(blank=True, null=True)
     
     # Metadata
-    model_version = models.CharField(max_length=50, default='gemini-1.5-flash')
+    model_version = models.CharField(max_length=50, default='gemini-2.5-flash')
     processing_time_ms = models.PositiveIntegerField(blank=True, null=True)
     
     created_at = models.DateTimeField(auto_now_add=True)

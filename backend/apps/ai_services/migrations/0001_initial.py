@@ -40,7 +40,7 @@ class Migration(migrations.Migration):
                 ('input_data', models.JSONField(default=dict)),
                 ('results', models.JSONField(default=dict)),
                 ('confidence_score', models.FloatField(blank=True, null=True)),
-                ('model_version', models.CharField(default='gemini-1.5-flash', max_length=50)),
+                ('model_version', models.CharField(default='gemini-2.5-flash', max_length=50)),
                 ('processing_time_ms', models.PositiveIntegerField(blank=True, null=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),

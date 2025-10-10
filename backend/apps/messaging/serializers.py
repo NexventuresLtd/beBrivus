@@ -78,55 +78,67 @@ class ConversationSerializer(serializers.ModelSerializer):
 
 class ConversationCreateSerializer(serializers.ModelSerializer):
     """Serializer for creating conversations"""
-    participant_ids = serializers.ListField(
-        child=serializers.IntegerField(),
+    participant_id = serializers.IntegerField(
         write_only=True,
-        help_text="List of user IDs to include in conversation"
-    )
-    mentor_id = serializers.IntegerField(
-        required=False, 
-        allow_null=True,
-        help_text="ID of mentor if this is mentor-related conversation"
+        help_text="User ID to start conversation with"
     )
     initial_message = serializers.CharField(
         write_only=True,
         required=False,
+        allow_blank=True,
         help_text="Optional initial message to send"
     )
 
     class Meta:
         model = Conversation
-        fields = ['participant_ids', 'mentor_id', 'initial_message']
+        fields = ['participant_id', 'initial_message']
 
     def create(self, validated_data):
-        """Create conversation with participants"""
-        participant_ids = validated_data.pop('participant_ids', [])
-        mentor_id = validated_data.pop('mentor_id', None)
+        """Create conversation with participant"""
+        participant_id = validated_data.pop('participant_id')
         initial_message = validated_data.pop('initial_message', None)
         
         request = self.context.get('request')
         current_user = request.user
         
-        # Create conversation
-        conversation = Conversation.objects.create(**validated_data)
+        # Check if conversation already exists between these users
+        existing_conversation = Conversation.objects.filter(
+            participants=current_user
+        ).filter(
+            participants__id=participant_id
+        ).first()
         
-        # Add current user to participants
+        if existing_conversation:
+            # If message provided, send it to existing conversation
+            if initial_message:
+                Message.objects.create(
+                    conversation=existing_conversation,
+                    sender=current_user,
+                    content=initial_message
+                )
+            return existing_conversation
+        
+        # Create new conversation
+        conversation = Conversation.objects.create()
+        
+        # Add both users as participants
         conversation.participants.add(current_user)
         
-        # Add other participants
-        if participant_ids:
-            users = User.objects.filter(id__in=participant_ids)
-            conversation.participants.add(*users)
-        
-        # Link to mentor if provided
-        if mentor_id:
+        try:
+            other_user = User.objects.get(id=participant_id)
+            conversation.participants.add(other_user)
+            
+            # Check if other user is a mentor and link
             try:
-                mentor = MentorProfile.objects.get(id=mentor_id)
-                conversation.mentor = mentor
-                conversation.participants.add(mentor.user)
+                mentor_profile = MentorProfile.objects.get(user=other_user)
+                conversation.mentor = mentor_profile
                 conversation.save()
             except MentorProfile.DoesNotExist:
                 pass
+                
+        except User.DoesNotExist:
+            conversation.delete()
+            raise serializers.ValidationError({'participant_id': 'User not found'})
         
         # Send initial message if provided
         if initial_message:

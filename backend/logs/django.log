@@ -2016,3 +2016,1116 @@ Watching for file changes with StatReloader
 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
 Configuring endpoint tcp:port=8000:interface=127.0.0.1
 Listening on TCP address 127.0.0.1:8000
+[mHTTP OPTIONS /api/forum/discussions/post-created/ 200 [0.00, 127.0.0.1:57793][0m
+Not Found: /api/forum/discussions/post-created/
+[33mHTTP GET /api/forum/discussions/post-created/ 404 [0.08, 127.0.0.1:57793][0m
+Not Found: /api/forum/discussions/post-created/
+[33mHTTP GET /api/forum/discussions/post-created/ 404 [0.02, 127.0.0.1:57793][0m
+[mHTTP GET /api/forum/categories/ 200 [0.07, 127.0.0.1:57793][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.15, 127.0.0.1:50272][0m
+[mHTTP OPTIONS /api/forum/discussions/new-post-8/ 200 [0.01, 127.0.0.1:50272][0m
+Not Found: /api/forum/discussions/new-post-8/
+[33mHTTP GET /api/forum/discussions/new-post-8/ 404 [0.03, 127.0.0.1:50272][0m
+Not Found: /api/forum/discussions/new-post-8/
+[33mHTTP GET /api/forum/discussions/new-post-8/ 404 [0.03, 127.0.0.1:50272][0m
+[mHTTP GET /api/forum/categories/ 200 [0.09, 127.0.0.1:50272][0m
+[mHTTP GET /api/forum/discussions/?ordering=-last_activity 200 [0.14, 127.0.0.1:57793][0m
+[mHTTP GET /api/mentors/ 200 [0.05, 127.0.0.1:57793][0m
+Internal Server Error: /api/messaging/conversations/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "<frozen _collections_abc>", line 993, in __iter__
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\paginator.py", line 202, in __getitem__
+    self.object_list = list(self.object_list)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2646, in prefetch_one_level
+    qs = manager._apply_rel_filters(lookup.queryset)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 719, in _apply_rel_filters
+    queryset = queryset.filter(**self.core_filters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1505, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+[35;1mHTTP GET /api/messaging/conversations/ 500 [0.20, 127.0.0.1:57793][0m
+Internal Server Error: /api/messaging/conversations/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "<frozen _collections_abc>", line 993, in __iter__
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\paginator.py", line 202, in __getitem__
+    self.object_list = list(self.object_list)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2646, in prefetch_one_level
+    qs = manager._apply_rel_filters(lookup.queryset)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 719, in _apply_rel_filters
+    queryset = queryset.filter(**self.core_filters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1505, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+[35;1mHTTP GET /api/messaging/conversations/ 500 [0.13, 127.0.0.1:57793][0m
+[mHTTP POST /api/messaging/conversations/ 201 [0.11, 127.0.0.1:57793][0m
+[mHTTP OPTIONS /api/messaging/conversations/2/messages/ 200 [0.01, 127.0.0.1:50272][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.07, 127.0.0.1:50272][0m
+Internal Server Error: /api/messaging/conversations/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "<frozen _collections_abc>", line 993, in __iter__
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\paginator.py", line 202, in __getitem__
+    self.object_list = list(self.object_list)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2646, in prefetch_one_level
+    qs = manager._apply_rel_filters(lookup.queryset)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 719, in _apply_rel_filters
+    queryset = queryset.filter(**self.core_filters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1505, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+[35;1mHTTP GET /api/messaging/conversations/ 500 [0.18, 127.0.0.1:57793][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.04, 127.0.0.1:57793][0m
+Internal Server Error: /api/messaging/conversations/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "<frozen _collections_abc>", line 993, in __iter__
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\paginator.py", line 202, in __getitem__
+    self.object_list = list(self.object_list)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2646, in prefetch_one_level
+    qs = manager._apply_rel_filters(lookup.queryset)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 719, in _apply_rel_filters
+    queryset = queryset.filter(**self.core_filters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1505, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+[35;1mHTTP GET /api/messaging/conversations/ 500 [0.20, 127.0.0.1:57793][0m
+Method Not Allowed: /api/messaging/conversations/2/messages/
+[31;1mHTTP POST /api/messaging/conversations/2/messages/ 405 [0.04, 127.0.0.1:57793][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\messaging\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/forum/categories/ 200 [0.11, 127.0.0.1:58941][0m
+[mHTTP GET /api/mentors/ 200 [0.06, 127.0.0.1:58941][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\messaging\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/mentors/ 200 [0.08, 127.0.0.1:54500][0m
+Internal Server Error: /api/messaging/conversations/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "<frozen _collections_abc>", line 993, in __iter__
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\paginator.py", line 202, in __getitem__
+    self.object_list = list(self.object_list)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2646, in prefetch_one_level
+    qs = manager._apply_rel_filters(lookup.queryset)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 719, in _apply_rel_filters
+    queryset = queryset.filter(**self.core_filters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1505, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+[35;1mHTTP GET /api/messaging/conversations/ 500 [0.17, 127.0.0.1:54500][0m
+Internal Server Error: /api/messaging/conversations/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "<frozen _collections_abc>", line 993, in __iter__
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\paginator.py", line 202, in __getitem__
+    self.object_list = list(self.object_list)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2646, in prefetch_one_level
+    qs = manager._apply_rel_filters(lookup.queryset)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 719, in _apply_rel_filters
+    queryset = queryset.filter(**self.core_filters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1505, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+[35;1mHTTP GET /api/messaging/conversations/ 500 [0.11, 127.0.0.1:54500][0m
+[mHTTP POST /api/messaging/conversations/ 201 [0.11, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.08, 127.0.0.1:61917][0m
+Internal Server Error: /api/messaging/conversations/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "<frozen _collections_abc>", line 993, in __iter__
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\paginator.py", line 202, in __getitem__
+    self.object_list = list(self.object_list)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2646, in prefetch_one_level
+    qs = manager._apply_rel_filters(lookup.queryset)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 719, in _apply_rel_filters
+    queryset = queryset.filter(**self.core_filters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1505, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+[35;1mHTTP GET /api/messaging/conversations/ 500 [0.20, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.04, 127.0.0.1:54500][0m
+Internal Server Error: /api/messaging/conversations/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "<frozen _collections_abc>", line 993, in __iter__
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\paginator.py", line 202, in __getitem__
+    self.object_list = list(self.object_list)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2646, in prefetch_one_level
+    qs = manager._apply_rel_filters(lookup.queryset)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 719, in _apply_rel_filters
+    queryset = queryset.filter(**self.core_filters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1505, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+[35;1mHTTP GET /api/messaging/conversations/ 500 [0.16, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.04, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.03, 127.0.0.1:54500][0m
+[mHTTP OPTIONS /api/messaging/conversations/2/send_message/ 200 [0.00, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/send_message/
+[33mHTTP POST /api/messaging/conversations/2/send_message/ 404 [0.05, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.05, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.04, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.04, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.04, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.04, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.05, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.06, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.03, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.03, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.03, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.05, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.03, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.03, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.03, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.07, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.05, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.07, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.06, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.05, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.05, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/send_message/
+[33mHTTP POST /api/messaging/conversations/2/send_message/ 404 [0.06, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.04, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.03, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.05, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.04, 127.0.0.1:54500][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.03, 127.0.0.1:54992][0m
+[mHTTP OPTIONS /api/mentors/bookings/ 200 [0.00, 127.0.0.1:54992][0m
+[mHTTP GET /api/mentors/bookings/ 200 [0.06, 127.0.0.1:54992][0m
+[mHTTP OPTIONS /api/ai/chat/ 200 [0.01, 127.0.0.1:54992][0m
+Not Found: /api/ai/chat/
+[33mHTTP POST /api/ai/chat/ 404 [0.18, 127.0.0.1:54992][0m
+Not Found: /api/ai/chat/
+[33mHTTP POST /api/ai/chat/ 404 [0.06, 127.0.0.1:54992][0m
+[mHTTP GET /api/forum/categories/ 200 [0.04, 127.0.0.1:52144][0m
+[mHTTP GET /api/forum/categories/ 200 [0.05, 127.0.0.1:53556][0m
+[mHTTP GET /api/forum/categories/ 200 [0.04, 127.0.0.1:53556][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\messaging\urls.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\messaging\urls.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP GET /api/mentors/ 200 [0.22, 127.0.0.1:55613][0m
+Internal Server Error: /api/messaging/conversations/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "<frozen _collections_abc>", line 993, in __iter__
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\paginator.py", line 202, in __getitem__
+    self.object_list = list(self.object_list)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2646, in prefetch_one_level
+    qs = manager._apply_rel_filters(lookup.queryset)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 719, in _apply_rel_filters
+    queryset = queryset.filter(**self.core_filters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1505, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+[35;1mHTTP GET /api/messaging/conversations/ 500 [0.26, 127.0.0.1:55613][0m
+Internal Server Error: /api/messaging/conversations/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "<frozen _collections_abc>", line 993, in __iter__
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\paginator.py", line 202, in __getitem__
+    self.object_list = list(self.object_list)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2646, in prefetch_one_level
+    qs = manager._apply_rel_filters(lookup.queryset)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 719, in _apply_rel_filters
+    queryset = queryset.filter(**self.core_filters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1505, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+[35;1mHTTP GET /api/messaging/conversations/ 500 [0.10, 127.0.0.1:55613][0m
+[mHTTP POST /api/messaging/conversations/ 201 [0.12, 127.0.0.1:55613][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.08, 127.0.0.1:64316][0m
+Internal Server Error: /api/messaging/conversations/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "<frozen _collections_abc>", line 993, in __iter__
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\paginator.py", line 202, in __getitem__
+    self.object_list = list(self.object_list)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2646, in prefetch_one_level
+    qs = manager._apply_rel_filters(lookup.queryset)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 719, in _apply_rel_filters
+    queryset = queryset.filter(**self.core_filters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1505, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+[35;1mHTTP GET /api/messaging/conversations/ 500 [0.27, 127.0.0.1:55613][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.03, 127.0.0.1:55613][0m
+Internal Server Error: /api/messaging/conversations/
+Traceback (most recent call last):
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 489, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 439, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\asgiref\sync.py", line 493, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "<frozen _collections_abc>", line 993, in __iter__
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\core\paginator.py", line 202, in __getitem__
+    self.object_list = list(self.object_list)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 2646, in prefetch_one_level
+    qs = manager._apply_rel_filters(lookup.queryset)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 719, in _apply_rel_filters
+    queryset = queryset.filter(**self.core_filters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1505, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+[35;1mHTTP GET /api/messaging/conversations/ 500 [0.13, 127.0.0.1:55613][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.04, 127.0.0.1:55613][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.04, 127.0.0.1:55613][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.05, 127.0.0.1:55613][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.06, 127.0.0.1:55613][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.04, 127.0.0.1:55613][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.03, 127.0.0.1:55613][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.05, 127.0.0.1:55613][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.05, 127.0.0.1:55613][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.02, 127.0.0.1:55613][0m
+Not Found: /api/messaging/conversations/2/messages/
+[33mHTTP GET /api/messaging/conversations/2/messages/ 404 [0.03, 127.0.0.1:55613][0m
+[mHTTP GET /api/resources/ 200 [0.07, 127.0.0.1:55613][0m
+[mHTTP GET /api/resources/categories/ 200 [0.07, 127.0.0.1:64316][0m
+[mHTTP GET /api/resources/categories/ 200 [0.06, 127.0.0.1:64316][0m
+[mHTTP GET /api/resources/ 200 [0.06, 127.0.0.1:55613][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\ai_services\views.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Not Found: /api/ai/chat/
+[33mHTTP POST /api/ai/chat/ 404 [0.04, 127.0.0.1:54004][0m
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Gemini API error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+Internal Server Error: /api/ai/chat/
+[35;1mHTTP POST /api/ai/chat/ 500 [1.69, 127.0.0.1:51805][0m
+Gemini API error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+Internal Server Error: /api/ai/chat/
+[35;1mHTTP POST /api/ai/chat/ 500 [0.23, 127.0.0.1:63002][0m
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+Gemini API error: 404 models/gemini-2.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Internal Server Error: /api/ai/chat/
+[35;1mHTTP POST /api/ai/chat/ 500 [1.27, 127.0.0.1:54432][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\ai_services\gemini_service.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP POST /api/ai/chat/ 200 [3.92, 127.0.0.1:54973][0m
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP POST /api/ai/chat/ 200 [4.66, 127.0.0.1:54919][0m
+C:\Users\mbric\Documents\Sook\NexVentures Projects\beBrivus\backend\apps\ai_services\urls.py changed, reloading.
+Watching for file changes with StatReloader
+HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+Configuring endpoint tcp:port=8000:interface=127.0.0.1
+Listening on TCP address 127.0.0.1:8000
+[mHTTP OPTIONS /api/accounts/profile/ 200 [0.08, 127.0.0.1:51389][0m
+Not Found: /api/accounts/profile/
+[33mHTTP GET /api/accounts/profile/ 404 [0.43, 127.0.0.1:51389][0m
+Not Found: /api/accounts/profile/
+[33mHTTP GET /api/accounts/profile/ 404 [0.02, 127.0.0.1:51389][0m
+Not Found: /api/accounts/profile/
+[33mHTTP GET /api/accounts/profile/ 404 [0.02, 127.0.0.1:51389][0m
+Not Found: /api/accounts/profile/
+[33mHTTP GET /api/accounts/profile/ 404 [0.08, 127.0.0.1:64211][0m
+Not Found: /api/accounts/profile/
+[33mHTTP GET /api/accounts/profile/ 404 [0.05, 127.0.0.1:64211][0m
+Not Found: /api/accounts/profile/
+[33mHTTP GET /api/accounts/profile/ 404 [0.02, 127.0.0.1:64211][0m
+Not Found: /api/accounts/profile/
+[33mHTTP GET /api/accounts/profile/ 404 [0.02, 127.0.0.1:50099][0m
+[mHTTP OPTIONS /api/auth/profile/ 200 [0.01, 127.0.0.1:50099][0m
+[mHTTP GET /api/auth/profile/ 200 [0.35, 127.0.0.1:50099][0m
+[mHTTP OPTIONS /api/auth/skills/ 200 [0.01, 127.0.0.1:50099][0m
+[mHTTP OPTIONS /api/auth/education/ 200 [0.01, 127.0.0.1:53362][0m
+[mHTTP OPTIONS /api/auth/experience/ 200 [0.01, 127.0.0.1:50099][0m
+[mHTTP GET /api/auth/skills/ 200 [0.08, 127.0.0.1:53362][0m
+[mHTTP GET /api/auth/education/ 200 [0.08, 127.0.0.1:50099][0m
+[mHTTP GET /api/auth/experience/ 200 [0.03, 127.0.0.1:53362][0m
+[mHTTP GET /api/auth/experience/ 200 [0.13, 127.0.0.1:53355][0m
+[mHTTP GET /api/auth/education/ 200 [0.16, 127.0.0.1:60729][0m
+[mHTTP GET /api/auth/profile/ 200 [0.25, 127.0.0.1:58373][0m
+[mHTTP GET /api/auth/skills/ 200 [0.30, 127.0.0.1:61099][0m
+[mHTTP GET /api/auth/skills/ 200 [0.07, 127.0.0.1:58373][0m
+[mHTTP GET /api/auth/experience/ 200 [0.12, 127.0.0.1:60729][0m
+[mHTTP GET /api/auth/profile/ 200 [0.11, 127.0.0.1:53355][0m
+[mHTTP GET /api/auth/education/ 200 [0.12, 127.0.0.1:61099][0m
+[mHTTP GET /api/auth/skills/ 200 [0.08, 127.0.0.1:57584][0m
+[mHTTP GET /api/auth/education/ 200 [0.08, 127.0.0.1:52642][0m
+[mHTTP GET /api/auth/profile/ 200 [0.08, 127.0.0.1:60645][0m
+[mHTTP GET /api/auth/experience/ 200 [0.09, 127.0.0.1:53597][0m
+[mHTTP GET /api/auth/skills/ 200 [0.07, 127.0.0.1:53597][0m
+[mHTTP GET /api/auth/education/ 200 [0.08, 127.0.0.1:60645][0m
+[mHTTP GET /api/auth/experience/ 200 [0.08, 127.0.0.1:52642][0m
+[mHTTP GET /api/auth/profile/ 200 [0.08, 127.0.0.1:57584][0m
+[mHTTP GET /api/auth/education/ 200 [0.09, 127.0.0.1:52642][0m
+[mHTTP GET /api/auth/skills/ 200 [0.09, 127.0.0.1:57584][0m
+[mHTTP GET /api/auth/experience/ 200 [0.09, 127.0.0.1:60645][0m
+[mHTTP GET /api/auth/profile/ 200 [0.10, 127.0.0.1:53597][0m

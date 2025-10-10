@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { messagingApi } from "../../api/messaging";
-import { Send, Video, X } from "lucide-react";
+import { Send, Video, X, Loader2 } from "lucide-react";
 import { Button } from "../ui";
 
 interface MessagingWindowProps {
@@ -19,13 +19,16 @@ export const MessagingWindow: React.FC<MessagingWindowProps> = ({
 }) => {
   const [newMessage, setNewMessage] = useState("");
   const [conversationId, setConversationId] = useState<number | null>(null);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
   const queryClient = useQueryClient();
 
   // Get or create conversation
-  const { data: conversationsData } = useQuery({
-    queryKey: ["conversations"],
-    queryFn: () => messagingApi.getConversations(),
-  });
+  const { data: conversationsData, isLoading: loadingConversations } = useQuery(
+    {
+      queryKey: ["conversations"],
+      queryFn: () => messagingApi.getConversations(),
+    }
+  );
 
   // Find existing conversation with this mentor
   useEffect(() => {
@@ -48,11 +51,17 @@ export const MessagingWindow: React.FC<MessagingWindowProps> = ({
   }, [conversationsData, mentorId]);
 
   // Get messages for this conversation
-  const { data: messagesData } = useQuery({
+  const { data: messagesData, isLoading: loadingMessages } = useQuery({
     queryKey: ["messages", conversationId],
     queryFn: () => messagingApi.getMessages(conversationId!),
     enabled: !!conversationId,
+    refetchInterval: 3000, // Poll for new messages every 3 seconds
   });
+
+  // Scroll to bottom when messages change
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messagesData]);
 
   // Start conversation mutation
   const startConversationMutation = useMutation({
@@ -60,10 +69,15 @@ export const MessagingWindow: React.FC<MessagingWindowProps> = ({
       messagingApi.startConversation(mentorId, initialMessage),
     onSuccess: (response) => {
       setConversationId(response.data.id);
+      setNewMessage("");
       queryClient.invalidateQueries({ queryKey: ["conversations"] });
       queryClient.invalidateQueries({
         queryKey: ["messages", response.data.id],
       });
+    },
+    onError: (error) => {
+      console.error("Failed to start conversation:", error);
+      alert("Failed to send message. Please try again.");
     },
   });
 
@@ -77,8 +91,13 @@ export const MessagingWindow: React.FC<MessagingWindowProps> = ({
       content: string;
     }) => messagingApi.sendMessage(conversationId, content),
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["messages", conversationId] });
       setNewMessage("");
+      queryClient.invalidateQueries({ queryKey: ["messages", conversationId] });
+      queryClient.invalidateQueries({ queryKey: ["conversations"] });
+    },
+    onError: (error) => {
+      console.error("Failed to send message:", error);
+      alert("Failed to send message. Please try again.");
     },
   });
 
@@ -87,15 +106,20 @@ export const MessagingWindow: React.FC<MessagingWindowProps> = ({
     if (!newMessage.trim()) return;
 
     if (conversationId) {
+      // Send to existing conversation
       sendMessageMutation.mutate({ conversationId, content: newMessage });
     } else {
-      // Start new conversation
+      // Start new conversation with initial message
       startConversationMutation.mutate(newMessage);
-      setNewMessage("");
     }
   };
 
   const messages = messagesData?.data?.results || [];
+  const isLoading =
+    loadingConversations ||
+    loadingMessages ||
+    startConversationMutation.isPending ||
+    sendMessageMutation.isPending;
 
   const formatTime = (timestamp: string) => {
     return new Date(timestamp).toLocaleTimeString("en-US", {
@@ -189,13 +213,14 @@ export const MessagingWindow: React.FC<MessagingWindowProps> = ({
                         isFromMentor ? "text-gray-500" : "text-primary-100"
                       }`}
                     >
-                      {formatTime(message.timestamp)}
+                      {formatTime(message.created_at || message.timestamp)}
                     </p>
                   </div>
                 </div>
               );
             })
           )}
+          <div ref={messagesEndRef} />
 
           {/* Loading states */}
           {(startConversationMutation.isPending ||
@@ -229,17 +254,15 @@ export const MessagingWindow: React.FC<MessagingWindowProps> = ({
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
               placeholder="Type your message..."
-              className="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+              disabled={isLoading}
+              className="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
             />
-            <Button
-              type="submit"
-              disabled={
-                !newMessage.trim() ||
-                startConversationMutation.isPending ||
-                sendMessageMutation.isPending
-              }
-            >
-              <Send className="w-4 h-4" />
+            <Button type="submit" disabled={!newMessage.trim() || isLoading}>
+              {isLoading ? (
+                <Loader2 className="w-4 h-4 animate-spin" />
+              ) : (
+                <Send className="w-4 h-4" />
+              )}
             </Button>
           </div>
         </form>

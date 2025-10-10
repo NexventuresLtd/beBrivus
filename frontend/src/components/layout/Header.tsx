@@ -121,12 +121,6 @@ export const Header: React.FC = () => {
           <div className="flex items-center space-x-4">
             {isAuthenticated ? (
               <>
-                {/* Notifications */}
-                <button className="p-2 text-secondary-600 hover:text-secondary-900 relative">
-                  <Bell className="w-5 h-5" />
-                  <span className="absolute top-0 right-0 w-2 h-2 bg-error-500 rounded-full"></span>
-                </button>
-
                 {/* User Menu */}
                 <Menu as="div" className="relative">
                   <MenuButton className="flex items-center space-x-2 p-2 rounded-lg hover:bg-secondary-100 transition-colors">

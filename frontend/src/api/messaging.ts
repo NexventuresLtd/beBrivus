@@ -84,25 +84,27 @@ export const messagingApi = {
   getConversations: () =>
     api.get<{ results: Conversation[] }>('/messaging/conversations/'),
 
-  // Get conversation by ID with messages
+  // Get conversation by ID
   getConversation: (conversationId: number) =>
     api.get<Conversation>(`/messaging/conversations/${conversationId}/`),
 
   // Get messages for a conversation
   getMessages: (conversationId: number, page?: number) =>
-    api.get<{ results: Message[] }>(`/messaging/conversations/${conversationId}/messages/${page ? `?page=${page}` : ''}`),
+    api.get<{ results: Message[]; has_more: boolean }>(
+      `/messaging/conversations/${conversationId}/messages/${page ? `?page=${page}` : ''}`
+    ),
 
-  // Send a message
+  // Send a message to a conversation
   sendMessage: (conversationId: number, content: string) =>
-    api.post<Message>(`/messaging/conversations/${conversationId}/messages/`, {
+    api.post<Message>(`/messaging/conversations/${conversationId}/send_message/`, {
       content
     }),
 
-  // Start conversation with mentor
-  startConversation: (mentorId: number, initialMessage: string) =>
+  // Start conversation with another user (by user ID)
+  startConversation: (userId: number, initialMessage?: string) =>
     api.post<Conversation>('/messaging/conversations/', {
-      participant_ids: [mentorId],
-      initial_message: initialMessage
+      participant_id: userId,
+      initial_message: initialMessage || ''
     }),
 
   // Mark conversation as read
