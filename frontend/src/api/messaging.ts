@@ -101,7 +101,7 @@ export const messagingApi = {
   // Start conversation with mentor
   startConversation: (mentorId: number, initialMessage: string) =>
     api.post<Conversation>('/messaging/conversations/', {
-      participant_id: mentorId,
+      participant_ids: [mentorId],
       initial_message: initialMessage
     }),
 

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { mentorsApi } from "../../api/mentors";
 import { messagingApi } from "../../api/messaging";
 import { Send, Video, X } from "lucide-react";
 import { Button } from "../ui";
@@ -33,8 +32,15 @@ export const MessagingWindow: React.FC<MessagingWindowProps> = ({
     console.log("Conversations Data:", conversationsData);
     if (conversationsData?.data?.results) {
       const existingConversation = conversationsData.data.results.find(
-        (conv: any) => conv.participants.some((p: any) => p.id === mentorId)
+        (conv: any) => {
+          // Check if any participant (other than current user) matches the mentor ID
+          return (
+            conv.participants &&
+            conv.participants.some((p: any) => p.id === mentorId)
+          );
+        }
       );
+      console.log("Existing conversation found:", existingConversation);
       if (existingConversation) {
         setConversationId(existingConversation.id);
       }
@@ -55,6 +61,9 @@ export const MessagingWindow: React.FC<MessagingWindowProps> = ({
     onSuccess: (response) => {
       setConversationId(response.data.id);
       queryClient.invalidateQueries({ queryKey: ["conversations"] });
+      queryClient.invalidateQueries({
+        queryKey: ["messages", response.data.id],
+      });
     },
   });
 

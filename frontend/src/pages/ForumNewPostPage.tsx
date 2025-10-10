@@ -30,13 +30,20 @@ export const ForumNewPostPage: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    createMutation.mutate({
+
+    const postData: any = {
       title,
       content,
       category,
       discussion_type: discussionType,
-      tags,
-    });
+    };
+
+    // Only include tags if they exist
+    if (tags.length > 0) {
+      postData.tags = tags;
+    }
+
+    createMutation.mutate(postData);
   };
 
   return (
@@ -97,7 +104,7 @@ export const ForumNewPostPage: React.FC = () => {
           </div>
           <div>
             <label className="block mb-1 font-medium">
-              Tags (comma separated)
+              Tags (optional, comma separated)
             </label>
             <input
               type="text"
@@ -111,6 +118,7 @@ export const ForumNewPostPage: React.FC = () => {
                     .filter(Boolean)
                 )
               }
+              placeholder="e.g., startup, funding, marketing"
             />
           </div>
           <button

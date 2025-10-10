@@ -147,7 +147,7 @@ class DiscussionDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Discussion
         fields = [
-            'id', 'title', 'content', 'discussion_type', 'author', 'category',
+            'id', 'title', 'slug', 'content', 'discussion_type', 'author', 'category',
             'views_count', 'likes_count', 'replies_count',
             'is_pinned', 'is_locked', 'is_resolved',
             'ai_summary', 'ai_keywords',
@@ -186,12 +186,21 @@ class DiscussionCreateSerializer(serializers.ModelSerializer):
     tags = serializers.ListField(
         child=serializers.CharField(max_length=50),
         required=False,
-        allow_empty=True
+        allow_empty=True,
+        write_only=True  # This is only for input, not output
     )
+    tag_list = serializers.SerializerMethodField(read_only=True)
     
     class Meta:
         model = Discussion
-        fields = ['title', 'content', 'discussion_type', 'category', 'tags']
+        fields = ['id', 'title', 'slug', 'content', 'discussion_type', 'category', 'tags', 'tag_list']
+        extra_kwargs = {
+            'slug': {'required': False, 'allow_blank': True}
+        }
+    
+    def get_tag_list(self, obj):
+        """Return tags as list of strings for output"""
+        return [tag.name for tag in obj.tags.all()]
     
     def create(self, validated_data):
         tags_data = validated_data.pop('tags', [])
