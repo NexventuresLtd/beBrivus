@@ -29,11 +29,15 @@ export const RegisterForm: React.FC = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+  const [backendErrors, setBackendErrors] = useState<Record<string, string[]>>(
+    {}
+  );
 
   const {
     register,
     handleSubmit,
     formState: { errors },
+    setError: setFormError,
   } = useForm<RegisterFormData>({
     resolver: yupResolver(schema),
   });
@@ -42,6 +46,7 @@ export const RegisterForm: React.FC = () => {
     try {
       setIsLoading(true);
       setError("");
+      setBackendErrors({});
       const response = await registerUser(data);
 
       // Check if onboarding is needed
@@ -51,11 +56,51 @@ export const RegisterForm: React.FC = () => {
         navigate("/dashboard");
       }
     } catch (err: any) {
-      setError(
-        err.response?.data?.detail ||
-          err.response?.data?.message ||
-          "Registration failed. Please try again."
-      );
+      // Handle backend validation errors
+      if (err.response?.data && typeof err.response.data === "object") {
+        const errors = err.response.data;
+
+        // Check if it's a field-specific error object
+        const hasFieldErrors = Object.keys(errors).some(
+          (key) =>
+            Array.isArray(errors[key]) ||
+            (typeof errors[key] === "string" &&
+              key !== "detail" &&
+              key !== "message")
+        );
+
+        if (hasFieldErrors) {
+          setBackendErrors(errors);
+
+          // Also set form errors for individual fields
+          Object.keys(errors).forEach((fieldName) => {
+            const fieldErrors = errors[fieldName];
+            const errorMessage = Array.isArray(fieldErrors)
+              ? fieldErrors.join(", ")
+              : fieldErrors;
+
+            if (fieldName in data) {
+              setFormError(fieldName as keyof RegisterFormData, {
+                type: "manual",
+                message: errorMessage,
+              });
+            }
+          });
+        } else {
+          // Generic error message
+          setError(
+            errors.detail ||
+              errors.message ||
+              "Registration failed. Please try again."
+          );
+        }
+      } else {
+        setError(
+          err.response?.data?.detail ||
+            err.response?.data?.message ||
+            "Registration failed. Please try again."
+        );
+      }
     } finally {
       setIsLoading(false);
     }
@@ -94,6 +139,48 @@ export const RegisterForm: React.FC = () => {
               {error && (
                 <div className="bg-error-50 border border-error-200 rounded-lg p-3">
                   <p className="text-error-600 text-sm">{error}</p>
+                </div>
+              )}
+
+              {Object.keys(backendErrors).length > 0 && !error && (
+                <div className="bg-error-50 border border-error-200 rounded-lg p-4">
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <svg
+                        className="h-5 w-5 text-error-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div className="ml-3">
+                      <h3 className="text-sm font-medium text-error-800">
+                        There were errors with your submission:
+                      </h3>
+                      <div className="mt-2 text-sm text-error-700">
+                        <ul className="list-disc pl-5 space-y-1">
+                          {Object.entries(backendErrors).map(
+                            ([field, messages]) => (
+                              <li key={field}>
+                                <strong className="capitalize">
+                                  {field.replace("_", " ")}:
+                                </strong>{" "}
+                                {Array.isArray(messages)
+                                  ? messages.join(", ")
+                                  : messages}
+                              </li>
+                            )
+                          )}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               )}
 
